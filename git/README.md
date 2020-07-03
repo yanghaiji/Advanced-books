@@ -1,4 +1,5 @@
+![GitLogo](../doc/gitlogo.jpg)
 
-## Git
+## Git Books 
 
 [1.Git emoji 使用](emoji/README.md)
