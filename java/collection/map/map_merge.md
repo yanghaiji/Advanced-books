@@ -1,12 +1,12 @@
 # Map merge
-- [介绍](#1-介绍)
-- [初始化](#2-初始化)
-- [Map.merge()](#3-Map.merge())
-- [Stream.concat()](#4-Stream.concat())
-- [Stream.of()](#5-Stream.of())
-- [Simple Streaming](#6-Simple-Streaming)
-- [StreamEx](#7-StreamEx)
-- [Test源码](#8-Test源码)
+- [1. 介绍](#1-介绍)
+- [2. 初始化](#2-初始化)
+- [3. Map.merge()](#3-Map-.merge())
+- [4. Stream.concat()](#4-Stream-.concat())
+- [5. Stream.of()](#5-Stream-.of())
+- [6. Simple Streaming](#6-Simple-Streaming)
+- [7. StreamEx](#7-StreamEx)
+- [8. Test源码](#8-Test源码)
 
 ## 1. 介绍
 
