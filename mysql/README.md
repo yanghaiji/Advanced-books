@@ -22,7 +22,7 @@
     - [4.8 外部连接简化](book/sql优化/外部连接简化.md)
     - [4.9 多范围读取优化](book/sql优化/多范围读取优化.md)
     - [4.10 条件过滤](book/sql优化/条件过滤.md)
-    - [4.11 IS NULL优化](book/sql优化/IS NULL优化.md)
+    - [4.11 IS NULL优化](book/sql优化/ISNULL优化.md)
     - [4.12 化排序](book/sql优化/优化排序.md)
     - [4.13 优化分组](book/sql优化/优化分组.md)
     - [4.14 LIMIT查询优化](book/sql优化/LIMIT查询优化.md)
