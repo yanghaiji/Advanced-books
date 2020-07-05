@@ -33,6 +33,7 @@ channel.read(bufferArray);
 ### Gathering Writes
 
 "gathering write"把多个buffer的数据写入到同一个channel中，下面是示意图：
+
 ![javaLogo](../../doc/nio/gather.png)
 
 **Java NIO: Gathering Write**
