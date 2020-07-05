@@ -1,4 +1,4 @@
-## IS NULL优化
+## 4.11 IS NULL优化
 
 MySQL能够执行在相同的优化 ，它可以使用 。例如，MySQL能使用索引和范围来搜索 与。 *`col_name`* `IS NULL`*`col_name`* `=` *`constant_value`*`NULL``IS NULL`
 

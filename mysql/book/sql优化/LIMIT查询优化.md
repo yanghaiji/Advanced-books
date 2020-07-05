@@ -1,8 +1,8 @@
-## LIMIT查询优化
+## 4.14 LIMIT查询优化
 
 如果从结果集中只需要指定数量的行，则`LIMIT`在查询中使用子句，而不是获取整个结果集并丢弃多余的数据。
 
-MySQL有时会优化具有子句和无 子句的查询： `LIMIT *`row_count`*``HAVING`
+MySQL有时会优化具有子句和无 子句的查询： `LIMIT row_count HAVING`
 
 - 如果仅使用来选择几行 `LIMIT`，则在通常情况下，MySQL倾向于使用全表扫描，因此在某些情况下会使用索引。
 
@@ -10,9 +10,9 @@ MySQL有时会优化具有子句和无 子句的查询： `LIMIT *`row_count`*``
 
   此行为的一种体现是，`ORDER BY`带有和不带有 查询的查询 `LIMIT`可能以不同的顺序返回行，如本节后面所述。
 
-- 如果与结合使用，MySQL 将在 找到唯一行后立即停止。 `LIMIT *`row_count`*``DISTINCT`*`row_count`*
+- 如果与结合使用，MySQL 将在 找到唯一行后立即停止。 `LIMIT row_count DISTINCT`*`row_count`*
 
-- 在某些情况下，`GROUP BY`可以通过按顺序读取索引（或对索引进行排序）然后计算汇总直到索引值更改来解决a。在这种情况下，不会计算任何不必要的 值。 `LIMIT *`row_count`*``GROUP BY`
+- 在某些情况下，`GROUP BY`可以通过按顺序读取索引（或对索引进行排序）然后计算汇总直到索引值更改来解决a。在这种情况下，不会计算任何不必要的 值。 `LIMIT *row_count*`GROUP BY`
 
 - MySQL一旦向客户端发送了所需的行数，它将立即终止查询，除非您使用 `SQL_CALC_FOUND_ROWS`。在这种情况下，可以使用检索行数`SELECT FOUND_ROWS()`。
 

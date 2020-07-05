@@ -1,4 +1,4 @@
-## WHERE子句优化
+## 4.1 WHERE子句优化
 
 这些示例使用 `SELECT`语句，但是相同的优化适用`WHERE`于`DELETE`和 `UPDATE`语句中的子句 。
 
