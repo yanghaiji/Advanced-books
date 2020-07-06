@@ -1,5 +1,8 @@
 ![GitLogo](doc/book.jpg)
 
+#### Java社区交流群
+> 添加小编微信: **372787553** (添加备注学习) 带您进入Java社区交流群
+
 ### 欢迎来到 Java有货读书馆，以下是为您呈现的目录
 
 - [一.Mysql 进阶篇](mysql/README.md)
