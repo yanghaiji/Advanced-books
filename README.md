@@ -68,3 +68,8 @@
         - [5.8. 索引扩展的使用](mysql/book/索引优化/索引扩展的使用.md)        
 - [三.Git 核心技术](git/README.md)
     - [1.Git emoji 使用](git/emoji/emoji.md)
+- [四.Mybatis 进阶篇](mybatis/README.md)  
+    - [1. Mybatis 二级缓存](https://blog.csdn.net/weixin_38937840/article/details/106332696)
+    - [2. Mybatis 高级映射](mybatis/结果映射.md)
+    - [3. Mybatis 动态 SQL](mybatis/动态SQL.md)
+    - [4. Mybatis SqlSession](mybatis/SqlSession.md) 
