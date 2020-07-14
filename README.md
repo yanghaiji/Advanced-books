@@ -12,6 +12,7 @@
     - 2.Java collection
         - [2.1.JDK 8 HashMap鬼斧神工的优化](https://blog.csdn.net/weixin_38937840/article/details/106805496)
         - [2.2.JDK8 Map merge 一些骚操作](java/collection/map/map_merge.md)
+        - [2.3.JDK8 一行代码搞定集合去重，差集，并集，交集，是否相等](https://blog.csdn.net/weixin_38937840/article/details/107338265)
     - 3.Java NIO
         - [3.1.Java NIO 教程](java/nio/JavaNIO教程.md)    
         - [3.2.Java NIO 概览](java/nio/JavaNIO概览.md)    
