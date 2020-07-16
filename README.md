@@ -35,7 +35,8 @@
          - [4.1 ExecutorService指南](java/concurrency/ExecutorService指南.md)  
          - [4.2 CompletableFuture](https://blog.csdn.net/weixin_38937840/article/details/105046588) 
     - 5.Java Stream  
-         - [5.1 java-8-collectors](java/stream/collectors.md)     
+         - [5.1 java-8-collectors](java/stream/collectors.md) 
+         - [5.2 java-8-Stream 讲解与示例](java/stream/stream.md)       
     - [6.常见面试题](java/InterviewQuestions/README.md)
     - 7.Java 扩展 
         - [JDK14的重大更新](https://blog.csdn.net/weixin_38937840/article/details/105054595)
