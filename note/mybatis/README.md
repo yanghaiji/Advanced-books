@@ -1,4 +1,4 @@
-![MYSQL](../doc/mybatislogo.png)
+![MYSQL](../../doc/mybatislogo.png)
 
 ## Mybatis 
 

@@ -1,4 +1,4 @@
-![MYSQL](../doc/mysqllogo.jpg)
+![MYSQL](../../doc/mysqllogo.jpg)
 
 # MySQL 进阶篇
 

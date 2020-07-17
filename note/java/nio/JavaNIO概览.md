@@ -15,7 +15,7 @@ NIO包含下面几个核心的组件：
 通常来说NIO中的所有IO都是从Channel开始的。Channel和流有点类似。通过Channel，
 我们即可以从Channel把数据写到Buffer中，也可以把数据冲Buffer写入到Channel，下图是一个示意图：
 
-![javaLogo](../../doc/nio/overview-channels-buffers.png)
+![javaLogo](../../../doc/nio/overview-channels-buffers.png)
 
 **Java NIO: Channels read data into Buffers, and Buffers write data into Channels**
 
@@ -44,7 +44,7 @@ NIO包含下面几个核心的组件：
 选择器允许单线程操作多个通道。如果你的程序中有大量的链接，同时每个链接的IO带宽不高的话，这个特性将会非常有帮助。比如聊天服务器。 
 下面是一个单线程中Slector维护3个Channel的示意图：
 
-![javaLogo](../../doc/nio/overview-selectors.png)
+![javaLogo](../../../doc/nio/overview-selectors.png)
 
 **Java NIO: A Thread uses a Selector to handle 3 Channel's**
 

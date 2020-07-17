@@ -55,7 +55,7 @@ position和limit的具体含义取决于当前buffer的模式。capacity在两�
 
 下面有张示例图，描诉了不同模式下position和limit的含义：
 
-![javaLogo](../../doc/nio/buffers-modes.png)
+![javaLogo](../../../doc/nio/buffers-modes.png)
 
 **Buffer capacity, position and limit in write and read mode.**
 

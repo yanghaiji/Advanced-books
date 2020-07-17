@@ -10,7 +10,7 @@ Selector是Java NIO中的一个组件，用于检查一个或多个NIO Channel�
 
 这有一幅示意图，描述了单线程处理三个channel的情况：
 
-![javaLogo](../../doc/nio/overview-selectors.png)
+![javaLogo](../../../doc/nio/overview-selectors.png)
 
 **Java NIO: A Thread uses a Selector to handle 3 Channel's**
 

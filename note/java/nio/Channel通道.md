@@ -8,7 +8,7 @@ Java NIO Channel通道和流非常相似，主要有以下几点区别：
 
 正如上面提到的，我们可以从通道中读取数据，写入到buffer；也可以中buffer内读数据，写入到通道中。下面有个示意图：
 
-![javaLogo](../../doc/nio/overview-channels-buffers.png)
+![javaLogo](../../../doc/nio/overview-channels-buffers.png)
 
 **Java NIO: Channels read data into Buffers, and Buffers write data into Channels**
 

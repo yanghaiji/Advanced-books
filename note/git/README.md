@@ -1,4 +1,4 @@
-![GitLogo](../doc/gitlogo.jpg)
+![GitLogo](../../doc/gitlogo.jpg)
 
 ## Git Books 
 

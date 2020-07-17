@@ -28,7 +28,7 @@ String s2 = "Hello World";
 assertThat(s1 == s2).isTrue();
 ```
 由于前面的示例中存在String池，因此两个不同的变量指向该池中的同一String对象，从而节省了关键的内存资源。
-![StringInfo](../../doc/Why_String_Is_Immutable_In_Java.jpg)
+![StringInfo](../../../doc/Why_String_Is_Immutable_In_Java.jpg)
 
 ### 3.2 安全
 
