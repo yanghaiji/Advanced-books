@@ -12,7 +12,7 @@ package com.javayh.advanced.java.annotation;
 public class AddMapper
 {
 
-    @Limit
+    @Limit(value ="Test")
     public void test()
     {
         System.out.println("test case");
