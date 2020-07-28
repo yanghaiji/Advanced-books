@@ -42,8 +42,9 @@
     - [6.常见面试题](note/java/InterviewQuestions/README.md)
     - 7.Java 扩展 
         - [JDK14的重大更新](https://blog.csdn.net/weixin_38937840/article/details/105054595)
-
-- [二.Mysql 进阶篇](note/mysql/README.md)
+- [二.Spring 进阶篇](note/spring/README.md)
+    - [1. EnableAutoConfiguration 源码分析](note/spring/book/EnableAutoConfiguration.md)
+- [三.Mysql 进阶篇](note/mysql/README.md)
     - [1. Mysql Explain 详解](note/mysql/book/Explain.md)
     - [2. Mysql Explain Extra详解](note/mysql/book/Extra.md)
     - [3. Mysql 优化方案](note/mysql/book/优化方案.md)
@@ -72,9 +73,9 @@
         - [5.6. InnoDB和MyISAM索引统计信息收集](note/mysql/book/索引优化/InnoDB和MyISAM索引统计信息收集.md)
         - [5.7. B树和哈希索引的比较](note/mysql/book/索引优化/B树和哈希索引的比较.md)
         - [5.8. 索引扩展的使用](note/mysql/book/索引优化/索引扩展的使用.md)        
-- [三.Git 核心技术](note/git/README.md)
+- [四.Git 核心技术](note/git/README.md)
     - [1.Git emoji 使用](note/git/emoji/emoji.md)
-- [四.Mybatis 进阶篇](note/mybatis/README.md)  
+- [五.Mybatis 进阶篇](note/mybatis/README.md)  
     - [1. Mybatis 二级缓存](https://blog.csdn.net/weixin_38937840/article/details/106332696)
     - [2. Mybatis 高级映射](note/mybatis/结果映射.md)
     - [3. Mybatis 动态 SQL](note/mybatis/动态SQL.md)
