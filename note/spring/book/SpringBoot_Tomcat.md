@@ -172,3 +172,4 @@ public void refresh() throws BeansException, IllegalStateException {
 
 通过上面的执行，Tomcat已经正常的启动，再由`initPropertySources();`进行资源初始化
 
+如果您对Tomcat的感兴趣，点击这里 [销书的pdf版本](https://github.com/yanghaiji/Programmer-Learning-materials)
