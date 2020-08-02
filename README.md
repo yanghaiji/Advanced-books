@@ -47,6 +47,8 @@
     - [2. SpringApplication 源码分析](note/spring/book/SpringApplication.md)
     - [3. SpringApplication 之 refresh 源码分析](note/spring/book/refresh.md)
     - [4. SpringBoot Tomcat 启动原理分析](note/spring/book/SpringBoot_Tomcat.md)
+    - [5. Tomcat自动获取配置原理分析](note/spring/book/TomcatConfigurationFile.md)
+    - [6. ConfigurationProperties使用方式全解](note/spring/book/ConfigurationProperties.md)
 - [三.Mysql 进阶篇](note/mysql/README.md)
     - [1. Mysql Explain 详解](note/mysql/book/Explain.md)
     - [2. Mysql Explain Extra详解](note/mysql/book/Extra.md)
