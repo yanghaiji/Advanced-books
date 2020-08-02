@@ -11,7 +11,7 @@ Scatter/gather在有些场景下会非常有用，比如需要处理多份分开
 ### Scattering Reads
 
 "scattering read"是把数据从单个Channel写入到多个buffer，下面是示意图：
-![javaLogo](../../../doc/nio/scatter.png)
+![javaLogo](../../../../doc/nio/scatter.png)
 
 **Java NIO: Scattering Read**
 
@@ -34,7 +34,7 @@ channel.read(bufferArray);
 
 "gathering write"把多个buffer的数据写入到同一个channel中，下面是示意图：
 
-![javaLogo](../../../doc/nio/gather.png)
+![javaLogo](../../../../doc/nio/gather.png)
 
 **Java NIO: Gathering Write**
 
