@@ -1,4 +1,4 @@
-![MYSQL](../../doc/springlogo.jpg)
+![springlogo](../../doc/springlogo.jpg)
 
 # SpringBoot 进阶篇
 
