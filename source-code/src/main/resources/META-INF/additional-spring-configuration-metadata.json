@@ -1,0 +1,22 @@
+{
+  "properties": [
+    {
+      "name": "javayh.author",
+      "type": "java.lang.String",
+      "defaultValue": "YangHaiJi",
+      "description": "Description for javayh.author."
+    },
+    {
+      "name": "javayh.gender",
+      "type": "java.lang.String",
+      "defaultValue": "China",
+      "description": "Description for javayh.gender."
+    },
+    {
+      "name": "javayh.age",
+      "type": "java.lang.Integer",
+      "defaultValue": 18,
+      "description": "Description for javayh.age."
+    }
+  ]
+}
