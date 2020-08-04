@@ -1,0 +1,42 @@
+server:
+  port: 9090
+
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/db1?serverTimezone=CTT&characterEncoding=utf8&autoReconnect=true&useUnicode=true&useSSL=true
+    username: root
+    password: root
+    hikari:
+      minimum-idle: 10
+      maximum-pool-size: 30
+      auto-commit: true
+      idle-timeout: 30000
+      pool-name: DatebookHikariCP
+      max-lifetime: 60000
+      connection-timeout: 60000
+      validation-timeout: 5000
+      read-only: false
+      login-timeout: 5
+
+## mybatis 常用配置
+mybatis:
+  ### xml存放路径
+  mapper-locations: classpath*:mapper/*/*Mapper.xml
+  configuration:
+    cache-enabled: true
+    lazy-loading-enabled: false
+    aggressive-lazy-loading: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+
+
+### 自定配置
+
+javayh:
+  author: yanghaiji
+  gender: beijng
+  age: 29
+
+
+

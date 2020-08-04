@@ -86,3 +86,4 @@
     - [2. Mybatis 高级映射](note/mybatis/book/结果映射.md)
     - [3. Mybatis 动态 SQL](note/mybatis/book/动态SQL.md)
     - [4. Mybatis SqlSession](note/mybatis/book/SqlSession.md) 
+    - [5. Mybatis 学习扩展](note/mybatis/book/SqlSession.md)
