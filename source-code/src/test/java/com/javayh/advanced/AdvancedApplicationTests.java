@@ -11,6 +11,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @SpringBootTest
@@ -29,6 +30,18 @@ class AdvancedApplicationTests {
     @Test
     void mapperMap() throws JsonProcessingException {
         List<LogisticsVO> all = testMapper.findAll();
+        ObjectMapper objectMapper = new ObjectMapper();
+        String s = objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(all);
+        System.out.println(s);
+    }
+
+
+    @Test
+    void mapperIf() throws JsonProcessingException {
+        LogisticsVO yanghaiji = LogisticsVO.builder().addressee_name("yanghaiji").addressee_phone("1234565432").build();
+        List<LogisticsVO> logisticsVOS = new ArrayList<>();
+        logisticsVOS.add(yanghaiji);
+        List<LogisticsVO> all = testMapper.findListAndIf(logisticsVOS);
         ObjectMapper objectMapper = new ObjectMapper();
         String s = objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(all);
         System.out.println(s);

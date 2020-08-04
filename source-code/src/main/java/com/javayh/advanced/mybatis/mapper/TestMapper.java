@@ -2,6 +2,7 @@ package com.javayh.advanced.mybatis.mapper;
 
 import com.javayh.advanced.mybatis.vo.LogisticsVO;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -28,4 +29,6 @@ public interface TestMapper {
      * @return java.util.List<com.javayh.advanced.mybatis.vo.LogisticsVO>
      */
     List<LogisticsVO> findAll();
+
+    List<LogisticsVO> findListAndIf(@Param(value = "vos") List<LogisticsVO> vos);
 }

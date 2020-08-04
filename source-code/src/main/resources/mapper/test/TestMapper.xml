@@ -33,5 +33,23 @@
         FROM
             sys_logistics
     </select>
+    <select id="findListAndIf" resultType="com.javayh.advanced.mybatis.vo.LogisticsVO">
+         SELECT
+            addressee,
+            addressee_name,
+            addressee_phone
+        FROM
+            sys_logistics
+        <trim prefix="WHERE" prefixOverrides="AND | OR">
+            <foreach item="vos" index="vos" collection="vos"  separator="," >
+                <if test="vos.addressee_name != null and vos.addressee_name != ''">
+                    AND addressee_name= #{vos.addressee_name}
+                </if>
+                <if test="vos.addressee_phone != null and vos.addressee_phone != ''">
+                    AND addressee_phone= #{vos.addressee_phone}
+                </if>
+            </foreach>
+        </trim>
+    </select>
 
 </mapper>
