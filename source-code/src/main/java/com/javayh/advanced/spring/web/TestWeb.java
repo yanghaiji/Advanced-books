@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping(value = "/test/")
 public class TestWeb {
 
-    @SysLog(value = "测试Aop注解")
+    @SysLog(value = "测试Aop注解",limit = 3)
     @RequestMapping(value = "syslog")
     public String test(){
         return "test";

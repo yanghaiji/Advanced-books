@@ -17,8 +17,8 @@
     <properties>
         <java.version>14</java.version>
         <spring-boot.version>2.3.1.RELEASE</spring-boot.version>
-        <maven.compiler.source>14</maven.compiler.source>
-        <maven.compiler.target>14</maven.compiler.target>
+        <maven.compiler.source.version>14</maven.compiler.source.version>
+        <maven.compiler.target.version>14</maven.compiler.target.version>
         <maven.compiler.encoding>UTF-8</maven.compiler.encoding>
         <maven.compiler.compilerArgs>--enable-preview</maven.compiler.compilerArgs>
         <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
@@ -72,6 +72,14 @@
             <artifactId>mybatis-spring-boot-starter</artifactId>
             <version>${mybatis.version}</version>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-logging</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+        </dependency>
     </dependencies>
 
     <build>
@@ -85,8 +93,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>${maven-compiler-plugin.version}</version>
                 <configuration>
-                    <source>${maven.compiler.source}</source>
-                    <target>${maven.compiler.target}</target>
+                    <source>${maven.compiler.source.version}</source>
+                    <target>${maven.compiler.target.version}</target>
                     <encoding>${maven.compiler.encoding}</encoding>
                     <compilerArgs>${maven.compiler.compilerArgs}</compilerArgs>
                 </configuration>

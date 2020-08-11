@@ -15,4 +15,5 @@ public @interface SysLog {
 
     String value() default "";
 
+    long limit() default 10;
 }
