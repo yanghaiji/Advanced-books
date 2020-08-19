@@ -1,4 +1,4 @@
-![mybatislogo](../../doc/mybatislogo.png)
+![mybatislogo](../../doc/logo/mybatislogo.png)
 
 ## Mybatis 
 

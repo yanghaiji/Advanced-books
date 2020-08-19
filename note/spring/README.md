@@ -1,4 +1,4 @@
-![springlogo](../../doc/springlogo.jpg)
+![springlogo](../../doc/logo/springlogo.jpg)
 
 # SpringBoot 进阶篇
 

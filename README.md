@@ -1,4 +1,4 @@
-![GitLogo](doc/book.jpg)
+![GitLogo](doc/logo/book.jpg)
 
 #### Java社区交流群
 > 添加小编微信: **372787553** (添加备注学习) 带您进入Java社区交流群

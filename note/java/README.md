@@ -1,4 +1,4 @@
-![javaLogo](../../doc/javalogo.png)
+![javaLogo](../../doc/logo/javalogo.png)
 # Java 核心技术
 
 - [1.Java 基础](base/README.md)
