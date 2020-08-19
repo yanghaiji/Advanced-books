@@ -71,10 +71,8 @@ public class SysLogAspect {
         MethodSignature methodSignature = (MethodSignature) joinPoint.getSignature();
         //类名
         String className = methodSignature.getDeclaringTypeName() + "." + methodSignature.getName();
-        StringBuilder stringBuilder = new StringBuilder();
-        stringBuilder.append(className).append(getIpAddr());
         //将类名加 ip 作为 key
-        String limitKey = stringBuilder.toString();
+        String limitKey = className + getIpAddr();
         SysLog annotation = methodSignature.getMethod().getAnnotation(SysLog.class);
         String value = annotation.value();
         long limit = annotation.limit();
