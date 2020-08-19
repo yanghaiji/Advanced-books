@@ -14,7 +14,7 @@
 
 ### 一个实际的需求
 
-![img](../../../doc/java/datastructure/qipan.jpg) |
+![img](../../../../doc/java/datastructure/qipan.jpg) |
 
 编写的五子棋程序中，有存盘退出和续上盘的功能。
 
@@ -27,7 +27,7 @@
     2)	把稀疏数组存盘，并且可以从新恢复原来的二维数组数
     3)	整体思路分析
     
-     ![img](../../../doc/java/datastructure/fenxi.jpg) |
+     ![img](../../../../doc/java/datastructure/fenxi.jpg) |
         
 - 代码 实战
 
