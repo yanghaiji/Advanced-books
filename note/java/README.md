@@ -8,6 +8,7 @@
 - [2.数据结构](datastructure/README.md)
     - [2.1 二维数组](datastructure/book/SparseArray.md)
     - [2.2 栈](datastructure/book/Stack.md)
+    - [2.3 队列](datastructure/book/Queue.md)
 - [3.Java collection](collection/README.md)
     - [3.1.JDK 8 HashMap鬼斧神工的优化](https://blog.csdn.net/weixin_38937840/article/details/106805496)
     - [3.2.JDK8 Map merge 一些骚操作](collection/map/map_merge.md)
