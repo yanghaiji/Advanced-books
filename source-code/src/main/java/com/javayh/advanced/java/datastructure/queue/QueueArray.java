@@ -2,7 +2,6 @@ package com.javayh.advanced.java.datastructure.queue;
 
 import com.javayh.advanced.exception.ExceptionQueueEmpty;
 import com.javayh.advanced.exception.ExceptionQueueFull;
-import com.javayh.advanced.exception.ExceptionStackEmpty;
 
 /**
  * <p>
