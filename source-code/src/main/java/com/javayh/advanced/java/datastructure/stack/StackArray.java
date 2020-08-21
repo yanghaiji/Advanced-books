@@ -48,7 +48,7 @@ public class StackArray<E> implements Stack<E> {
      * @param e
      */
     @Override
-    public void push(Object e) {
+    public void push(E e) {
         if (size() == capacity){
             throw new ExceptionStackFull("意外：栈溢出");
         }

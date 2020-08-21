@@ -23,5 +23,12 @@ public class QueueTest {
         queue.enqueue("haiji");
         queue.enqueue("yang");
         queue.enqueue("haiji");
+
+        Queue<String> linkedQueue = new LinkedQueue<>();
+        linkedQueue.enqueue("haiji");
+        linkedQueue.enqueue("yang");
+        linkedQueue.enqueue("haiji");
+        String dequeue = linkedQueue.dequeue();
+        System.out.println(dequeue);
     }
 }

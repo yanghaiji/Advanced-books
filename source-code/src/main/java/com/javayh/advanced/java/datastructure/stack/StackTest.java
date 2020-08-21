@@ -16,5 +16,10 @@ public class StackTest {
         stack.push("yang");
         String pop = stack.pop();
         System.out.println(pop);
+        Stack<String>  stackList = new LinkedStack<>();
+        stackList.push("haiji");
+        stackList.push("yang");
+        String popList = stackList.pop();
+        System.out.println(popList);
     }
 }
