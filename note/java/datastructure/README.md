@@ -6,3 +6,4 @@
    - [2.4 位置](book/Position.md)
    - [2.5 链表](book/Linkend.md)
    - [2.6 双端队列](book/Deque.md)
+   - [2.7 向量与数组](book/VectorOrArrayList.md)

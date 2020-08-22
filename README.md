@@ -17,6 +17,7 @@
         - [2.4 位置](note/java/datastructure/book/Position.md)
         - [2.5 链表](note/java/datastructure/book/Linkend.md)
         - [2.6 双端队列](note/java/datastructure/book/Deque.md)
+        - [2.7 向量与数组](note/java/datastructure/book/VectorOrArrayList.md)
     - [3.Java collection](note/java/collection/README.md)
         - [3.1.JDK 8 HashMap鬼斧神工的优化](https://blog.csdn.net/weixin_38937840/article/details/106805496)
         - [3.2.JDK8 Map merge 一些骚操作](note/java/collection/map/map_merge.md)
