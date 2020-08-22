@@ -5,3 +5,4 @@
    - [2.3 队列](book/Queue.md)
    - [2.4 位置](book/Position.md)
    - [2.5 链表](book/Linkend.md)
+   - [2.6 双端队列](book/Deque.md)
