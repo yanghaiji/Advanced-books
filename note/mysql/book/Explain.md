@@ -18,7 +18,7 @@ SELECT version();
 
 每个输出行`EXPLAIN` 提供有关一个表的信息。
 
-![image-20200630170527861](C:\Users\haiyang\AppData\Roaming\Typora\typora-user-images\image-20200630170527861.png)
+![image-explain](../../../doc/mysql/explain.png)
 
 **EXPLAIN输出列**
 
