@@ -58,6 +58,7 @@
     - [5. Tomcat自动获取配置原理分析](note/spring/book/TomcatConfigurationFile.md)
     - [6. ConfigurationProperties使用方式全解](note/spring/book/ConfigurationProperties.md)
     - [7. 为什么SpringBoot 可以自动加载Aop](note/spring/book/EnableAutoConfiguration.md)
+    - [8. Transaction 源码分析](note/spring/book/transaction/Transaction_invoke.md)
 - [三.Mysql 进阶篇](note/mysql/README.md)
     - [1. Mysql Explain 详解](note/mysql/book/Explain.md)
     - [2. Mysql Explain Extra详解](note/mysql/book/Extra.md)
