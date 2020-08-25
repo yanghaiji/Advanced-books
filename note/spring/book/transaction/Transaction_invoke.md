@@ -5,8 +5,9 @@
 今天就让我们一起来学习一下`@Transaction`背后到了做了什么？
 
 - [起源TransactionInterceptor](#起源TransactionInterceptor)
-- [起源TransactionInterceptor](#执行的流程)
+- [执行的流程](#执行的流程)
 - [核心方法介绍](#核心方法介绍)
+- [TransactionDefinition](#TransactionDefinition)
 
 ### 起源TransactionInterceptor
 
@@ -216,4 +217,50 @@ protected TransactionInfo prepareTransactionInfo(@Nullable PlatformTransactionMa
 
 TransactionInfo是对当前事务的描述，其中记录了事务的状态等信息。它记录了和一个事务所有的相关信息。
 它没有什么方法，只是对事务相关对象的一个组合。最关键的对象是TransactionStatus，它代表当前正在运行的是哪个事务。
+
+### TransactionDefinition
+在上面我们看到了这样的代码，`TransactionDefinition def = (definition != null ? definition : TransactionDefinition.withDefaults());`
+但是这具体做了什么，我们接下来分析一下，`TransactionDefinition`的是Spring中的事务支持的核心接口，并将其定义如下
+
+```java
+public interface TransactionDefinition {
+   int getPropagationBehavior();
+   int getIsolationLevel();
+   String getName();
+   int getTimeout();
+   boolean isReadOnly();
+}
+```
+
+| 序号 | 方法与说明                                                   |
+| ---- | ------------------------------------------------------------ |
+| 1个  | int getPropagationBehavior()此方法返回传播行为。Spring提供了EJB CMT熟悉的所有事务传播选项。 |
+| 2    | int getIsolationLevel()此方法返回此事务与其他事务的工作隔离的程度。 |
+| 3    | 字符串getName()此方法返回此事务的名称。                |
+| 4    | int getTimeout()此方法以秒为单位返回必须完成事务的时间。 |
+| 5    | boolean isReadOnly()此方法返回事务是否为只读。         |
+
+以下是隔离级别的可能值
+
+| 序号 | 隔离与说明                                                   |
+| ---- | ------------------------------------------------------------ |
+| 1个  | **TransactionDefinition.ISOLATION_DEFAULT**这是默认的隔离级别。 |
+| 2    | **TransactionDefinition.ISOLATION_READ_COMMITTED**指示防止脏读；可能会发生不可重复的读取和幻像读取。 |
+| 3    | **TransactionDefinition.ISOLATION_READ_UNCOMMITTED**表示可能发生脏读，不可重复读和幻像读。 |
+| 4    | **TransactionDefinition.ISOLATION_REPEATABLE_READ**指示防止脏读和不可重复读；可能会发生幻像读取。 |
+| 5    | **TransactionDefinition.ISOLATION_SERIALIZABLE**指示防止脏读，不可重复读和幻像读。 |
+
+以下是传播类型的可能值
+
+| 序号 | 传播与说明                                                   |
+| ---- | ------------------------------------------------------------ |
+| 1个  | **TransactionDefinition.PROPAGATION_MANDATORY**支持当前交易；如果当前事务不存在，则引发异常。 |
+| 2    | **TransactionDefinition.PROPAGATION_NESTED**如果当前事务存在，则在嵌套事务中执行。 |
+| 3    | **TransactionDefinition.PROPAGATION_NEVER**不支持当前交易；如果当前事务存在，则引发异常。 |
+| 4    | **TransactionDefinition.PROPAGATION_NOT_SUPPORTED**不支持当前交易；而是始终以非事务方式执行。 |
+| 5    | **TransactionDefinition.PROPAGATION_REQUIRED**支持当前交易；如果不存在，则创建一个新的。 |
+| 6    | **TransactionDefinition.PROPAGATION_REQUIRES_NEW**创建一个新事务，如果存在则暂停当前事务。 |
+| 7    | **TransactionDefinition.PROPAGATION_SUPPORTS**支持当前交易；如果不存在，则以非事务方式执行。 |
+| 8    | **TransactionDefinition.TIMEOUT_DEFAULT**使用基础事务系统的默认超时；如果不支持超时，则不使用默认超时。 |
+
 

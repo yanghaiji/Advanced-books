@@ -52,4 +52,10 @@
         </trim>
     </select>
 
+    <insert id="insert">
+        INSERT INTO `sys_logistics`
+        (  `addressee_name`, `addressee`, `addressee_phone`, `sender_name`, `sender_add`, `ems_status`, `retreat_status`, `retreat_info`, `create_date`, `update_date`, `create_by` )
+        VALUES
+	    ( #{name}, '北京', 1234565432, 'dylan-ji', '北京', 0, 0, NULL, '2019-11-02', NULL, 'admin' );
+    </insert>
 </mapper>

@@ -31,4 +31,10 @@ public interface TestMapper {
     List<LogisticsVO> findAll();
 
     List<LogisticsVO> findListAndIf(@Param(value = "vos") List<LogisticsVO> vos);
+
+
+    /**
+     * 新增
+     */
+    void insert(String name);
 }
