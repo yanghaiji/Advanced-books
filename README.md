@@ -18,6 +18,7 @@
         - [2.5 链表](note/java/datastructure/book/Linkend.md)
         - [2.6 双端队列](note/java/datastructure/book/Deque.md)
         - [2.7 向量与数组](note/java/datastructure/book/VectorOrArrayList.md)
+        - [2.8 列表](note/java/datastructure/book/List.md)
     - [3.Java collection](note/java/collection/README.md)
         - [3.1.JDK 8 HashMap鬼斧神工的优化](https://blog.csdn.net/weixin_38937840/article/details/106805496)
         - [3.2.JDK8 Map merge 一些骚操作](note/java/collection/map/map_merge.md)
@@ -51,16 +52,22 @@
     - 8.Java 扩展 
         - [JDK14的重大更新](https://blog.csdn.net/weixin_38937840/article/details/105054595)
 - [二.Spring 进阶篇](note/spring/README.md)
-    - [1. EnableAutoConfiguration 源码分析](note/spring/book/EnableAutoConfiguration.md)
-    - [2. SpringApplication 源码分析](note/spring/book/SpringApplication.md)
-    - [3. SpringApplication 之 refresh 源码分析](note/spring/book/refresh.md)
-    - [4. SpringBoot Tomcat 启动原理分析](note/spring/book/SpringBoot_Tomcat.md)
-    - [5. Tomcat自动获取配置原理分析](note/spring/book/TomcatConfigurationFile.md)
-    - [6. ConfigurationProperties使用方式全解](note/spring/book/ConfigurationProperties.md)
-    - [7. 为什么SpringBoot 可以自动加载Aop](note/spring/book/EnableAutoConfiguration.md)
-    - [8. Transaction 源码分析](note/spring/book/transaction/Transaction_invoke.md)
-    - [9. @Transaction 解析](note/spring/book/transaction/Transaction解析.md)
-
+    - Ioc 
+        - [1. EnableAutoConfiguration 源码分析](note/spring/book/EnableAutoConfiguration.md)
+        - [2. SpringApplication 源码分析 ioc 容器初始化](note/spring/book/ioc/SpringApplication.md)
+        - [3. SpringApplication 之 refresh 源码分析](note/spring/book/ioc/refresh.md)
+    - Bean    
+        - [1. Bean初始化并注入到ioc中](note/spring/book/ioc/InitBean.md)
+    - Tomcat    
+        - [1. SpringBoot Tomcat 启动原理分析](note/spring/book/ioc/SpringBoot_Tomcat.md)
+        - [2. Tomcat自动获取配置原理分析](note/spring/book/ioc/TomcatConfigurationFile.md)
+    - Transaction
+        - [1. Transaction 源码分析](note/spring/book/transaction/Transaction_invoke.md)
+        - [2. @Transaction 解析](note/spring/book/transaction/Transaction解析.md)
+    - Aop
+        - [1. 为什么SpringBoot 可以自动加载Aop](note/spring/book/EnableAutoConfiguration.md)        
+    - Other 
+        - [1. ConfigurationProperties使用方式全解](note/spring/book/ConfigurationProperties.md)
 - [三.Mysql 进阶篇](note/mysql/README.md)
     - [1. Mysql Explain 详解](note/mysql/book/Explain.md)
     - [2. Mysql Explain Extra详解](note/mysql/book/Extra.md)

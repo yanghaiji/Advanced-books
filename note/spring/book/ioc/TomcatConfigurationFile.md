@@ -33,7 +33,7 @@ public ConfigurableApplicationContext run(String... args) {
 ```
 那是我们并没说，`getRunListeners(args);`获取了那些监听，实则如下：
 
-![ConfigFileApplication](../../../doc/spring/configFileApplication.png)
+![ConfigFileApplication](../../../../doc/spring/configFileApplication.png)
 
 对于本文来说，重点在`ConfigFileApplicationListener`,其源码如下:
 ```java

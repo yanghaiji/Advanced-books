@@ -7,3 +7,4 @@
    - [2.5 链表](book/Linkend.md)
    - [2.6 双端队列](book/Deque.md)
    - [2.7 向量与数组](book/VectorOrArrayList.md)
+   - [2.8 列表](book/List.md)

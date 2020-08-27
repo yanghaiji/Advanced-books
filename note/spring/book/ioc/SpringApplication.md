@@ -97,7 +97,7 @@ private void configureHeadlessProperty() {
 		return instances;
 	}
 ```
-如果您看过 [EnableAutoConfiguration 源码解析](EnableAutoConfiguration.md) ,您很快就会明白他做了什么，这里主要是`SpringFactoriesLoader.loadFactoryNames`
+如果您看过 [EnableAutoConfiguration 源码解析](../EnableAutoConfiguration.md) ,您很快就会明白他做了什么，这里主要是`SpringFactoriesLoader.loadFactoryNames`
 是将`spring.factories`文件中的key存放在List中,在通过`createSpringFactoriesInstances`实例化
 通过`spring.factories` 我们可以看出最终实例化的是 `EventPublishingRunListener`, 然后在进行 `listeners.starting();`来发送事件,
 这里的`starting()`是调用的`EventPublishingRunListener`,当我查看其内部方法是,在实例化时又会预加载了`ApplicationListener`

@@ -91,7 +91,7 @@ public void refresh() throws BeansException, IllegalStateException {
 ```
 我们发现，`ServletWebServerFactory`有三个实现，类图如下，默认为Tomcat
 
-![ServletWebServerFactory](../../../doc/spring/Servlet.png)
+![ServletWebServerFactory](../../../../doc/spring/Servlet.png)
 
 这时我们来看一下`getWebServer`这个方法
 
@@ -161,7 +161,7 @@ public void refresh() throws BeansException, IllegalStateException {
 	}
 ```
 这里我们会发现，开启后又会关闭资源，具体时为什么，我们来看看Tomcat的架构图
-![Tomcat架构](../../../doc/spring/tomcat.png)
+![Tomcat架构](../../../../doc/spring/tomcat.png)
 
 >一个服务器的基本功能：接收客户请求，解析请求，处理业务逻辑，结果返回给客户端。
  一般有两个方法，star打开服务，监听端口；stop关闭服务，释放资源。

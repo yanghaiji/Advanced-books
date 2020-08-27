@@ -13,6 +13,7 @@
     - [2.5 链表](datastructure/book/Linkend.md)
     - [2.6 双端队列](datastructure/book/Deque.md)
     - [2.7 向量与数组](datastructure/book/VectorOrArrayList.md)
+    - [2.8 列表](datastructure/book/List.md)
 - [3.Java collection](collection/README.md)
     - [3.1.JDK 8 HashMap鬼斧神工的优化](https://blog.csdn.net/weixin_38937840/article/details/106805496)
     - [3.2.JDK8 Map merge 一些骚操作](collection/map/map_merge.md)

@@ -4,7 +4,7 @@
 之前我们自定义一个AOP时,都需要添加 `@EnableAspectJAutoProxy`,但是为何在SpringBoot项目中,我们只需要引入依赖就可以完整自动的配置呢？
 **答：**因为AOP的自动配置类帮我们开启了
 
-为何会自动开启呢?在[EnableAutoConfiguration 源码分析](EnableAutoConfiguration.md)时,我们说过这样一段代码，也是Spring源码中经常用到的；
+为何会自动开启呢?在[EnableAutoConfiguration 源码分析](../EnableAutoConfiguration.md)时,我们说过这样一段代码，也是Spring源码中经常用到的；
 ```java
 private static Map<String, List<String>> loadSpringFactories(@Nullable ClassLoader classLoader) {
    MultiValueMap<String, String> result = (MultiValueMap)cache.get(classLoader);

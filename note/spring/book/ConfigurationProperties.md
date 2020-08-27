@@ -1,6 +1,6 @@
 ## @ConfigurationProperties 
 
-在上篇文章[SpringBoot Tomcat 获取配置文件](TomcatConfigurationFile.md)我们了解 `@ConfigurationProperties` 这个注解，但并没我深入的了解，
+在上篇文章[SpringBoot Tomcat 获取配置文件](ioc/TomcatConfigurationFile.md)我们了解 `@ConfigurationProperties` 这个注解，但并没我深入的了解，
 本文将对`@ConfigurationProperties`的使用进行分析
 
 ### 源码
