@@ -2,7 +2,7 @@
 
 前几篇文章我们对Spring的启动流程进行了梳理，了解了Spring容器启动的，
 但是我们没有对`bean`的创建进行介绍，本文将对`bean`的创建进行分析;
-如果您对Spring的启动还不了解，请先阅读文章[SpringApplication 运行及源码解读](SpringApplication.md)
+如果您对Spring的启动还不了解，请先阅读文章[SpringApplication 运行及源码解读](../ioc/SpringApplication.md)
 
 
 - [起源refresh()](#起源refresh())
@@ -163,7 +163,7 @@ public void preInstantiateSingletons() throws BeansException {
 }
 ```
 
-- getBean()
+- doGetBean()
 
 ```java
 protected <T> T doGetBean(final String name, @Nullable final Class<T> requiredType,
@@ -663,6 +663,9 @@ protected void populateBean(String beanName, RootBeanDefinition mbd, @Nullable B
 	}
 }
 ```
+
+对于属性的设置，这里有一个非常重要的类就是`RootBeanDefinition`，当我阅读`RootBeanDefinition`时会发现它其实时`BeanDefinition`
+的渐接的子类，关于`BeanDefinition`的介绍，请阅读[Spring BeanDefinition 详解](BeanDefinition.md)
 
 ### initializeBean
 

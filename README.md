@@ -57,7 +57,7 @@
         - [2. SpringApplication 源码分析 ioc 容器初始化](note/spring/book/ioc/SpringApplication.md)
         - [3. SpringApplication 之 refresh 源码分析](note/spring/book/ioc/refresh.md)
     - Bean    
-        - [1. Bean初始化并注入到ioc中](note/spring/book/ioc/InitBean.md)
+        - [1. Bean初始化并注入到ioc中](note/spring/book/bean/InitBean.md)
     - Tomcat    
         - [1. SpringBoot Tomcat 启动原理分析](note/spring/book/ioc/SpringBoot_Tomcat.md)
         - [2. Tomcat自动获取配置原理分析](note/spring/book/ioc/TomcatConfigurationFile.md)
