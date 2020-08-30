@@ -1,8 +1,8 @@
 ## Spring BeanDefinition 详解
 
--[BeanDefinition简介](#BeanDefinition简介)
--[BeanDefinition类图](#BeanDefinition类图)
--[BeanDefinition源码](#BeanDefinition源码)
+- [BeanDefinition简介](#BeanDefinition简介)
+- [BeanDefinition类图](#BeanDefinition类图)
+- [BeanDefinition源码](#BeanDefinition源码)
 
 
 ### BeanDefinition简介

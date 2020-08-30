@@ -1,8 +1,8 @@
 ## Spring BeanFactory 
 
--[BeanFactory简介](#BeanFactory简介)
--[BeanFactory类图](#BeanFactory类图)
--[BeanFactory源码](#BeanFactory源码)
+- [BeanFactory简介](#BeanFactory简介)
+- [BeanFactory类图](#BeanFactory类图)
+- [BeanFactory源码](#BeanFactory源码)
 
 ### BeanFactory简介
 
