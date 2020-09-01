@@ -3,6 +3,8 @@
 #### Java社区交流群
 > 添加小编微信: **372787553** (添加备注学习) 带您进入Java社区交流群
 
+如果您打开这里的文章有图片无法显示的情况，您可以点击这里进行阅读[Advanced-books](https://gitee.com/YangHaiJi/Advanced-books)
+
 ### 欢迎来到 Java有货读书馆，以下是为您呈现的目录
 
 - [一.Java 核心技术](note/java/README.md)
@@ -45,12 +47,13 @@
     - 5.Java Concurrency
          - [5.1 ExecutorService指南](note/java/concurrency/ExecutorService指南.md)  
          - [5.2 CompletableFuture](https://blog.csdn.net/weixin_38937840/article/details/105046588) 
-    - 6.Java Stream  
-         - [6.1 java-8-collectors](note/java/stream/collectors.md) 
-         - [6.2 java-8-Stream 讲解与示例](note/java/stream/stream.md)       
+    - 6.Java HotSpot VM
+        - [6.1.Java HotSpot VM 详解以及优化](note/java/jvm/JavaHotSpotVM.md)
     - [7.常见面试题](note/java/InterviewQuestions/README.md)
     - 8.Java 扩展 
-        - [JDK14的重大更新](https://blog.csdn.net/weixin_38937840/article/details/105054595)
+        - [8.1 JDK14的重大更新](https://blog.csdn.net/weixin_38937840/article/details/105054595)
+        - [8.2 java-8-collectors](note/java/stream/collectors.md)   
+        - [8.3 java-8-Stream 讲解与示例](note/java/stream/stream.md)   
 - [二.Spring 进阶篇](note/spring/README.md)
     - Ioc 
         - [1. EnableAutoConfiguration 源码分析](note/spring/book/EnableAutoConfiguration.md)
