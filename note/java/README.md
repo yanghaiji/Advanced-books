@@ -42,7 +42,7 @@
      - [5.2 CompletableFuture](https://blog.csdn.net/weixin_38937840/article/details/105046588)  
      - [5.3 Unsafe 应用](concurrency/Unsafe.md)  
 - 6.Java HotSpot VM
-    - [6.1.Java HotSpot VM 详解以及优化](jvm/JavaHotSpotVM.md)
+    - [6.1.HotSpot虚拟机垃圾收集优化指南](jvm/JavaHotSpotVM.md)
 - [7.常见面试题](InterviewQuestions/README.md)
 - 8.Java 扩展 
     - [8.1 JDK14的重大更新](https://blog.csdn.net/weixin_38937840/article/details/105054595)
