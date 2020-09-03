@@ -1,40 +1,63 @@
-## refresh() 源码解析
+## refresh 源码解析
 
 我们来分析一下这个refresh过程。
 
 还是以web程序为例，那么对应的Spring容器为AnnotationConfigEmbeddedWebApplicationContext。它的refresh方法调用了父类AbstractApplicationContext的refresh方法：
 
-```
+```java
+@Override
 public void refresh() throws BeansException, IllegalStateException {
-  // refresh过程只能一个线程处理，不允许并发执行
-  synchronized (this.startupShutdownMonitor) {
-    prepareRefresh();
-    ConfigurableListableBeanFactory beanFactory = obtainFreshBeanFactory();
-    prepareBeanFactory(beanFactory);
-    try {
-      postProcessBeanFactory(beanFactory);
-      invokeBeanFactoryPostProcessors(beanFactory);
-      registerBeanPostProcessors(beanFactory);
-      initMessageSource();
-      initApplicationEventMulticaster();
-      onRefresh();
-      registerListeners();
-      finishBeanFactoryInitialization(beanFactory);
-      finishRefresh();
-    }
-    catch (BeansException ex) {
-      if (logger.isWarnEnabled()) {
-        logger.warn("Exception encountered during context initialization - " +
-            "cancelling refresh attempt: " + ex);
-      }
-      destroyBeans();
-      cancelRefresh(ex);
-      throw ex;
-    }
-    finally {
-      resetCommonCaches();
-    }
-  }
+	synchronized (this.startupShutdownMonitor) {
+		// 准备刷新此上下文。(记录下容器的启动时间、标记“已启动”状态、处理配置文件中的占位符等)
+		prepareRefresh();
+        // 告诉子类刷新内部bean工厂。
+        // 这步比较关键，这步完成后，配置文件就会解析成一个个 Bean 定义，注册到 BeanFactory 中，
+        // 当然，这里说的 Bean 还没有初始化，只是配置信息都提取出来了，
+        // 注册也只是将这些信息都保存到了注册中心(说到底核心是一个 beanName-> beanDefinition 的 map)
+		ConfigurableListableBeanFactory beanFactory = obtainFreshBeanFactory();
+		// 准备BeanFactory以供在此上下文中使用。
+		prepareBeanFactory(beanFactory);
+
+		try {
+			//允许在上下文子类中对bean工厂进行后处理。
+            // 【这里需要知道 BeanFactoryPostProcessor 这个知识点，Bean 如果实现了此接口，
+            // 那么在容器初始化以后，Spring 会负责调用里面的 postProcessBeanFactory 方法。】
+            // 这里是提供给子类的扩展点，到这里的时候，所有的 Bean 都加载、注册完成了，但是都还没有初始化
+            // 具体的子类可以在这步的时候添加一些特殊的 BeanFactoryPostProcessor 的实现类或做点什么事
+			postProcessBeanFactory(beanFactory);
+			// 在上下文中调用注册为bean的工厂处理器。
+			invokeBeanFactoryPostProcessors(beanFactory);
+			// 注册拦截bean创建的bean处理器。
+            // 注册 BeanPostProcessor 的实现类，注意看和 BeanFactoryPostProcessor 的区别
+            // 此接口两个方法: postProcessBeforeInitialization 和 postProcessAfterInitialization
+            // 两个方法分别在 Bean 初始化之前和初始化之后得到执行。注意，到这里 Bean 还没初始化
+			registerBeanPostProcessors(beanFactory);
+			// 初始化国际化
+			initMessageSource();
+			// 为此上下文初始化事件多宿主。
+			initApplicationEventMulticaster();
+			// 从方法名就可以知道，典型的模板方法(钩子方法)，
+            // 具体的子类可以在这里初始化一些特殊的 Bean（在初始化 singleton beans 之前）
+			onRefresh();
+			registerListeners();
+            //  本文的重点方法
+			// 实例化所有剩余的（非延迟初始化）单例。
+			finishBeanFactoryInitialization(beanFactory);
+			// 进行广播，完成实例化
+			finishRefresh();
+		}
+		catch (BeansException ex) {
+			if (logger.isWarnEnabled()) {
+				logger.warn("Exception encountered during context initialization - " +"cancelling refresh attempt: " + ex);
+			}
+			destroyBeans();
+			cancelRefresh(ex);
+			throw ex;
+		}
+		finally {
+			resetCommonCaches();
+		}
+	}
 }
 ```
 
