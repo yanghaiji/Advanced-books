@@ -1,4 +1,4 @@
-## Spring AOP
+## Spring AOP 全面解析
 
 在之前的几篇文章我们已经对 `Spring Ioc` 有了初步的认识，了解了 `Spring` 容器的启动，`bean`的注册，
 接下来我们就来学习一下Spring的另一个重要知识点`AOP`，关于AOP的使用，

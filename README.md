@@ -71,9 +71,11 @@
         - [1. Transaction 源码分析](note/spring/book/transaction/Transaction_invoke.md)
         - [2. @Transaction 解析](note/spring/book/transaction/Transaction解析.md)
     - Aop
-        - [1. 为什么SpringBoot 可以自动加载Aop](note/spring/book/EnableAutoConfiguration.md)        
+        - [1. 为什么SpringBoot 可以自动加载Aop](note/spring/book/aop/SpringAutoProxy.md)        
+        - [2. Spring AOP 全面解析](note/spring/book/aop/SpringAop.md)        
     - Other 
         - [1. ConfigurationProperties使用方式全解](note/spring/book/ConfigurationProperties.md)
+        - [2. EnableAutoConfiguration 源码分析](note/spring/book/EnableAutoConfiguration.md)
 - [三.Mysql 进阶篇](note/mysql/README.md)
     - [1. Mysql Explain 详解](note/mysql/book/Explain.md)
     - [2. Mysql Explain Extra详解](note/mysql/book/Extra.md)
