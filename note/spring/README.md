@@ -23,6 +23,7 @@
 - Other 
     - [1. ConfigurationProperties使用方式全解](book/ConfigurationProperties.md)
     - [2. EnableAutoConfiguration 源码分析](book/EnableAutoConfiguration.md)
+    - [3. SpringBoot 2.3.0 新特性之优雅停机](book/GracefulShutdown.md)
 
 
 
