@@ -1,7 +1,8 @@
 ![GitLogo](doc/logo/book.jpg)
 
 #### Java社区交流群
-> 添加小编微信: **372787553** (添加备注学习) 带您进入Java社区交流群
+> 如果您想与小编一同维护或想进入Java社区交流群 
+> 请添加小编微信: **372787553** (添加备注学习)
 
 如果您打开这里的文章有图片无法显示的情况，您可以点击这里进行阅读[Advanced-books](https://gitee.com/YangHaiJi/Advanced-books)
 
