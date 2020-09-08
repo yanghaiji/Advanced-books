@@ -1,7 +1,12 @@
 server:
   port: 9090
+  shutdown: graceful
+
 
 spring:
+  # 优雅停机宽限时间
+  lifecycle:
+    timeout-per-shutdown-phase: 50
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://47.105.196.42:3306/db1?serverTimezone=CTT&characterEncoding=utf8&autoReconnect=true&useUnicode=true&useSSL=true
