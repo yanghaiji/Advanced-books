@@ -3,6 +3,8 @@ package com.javayh.advanced.java.datastructure.list;
 import com.javayh.advanced.exception.ExceptionBoundaryViolation;
 import com.javayh.advanced.exception.ExceptionListEmpty;
 import com.javayh.advanced.exception.ExceptionPositionInvalid;
+import com.javayh.advanced.java.datastructure.Iterator;
+import com.javayh.advanced.java.datastructure.IteratorElement;
 import com.javayh.advanced.java.datastructure.Position;
 import com.javayh.advanced.java.datastructure.deque.Node;
 
@@ -172,5 +174,10 @@ public class NodeList<E> implements List<E>{
         if (isEmpty()){
             throw new ExceptionListEmpty("意外：列表空");
         }
+    }
+
+    @Override
+    public Iterator elements(){
+        return new IteratorElement(this);
     }
 }

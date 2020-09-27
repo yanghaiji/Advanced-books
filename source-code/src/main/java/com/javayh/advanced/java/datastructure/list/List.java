@@ -2,6 +2,7 @@ package com.javayh.advanced.java.datastructure.list;
 
 import com.javayh.advanced.exception.ExceptionBoundaryViolation;
 import com.javayh.advanced.exception.ExceptionPositionInvalid;
+import com.javayh.advanced.java.datastructure.Iterator;
 import com.javayh.advanced.java.datastructure.Position;
 
 /**
@@ -42,4 +43,5 @@ public interface List<E> {
     E removeLast();
     //将处于给定位置的元素替换为新元素，并返回被替换的元素
     E replace(Position<E> p, E e)  throws ExceptionPositionInvalid;
+    Iterator elements();
 }
