@@ -8,3 +8,5 @@
    - [2.6 双端队列](book/Deque.md)
    - [2.7 向量与数组](book/VectorOrArrayList.md)
    - [2.8 列表](book/List.md)
+   - [2.9 树](book/Tree.md)
+   - [2.10 跳表](book/skipList.md)
