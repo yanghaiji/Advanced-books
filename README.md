@@ -51,8 +51,8 @@
          - [5.1 ExecutorService指南](note/java/concurrency/ExecutorService指南.md)  
          - [5.2 CompletableFuture](https://blog.csdn.net/weixin_38937840/article/details/105046588) 
     - 6.Java HotSpot VM
-        - [6.1.HotSpot虚拟机垃圾收集优化指南](note/java/jvm/JavaHotSpotVM.md)
-        - [6.2.Java HotSpot性能引擎架构](note/java/jvm/JavaHotSpot性能引擎架构.md)
+        - [6.1.HotSpot虚拟机垃圾收集优化指南](note/java/jvm/HotSpot/JavaHotSpotVM.md)
+        - [6.2.Java HotSpot性能引擎架构](note/java/jvm/HotSpot/JavaHotSpot性能引擎架构.md)
         - [6.3.内存与垃圾回收篇](note/java/jvm/README.md)
             - [6.3.1 JVM与Java体系结构](note/java/jvm/内存与垃圾回收篇/1_JVM与Java体系结构/README.md)
             - [6.3.2 类加载子系统](note/java/jvm/内存与垃圾回收篇/2_类加载子系统/README.md)
@@ -71,6 +71,8 @@
             - [6.3.15 垃圾回收相关算法](note/java/jvm/内存与垃圾回收篇/15_垃圾回收相关算法/README.md)
             - [6.3.16 垃圾回收相关概念](note/java/jvm/内存与垃圾回收篇/16_垃圾回收相关概念/README.md)
             - [6.3.17 垃圾回收器](note/java/jvm/内存与垃圾回收篇/17_垃圾回收器/README.md)
+        -[6.4.OutOfMemoryError Exception 介绍](note/java/jvm/StandardEditionTroubleshootingGuide/OutOfMemoryErrorException.md)    
+        -[6.5.诊断Java语言代码中的泄漏](note/java/jvm/StandardEditionTroubleshootingGuide/DiagnoseLeaksinJavaLanguageCode.md)    
     - [7.常见面试题](note/java/InterviewQuestions/README.md)
     - 8.Java 扩展 
         - [8.1 JDK14的重大更新](https://blog.csdn.net/weixin_38937840/article/details/105054595)

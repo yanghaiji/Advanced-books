@@ -1,8 +1,8 @@
 
 ## 目录
 
-- [1. HotSpot虚拟机垃圾收集优化指南](JavaHotSpotVM.md)
-- [2. Java HotSpot性能引擎架构](JavaHotSpot性能引擎架构.md)
+- [1. HotSpot虚拟机垃圾收集优化指南](HotSpot/JavaHotSpotVM.md)
+- [2. Java HotSpot性能引擎架构](HotSpot/JavaHotSpot性能引擎架构.md)
 - 3.内存与垃圾回收篇
     >以下内容来自 [LearningNotes](https://gitee.com/moxi159753/LearningNotes/tree/master/JVM)
     - [3.1 JVM与Java体系结构](内存与垃圾回收篇/1_JVM与Java体系结构/README.md)
@@ -22,3 +22,5 @@
     - [3.15 垃圾回收相关算法](内存与垃圾回收篇/15_垃圾回收相关算法/README.md)
     - [3.16 垃圾回收相关概念](内存与垃圾回收篇/16_垃圾回收相关概念/README.md)
     - [3.17 垃圾回收器](内存与垃圾回收篇/17_垃圾回收器/README.md)
+-[4.OutOfMemoryError Exception 介绍](StandardEditionTroubleshootingGuide/OutOfMemoryErrorException.md)    
+-[5.诊断Java语言代码中的泄漏](StandardEditionTroubleshootingGuide/DiagnoseLeaksinJavaLanguageCode.md)    
