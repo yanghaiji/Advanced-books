@@ -64,8 +64,8 @@
         - [6.3.15 垃圾回收相关算法](jvm/内存与垃圾回收篇/15_垃圾回收相关算法/README.md)
         - [6.3.16 垃圾回收相关概念](jvm/内存与垃圾回收篇/16_垃圾回收相关概念/README.md)
         - [6.3.17 垃圾回收器](jvm/内存与垃圾回收篇/17_垃圾回收器/README.md)
-    -[6.4.OutOfMemoryError Exception 介绍](jvm/StandardEditionTroubleshootingGuide/OutOfMemoryErrorException.md)    
-    -[6.5.诊断Java语言代码中的泄漏](jvm/StandardEditionTroubleshootingGuide/DiagnoseLeaksinJavaLanguageCode.md)    
+    - [6.4.OutOfMemoryError Exception 介绍](jvm/StandardEditionTroubleshootingGuide/OutOfMemoryErrorException.md)    
+    - [6.5.诊断Java语言代码中的泄漏](jvm/StandardEditionTroubleshootingGuide/DiagnoseLeaksinJavaLanguageCode.md)    
 - [7.常见面试题](InterviewQuestions/README.md)
 - 8.Java 扩展 
     - [8.1 JDK14的重大更新](https://blog.csdn.net/weixin_38937840/article/details/105054595)

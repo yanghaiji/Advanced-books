@@ -22,5 +22,5 @@
     - [3.15 垃圾回收相关算法](内存与垃圾回收篇/15_垃圾回收相关算法/README.md)
     - [3.16 垃圾回收相关概念](内存与垃圾回收篇/16_垃圾回收相关概念/README.md)
     - [3.17 垃圾回收器](内存与垃圾回收篇/17_垃圾回收器/README.md)
--[4.OutOfMemoryError Exception 介绍](StandardEditionTroubleshootingGuide/OutOfMemoryErrorException.md)    
--[5.诊断Java语言代码中的泄漏](StandardEditionTroubleshootingGuide/DiagnoseLeaksinJavaLanguageCode.md)    
+- [4.OutOfMemoryError Exception 介绍](StandardEditionTroubleshootingGuide/OutOfMemoryErrorException.md)    
+- [5.诊断Java语言代码中的泄漏](StandardEditionTroubleshootingGuide/DiagnoseLeaksinJavaLanguageCode.md)    
