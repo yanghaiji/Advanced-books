@@ -4,7 +4,7 @@
 - [1. HotSpot虚拟机垃圾收集优化指南](HotSpot/JavaHotSpotVM.md)
 - [2. Java HotSpot性能引擎架构](HotSpot/JavaHotSpot性能引擎架构.md)
 - 3.内存与垃圾回收篇
-    >以下内容来自 [LearningNotes](https://gitee.com/moxi159753/LearningNotes/tree/master/JVM)
+    >内容来自 [LearningNotes](https://gitee.com/moxi159753/LearningNotes/tree/master/JVM)
     - [3.1 JVM与Java体系结构](内存与垃圾回收篇/1_JVM与Java体系结构/README.md)
     - [3.2 类加载子系统](内存与垃圾回收篇/2_类加载子系统/README.md)
     - [3.3 运行时数据区概述及线程](内存与垃圾回收篇/3_运行时数据区概述及线程/README.md)
