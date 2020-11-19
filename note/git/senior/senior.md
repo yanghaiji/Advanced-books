@@ -43,8 +43,5 @@ $ git cherry-pick f
 
 当然git cherry pick 也支持同时合并多个提交
 
-> git cherry-pick <commitHash> <commitHash>
-
-由于大家开发使用的都是工具，这里以小编使用的IDEA 为例进行操作
 
 
