@@ -21,6 +21,7 @@
     - [3.2.JDK8 Map merge 一些骚操作](collection/map/map_merge.md)
     - [3.3.JDK8 一行代码搞定集合去重，差集，并集，交集，是否相等](https://blog.csdn.net/weixin_38937840/article/details/107338265)
     - [3.4.JDK14 ArrayList 分析](collection/list/ArrayList.md)
+    - [3.5.Collections 工具类学习](collection/collections/collections.md)
 - [4.Java NIO](nio/README.md)    
     - [4.1.Java NIO 教程](nio/book/JavaNIO教程.md)    
     - [4.2.Java NIO 概览](nio/book/JavaNIO概览.md)    
