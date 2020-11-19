@@ -3,6 +3,7 @@
 ### Chery-pick
 
 - 什么情况下会使用到 cherry-pick
+
 对于多分支的代码库，将代码从一个分支转移到另一个分支是常见需求。
 
 这时分两种情况:
@@ -11,7 +12,9 @@
 
 - 使用
 
-> git cherry-pick <commitHash>
+```
+ git cherry-pick <commitHash>
+```
 
 这里的commitHash值得是提交的commit id 
 
@@ -46,6 +49,15 @@ $ git cherry-pick f
 > git cherry-pick <commitHash> <commitHash>
 
 由于大家开发使用的都是工具，这里以小编使用的IDEA 为例进行操作
+首先还是进行git check out 
+
+这次我们将 `git_senior` 分支 的三次提交合并到 `master`分支
+
+![gitCherryPick](image/gitCherryPick.png)
+![CherryPick](image/CherryPick.png)
+![cherryPickData](image/cherryPickData.png)
+
+
 
 
 

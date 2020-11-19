@@ -133,6 +133,7 @@
         - [5.8. 索引扩展的使用](note/mysql/book/索引优化/索引扩展的使用.md)        
 - [四.Git 核心技术](note/git/README.md)
     - [1.Git emoji 使用](note/git/emoji/emoji.md)
+    - [2.Git cherry pick 使用](note/git/senior/cherryPick.md)
 - [五.Mybatis 进阶篇](note/mybatis/README.md)  
     - [1. Mybatis 二级缓存](https://blog.csdn.net/weixin_38937840/article/details/106332696)
     - [2. Mybatis 高级映射](note/mybatis/book/结果映射.md)
