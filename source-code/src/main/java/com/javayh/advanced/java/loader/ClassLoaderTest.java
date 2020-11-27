@@ -1,4 +1,4 @@
-package com.javayh.advanced.java;
+package com.javayh.advanced.java.loader;
 
 /**
  * <p>
@@ -9,7 +9,7 @@ package com.javayh.advanced.java;
  * @version 1.0.0
  * @since 2020-10-15
  */
-public class test {
+public class ClassLoaderTest {
     public static void main(String[] args) {
         // 获取系统类加载器
         ClassLoader systemClassLoader = ClassLoader.getSystemClassLoader();
@@ -24,7 +24,7 @@ public class test {
         System.out.println(bootstrapClassLoader);
 
         // 获取自定义加载器
-        ClassLoader classLoader = test.class.getClassLoader();
+        ClassLoader classLoader = ClassLoaderTest.class.getClassLoader();
         System.out.println(classLoader);
 
         // 获取String类型的加载器
