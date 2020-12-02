@@ -41,9 +41,9 @@
     - [4.16.Java NIO Files](nio/book/Files.md)    
     - [4.17.Java NIO AsynchronousFileChannel异步文件通道](nio/book/AsynchronousFileChannel异步文件通道.md)  
 - 5.Java Concurrency
-     - [5.1 ExecutorService指南](concurrency/ExecutorService指南.md)  
+     - [5.1 ExecutorService指南](concurrency/util/ExecutorService指南.md)  
      - [5.2 CompletableFuture](https://blog.csdn.net/weixin_38937840/article/details/105046588)  
-     - [5.3 Unsafe 应用](concurrency/Unsafe.md)  
+     - [5.3 Unsafe 应用](concurrency/util/Unsafe.md)  
 - 6.Java HotSpot VM
     - [6.1.HotSpot虚拟机垃圾收集优化指南](jvm/HotSpot/JavaHotSpotVM.md)
     - [6.2.Java HotSpot性能引擎架构](jvm/HotSpot/JavaHotSpot性能引擎架构.md)
