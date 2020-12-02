@@ -16,7 +16,7 @@
  - [2.数据结构](note/java/datastructure/README.md)
  - [3.Java collection](note/java/collection/README.md)
  - [4.Java NIO](note/java/nio/README.md)    
- - [5.Java 并发实战与并发设计模式](note/java/README.md)    
+ - [5.Java 并发实战与并发设计模式](note/java/concurrency/README.md)    
  - [6. Java HotSpot VM](note/java/jvm/README.md)
      - [6.1.HotSpot虚拟机垃圾收集优化指南](note/java/jvm/HotSpot/JavaHotSpotVM.md)
      - [6.2.Java HotSpot性能引擎架构](note/java/jvm/HotSpot/JavaHotSpot性能引擎架构.md)
