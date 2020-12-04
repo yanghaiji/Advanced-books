@@ -1,5 +1,6 @@
 package com.javayh.advanced.spring.web;
 
+import com.javayh.advanced.limiter.AutoIdempotent;
 import com.javayh.advanced.spring.aop.SysLog;
 import lombok.SneakyThrows;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,6 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping(value = "/test/")
 public class TestWeb {
 
+    @AutoIdempotent
     @SneakyThrows
     @SysLog(value = "测试Aop注解",limit = 3)
     @RequestMapping(value = "syslog")
