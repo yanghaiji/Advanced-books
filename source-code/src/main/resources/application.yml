@@ -4,6 +4,8 @@ server:
 
 
 spring:
+  main:
+    allow-bean-definition-overriding: true
   # 优雅停机宽限时间
   lifecycle:
     timeout-per-shutdown-phase: 50
