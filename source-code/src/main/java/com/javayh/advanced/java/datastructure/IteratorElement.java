@@ -12,12 +12,16 @@ import com.javayh.advanced.java.datastructure.list.List;
  * @version 1.0.0
  * @since 2020-09-09
  */
-public class IteratorElement<E>  implements Iterator<E> {
+public class IteratorElement<E> implements Iterator<E> {
 
     private List list;//列表
     private Position nextPosition;//当前（下一个）元素的位置
+
     //默认构造方法
-    public IteratorElement() { list = null; }
+    public IteratorElement() {
+        list = null;
+    }
+
     //构造方法
     public IteratorElement(List L) {
         list = L;

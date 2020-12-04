@@ -24,16 +24,16 @@ public class BeanTest {
     private ApplicationContext applicationContext;
 
     @Test
-    public void testBeanFactory(){
+    public void testBeanFactory() {
         // ApplicationContext applicationContext = new AnnotationConfigApplicationContext();
         BeanFactory beanFactory = new AnnotationConfigApplicationContext(BeanService.class);
         BeanService bean = beanFactory.getBean(BeanService.class);
-        System.out.println("bean name"+bean.getClass().getName());
+        System.out.println("bean name" + bean.getClass().getName());
     }
 
     /**
      * <p>
-     *       测试 FactoryBean
+     * 测试 FactoryBean
      * </p>
      */
     @Test

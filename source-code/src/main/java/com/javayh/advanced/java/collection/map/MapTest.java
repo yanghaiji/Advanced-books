@@ -15,9 +15,9 @@ import java.util.Map;
 public class MapTest {
 
     public static void main(String[] args) {
-        Map<String,String> map = new HashMap<>(8, 0.75f);
+        Map<String, String> map = new HashMap<>(8, 0.75f);
         for (int i = 0; i < 15; i++) {
-            map.put(i+"java",i+"java");
+            map.put(i + "java", i + "java");
         }
     }
 }

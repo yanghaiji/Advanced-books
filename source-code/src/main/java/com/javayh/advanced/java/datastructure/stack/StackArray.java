@@ -30,26 +30,25 @@ public class StackArray<E> implements Stack<E> {
     }
 
     public StackArray(int initialCapacity) {
-        if(initialCapacity > 0){
+        if (initialCapacity > 0) {
             capacity = initialCapacity;
             this.elementData = new Object[initialCapacity];
-        }
-        else if(initialCapacity == 0){
+        } else if (initialCapacity == 0) {
             capacity = DEFAULT_CAPACITY;
             this.elementData = new Object[DEFAULT_CAPACITY];
-        }
-        else{
-            throw new IllegalArgumentException("Illegal Capacity: "+initialCapacity);
+        } else {
+            throw new IllegalArgumentException("Illegal Capacity: " + initialCapacity);
         }
     }
 
     /**
      * 入栈
+     *
      * @param e
      */
     @Override
     public void push(E e) {
-        if (size() == capacity){
+        if (size() == capacity) {
             throw new ExceptionStackFull("意外：栈溢出");
         }
         elementData[++top] = e;
@@ -57,6 +56,7 @@ public class StackArray<E> implements Stack<E> {
 
     /**
      * 出栈
+     *
      * @return
      * @throws ExceptionStackEmpty
      */
@@ -71,6 +71,7 @@ public class StackArray<E> implements Stack<E> {
 
     /**
      * 获取长度
+     *
      * @return
      */
     @Override
@@ -80,6 +81,7 @@ public class StackArray<E> implements Stack<E> {
 
     /**
      * 是否为空
+     *
      * @return
      */
     @Override
@@ -89,6 +91,7 @@ public class StackArray<E> implements Stack<E> {
 
     /**
      * 获取最顶端元素
+     *
      * @return
      * @throws ExceptionStackEmpty
      */
@@ -98,7 +101,7 @@ public class StackArray<E> implements Stack<E> {
         return elementData(top);
     }
 
-    protected void assertEmpty(){
+    protected void assertEmpty() {
         if (isEmpty()) {
             throw new ExceptionStackEmpty("意外：栈空");
         }

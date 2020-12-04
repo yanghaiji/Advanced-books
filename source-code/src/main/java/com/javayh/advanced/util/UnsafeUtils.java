@@ -21,14 +21,15 @@ public class UnsafeUtils {
 
     /**
      * <p>
-     *       通过反射获取 Unsafe
+     * 通过反射获取 Unsafe
      * </p>
+     *
+     * @return sun.misc.Unsafe
      * @version 1.0.0
      * @author hai ji
      * @since 2020/8/11
-     * @return sun.misc.Unsafe
      */
-    public static Unsafe getUnsafe(){
+    public static Unsafe getUnsafe() {
         try {
             Field field = Unsafe.class.getDeclaredField("theUnsafe");
             field.setAccessible(true);

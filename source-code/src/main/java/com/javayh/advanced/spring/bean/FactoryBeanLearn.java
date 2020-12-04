@@ -26,9 +26,9 @@ import java.util.Objects;
  * @since 2020-09-02
  */
 @Configuration
-public class FactoryBeanLearn implements FactoryBean<BaseBean>,InitializingBean {
+public class FactoryBeanLearn implements FactoryBean<BaseBean>, InitializingBean {
 
-    Logger log  = LoggerFactory.getLogger(FactoryBeanLearn.class);
+    Logger log = LoggerFactory.getLogger(FactoryBeanLearn.class);
 
     private BaseBean baseBean;
 
@@ -36,12 +36,12 @@ public class FactoryBeanLearn implements FactoryBean<BaseBean>,InitializingBean 
 
     public FactoryBeanLearn(CustomConfigurationProperties customConfigurationProperties) {
         this.customConfigurationProperties = customConfigurationProperties;
-        log.info("customConfigurationProperties init : {}",customConfigurationProperties.toString());
+        log.info("customConfigurationProperties init : {}", customConfigurationProperties.toString());
     }
 
     @Override
     public BaseBean getObject() throws Exception {
-        if(Objects.isNull(baseBean)){
+        if (Objects.isNull(baseBean)) {
             this.afterPropertiesSet();
         }
         return this.baseBean;
@@ -65,13 +65,14 @@ public class FactoryBeanLearn implements FactoryBean<BaseBean>,InitializingBean 
 
     /**
      * <p>
-     *       实例化对象
+     * 实例化对象
      * </p>
+     *
      * @param
      * @return com.javayh.advanced.spring.bean.BaseBean
      */
     private BaseBean buildBaseBean() {
-        if (Objects.isNull(customConfigurationProperties)){
+        if (Objects.isNull(customConfigurationProperties)) {
             throw new RuntimeException("customConfigurationProperties is null");
         }
         return BaseBean.builder()

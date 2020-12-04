@@ -27,21 +27,21 @@ public class AutoIdempotentInterceptor implements HandlerInterceptor {
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
-        if(!(handler instanceof HandlerMethod)) {
+        if (!(handler instanceof HandlerMethod)) {
             return true;
         }
         HandlerMethod handlerMethod = (HandlerMethod) handler;
         Method method = handlerMethod.getMethod();
         //被ApiIdempotment标记的扫描
         AutoIdempotent methodAnnotation = method.getAnnotation(AutoIdempotent.class);
-        if(methodAnnotation != null) {
-            try{
+        if (methodAnnotation != null) {
+            try {
                 long time = methodAnnotation.time();
                 String token = request.getParameter("token");
                 // 幂等性校验, 校验通过则放行, 校验失败则抛出异常, 并通过统一异常处理返回友好提示
-                return limiterTokenService.checkToken(token,time);
+                return limiterTokenService.checkToken(token, time);
 
-            }catch(Exception ex){
+            } catch (Exception ex) {
                 throw ex;
             }
         }

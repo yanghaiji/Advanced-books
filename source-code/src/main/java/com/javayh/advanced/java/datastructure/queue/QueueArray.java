@@ -12,7 +12,7 @@ import com.javayh.advanced.exception.ExceptionQueueFull;
  * @version 1.0.0
  * @since 2020-08-20
  */
-public class QueueArray<E> implements Queue<E>{
+public class QueueArray<E> implements Queue<E> {
     transient Object[] elementData;
 
     //默认长度
@@ -32,8 +32,8 @@ public class QueueArray<E> implements Queue<E>{
     }
 
     public QueueArray(int initialCapacity) {
-        if(initialCapacity < 0){
-            throw new IllegalArgumentException("Illegal Capacity: "+initialCapacity);
+        if (initialCapacity < 0) {
+            throw new IllegalArgumentException("Illegal Capacity: " + initialCapacity);
         }
         capacity = initialCapacity;
         this.elementData = new Object[initialCapacity];
@@ -43,7 +43,7 @@ public class QueueArray<E> implements Queue<E>{
 
     @Override
     public int size() {
-        return (capacity - fist +last) % capacity;
+        return (capacity - fist + last) % capacity;
     }
 
     @Override
@@ -59,7 +59,7 @@ public class QueueArray<E> implements Queue<E>{
 
     @Override
     public void enqueue(E e) throws ExceptionQueueFull {
-        if(size() == capacity-1){
+        if (size() == capacity - 1) {
             throw new ExceptionQueueFull("Queue overflow.");
         }
         elementData[last] = e;
@@ -68,15 +68,15 @@ public class QueueArray<E> implements Queue<E>{
 
     @Override
     public E dequeue() throws ExceptionQueueEmpty {
-        E element ;
+        E element;
         assertEmpty();
         element = elementData(fist);
-        elementData[fist] =null;
-        fist = (fist + 1) %capacity;
+        elementData[fist] = null;
+        fist = (fist + 1) % capacity;
         return element;
     }
 
-    protected void assertEmpty(){
+    protected void assertEmpty() {
         if (isEmpty()) {
             throw new ExceptionQueueEmpty("意外：队列空");
         }

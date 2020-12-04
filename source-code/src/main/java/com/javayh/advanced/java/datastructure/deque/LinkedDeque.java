@@ -4,14 +4,14 @@ import com.javayh.advanced.exception.ExceptionQueueEmpty;
 
 /**
  * <p>
- *      自定义双端队列
+ * 自定义双端队列
  * </p>
  *
  * @author hai ji
  * @version 1.0.0
  * @since 2020-08-21
  */
-public class LinkedDeque<E> implements Deque<E>{
+public class LinkedDeque<E> implements Deque<E> {
 
     //指向头节点（哨兵）
     protected Node<E> header;
@@ -40,7 +40,7 @@ public class LinkedDeque<E> implements Deque<E>{
 
     @Override
     public E first() throws ExceptionQueueEmpty {
-        if (isEmpty()){
+        if (isEmpty()) {
             throw new ExceptionQueueEmpty("意外：双端队列为空");
         }
         return header.getNext().getElem();
@@ -48,7 +48,7 @@ public class LinkedDeque<E> implements Deque<E>{
 
     @Override
     public E last() throws ExceptionQueueEmpty {
-        if (isEmpty()){
+        if (isEmpty()) {
             throw new ExceptionQueueEmpty("意外：双端队列为空");
         }
         return trailer.getPrev().getElem();
@@ -104,7 +104,7 @@ public class LinkedDeque<E> implements Deque<E>{
     public void iterator() {
         Node<E> p = header.getNext();
         while (p != trailer) {
-            System.out.print(p.getElem()+" ");
+            System.out.print(p.getElem() + " ");
             p = p.getNext();
         }
         System.out.println();

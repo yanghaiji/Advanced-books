@@ -11,14 +11,18 @@ package com.javayh.advanced.java.datastructure.tree.linked;
  */
 public class TreeLinkedList<E> implements Tree<E> {
 
-    /**根节点*/
+    /**
+     * 根节点
+     */
     private E element;
 
-    /**父亲、长子及最大的弟弟*/
+    /**
+     * 父亲、长子及最大的弟弟
+     */
     private TreeLinkedList<E> parent, firstChild, nextSibling;
 
     public TreeLinkedList() {
-        this(null,null,null,null);
+        this(null, null, null, null);
     }
 
     public TreeLinkedList(E element, TreeLinkedList<E> parent, TreeLinkedList<E> firstChild, TreeLinkedList<E> nextSibling) {
@@ -52,8 +56,9 @@ public class TreeLinkedList<E> implements Tree<E> {
 
     /**
      * <p>
-     *     返回当前节点的最大弟弟；若没有弟弟，则返回null
+     * 返回当前节点的最大弟弟；若没有弟弟，则返回null
      * </p>
+     *
      * @return com.javayh.advanced.java.datastructure.tree.linked.TreeLinkedList<E>
      */
     @Override
@@ -75,8 +80,7 @@ public class TreeLinkedList<E> implements Tree<E> {
         int size = 1;
         //从长子开始
         TreeLinkedList<E> subtree = firstChild;
-        while (null != subtree)
-        {   // 累加
+        while (null != subtree) {   // 累加
             size += subtree.size();
             // 所有孩子的后代数目
             subtree = subtree.getNextSibling();
@@ -94,12 +98,12 @@ public class TreeLinkedList<E> implements Tree<E> {
         int height = -1;
         //从长子开始
         TreeLinkedList<E> subtree = firstChild;
-        while (null != subtree){
+        while (null != subtree) {
             //在所有孩子中取最大的高度
-            height = Math.max(height,subtree.getHeight());
+            height = Math.max(height, subtree.getHeight());
             subtree = subtree.getNextSibling();
         }
-        return height+1;
+        return height + 1;
     }
 
     @Override

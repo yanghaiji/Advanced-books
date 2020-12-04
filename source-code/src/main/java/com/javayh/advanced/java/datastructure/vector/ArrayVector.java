@@ -4,14 +4,14 @@ import com.javayh.advanced.exception.ExceptionBoundaryViolation;
 
 /**
  * <p>
- *      基于数组实现的向量
+ * 基于数组实现的向量
  * </p>
  *
  * @author hai ji
  * @version 1.0.0
  * @since 2020-08-22
  */
-public class ArrayVector<E> implements Vector<E>{
+public class ArrayVector<E> implements Vector<E> {
     //数组的容量
     private final int DEFAULT_CAPACITY = 1024;
     //向量的实际规模
@@ -21,7 +21,7 @@ public class ArrayVector<E> implements Vector<E>{
 
     public ArrayVector() {
         this.elementData = new Object[DEFAULT_CAPACITY];
-        this.size=0;
+        this.size = 0;
     }
 
     @Override
@@ -57,7 +57,7 @@ public class ArrayVector<E> implements Vector<E>{
         if (0 > r || r >= DEFAULT_CAPACITY) {
             throw new ExceptionBoundaryViolation("意外：秩越界");
         }
-        if (size >= DEFAULT_CAPACITY){
+        if (size >= DEFAULT_CAPACITY) {
             throw new ExceptionBoundaryViolation("意外：数组溢出");
         }
         /*for (int i= size; i > r; i--) {

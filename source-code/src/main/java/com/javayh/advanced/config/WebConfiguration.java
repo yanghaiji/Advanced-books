@@ -23,6 +23,7 @@ public class WebConfiguration implements WebMvcConfigurer {
 
     /**
      * 添加拦截器
+     *
      * @param registry
      */
     @Override

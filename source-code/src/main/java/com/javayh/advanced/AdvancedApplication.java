@@ -9,8 +9,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * <p>
  *
  * </p>
- * @version 1.0.0
+ *
  * @author Dylan-haiji
+ * @version 1.0.0
  */
 @Slf4j
 @SpringBootApplication
@@ -20,7 +21,7 @@ public class AdvancedApplication {
 
     public AdvancedApplication(CustomConfigurationProperties customConfigurationProperties) {
         this.customConfigurationProperties = customConfigurationProperties;
-        log.info("customConfigurationProperties init : {}",customConfigurationProperties.toString());
+        log.info("customConfigurationProperties init : {}", customConfigurationProperties.toString());
     }
 
     public static void main(String[] args) {

@@ -50,7 +50,7 @@
 针对前端重复连续多次点击的情况，例如恶意评论，支付，提交订单的接口就可以通过 Token 的机制实现防止重复提交。
 - 流程图如下:
 
-[token_limiter](img/token_limiter.png)
+![token_limiter](img/token_limiter.png)
 
 整个流程已经完成，但是我们在实际开发的时候还需要制定规则，来判断是否是重复提交
 

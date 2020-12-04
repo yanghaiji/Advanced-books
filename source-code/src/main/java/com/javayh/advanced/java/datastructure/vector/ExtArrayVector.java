@@ -4,14 +4,14 @@ import com.javayh.advanced.exception.ExceptionBoundaryViolation;
 
 /**
  * <p>
- *      动态扩容
+ * 动态扩容
  * </p>
  *
  * @author hai ji
  * @version 1.0.0
  * @since 2020-08-22
  */
-public class ExtArrayVector<E> implements Vector<E>{
+public class ExtArrayVector<E> implements Vector<E> {
 
     private int DEFAULT_CAPACITY = 16;
     //向量的实际规模
@@ -25,7 +25,7 @@ public class ExtArrayVector<E> implements Vector<E>{
     }
 
     public ExtArrayVector(int initialCapacity) {
-        if(initialCapacity < 0){
+        if (initialCapacity < 0) {
             throw new ExceptionBoundaryViolation("initialCapacity :" + initialCapacity);
         }
         this.elementData = new Object[initialCapacity];
@@ -44,7 +44,7 @@ public class ExtArrayVector<E> implements Vector<E>{
 
     @Override
     public E getAtRank(int r) throws ExceptionBoundaryViolation {
-        if(0 > r || r >size){
+        if (0 > r || r > size) {
             throw new ExceptionBoundaryViolation("下标越界");
         }
         return elementData(r);
@@ -52,7 +52,7 @@ public class ExtArrayVector<E> implements Vector<E>{
 
     @Override
     public E replaceAtRank(int r, E obj) throws ExceptionBoundaryViolation {
-        if(r > size){
+        if (r > size) {
             throw new ExceptionBoundaryViolation("下标越界");
         }
         E oldEle = elementData(r);
@@ -62,7 +62,7 @@ public class ExtArrayVector<E> implements Vector<E>{
 
     @Override
     public E insertAtRank(int r, E obj) throws ExceptionBoundaryViolation {
-        if(0 > r){
+        if (0 > r) {
             throw new ExceptionBoundaryViolation("下标越界");
         }
         //空间溢出的处理
@@ -70,7 +70,7 @@ public class ExtArrayVector<E> implements Vector<E>{
             DEFAULT_CAPACITY *= 2;
             //开辟一个容量加倍的数组
             Object[] elementCopy = new Object[DEFAULT_CAPACITY];
-            for (int i=0; i<size; i++) {
+            for (int i = 0; i < size; i++) {
                 //elementData[]中内容复制至elementCopy[]
                 elementCopy[i] = elementData[i];
             }
@@ -78,8 +78,8 @@ public class ExtArrayVector<E> implements Vector<E>{
             elementData = elementCopy;
         }
         //后续元素顺次后移
-        for (int i=size; i>r; i--) {
-            elementData[i] = elementData[i-1];
+        for (int i = size; i > r; i--) {
+            elementData[i] = elementData[i - 1];
         }
         elementData[r] = obj;//插入
         size++;//更新当前规模
@@ -88,7 +88,7 @@ public class ExtArrayVector<E> implements Vector<E>{
 
     @Override
     public E removeAtRank(int r) throws ExceptionBoundaryViolation {
-        if(0 > r || r > size){
+        if (0 > r || r > size) {
             throw new ExceptionBoundaryViolation("下标越界");
         }
         E oldEle = elementData(r);

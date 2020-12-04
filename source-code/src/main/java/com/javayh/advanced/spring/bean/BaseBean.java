@@ -6,7 +6,7 @@ import lombok.Setter;
 
 /**
  * <p>
- *      测试 factory bean
+ * 测试 factory bean
  * </p>
  *
  * @author hai ji

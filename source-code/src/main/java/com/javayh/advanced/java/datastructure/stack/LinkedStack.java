@@ -12,7 +12,7 @@ import com.javayh.advanced.java.datastructure.linked.Node;
  * @version 1.0.0
  * @since 2020-08-21
  */
-public class LinkedStack<E> implements Stack<E>{
+public class LinkedStack<E> implements Stack<E> {
 
     //指向栈顶元素
     private Node top;
@@ -20,8 +20,8 @@ public class LinkedStack<E> implements Stack<E>{
     private int size;
 
     public LinkedStack() {
-        this.size=0;
-        this.top=null;
+        this.size = 0;
+        this.top = null;
     }
 
     @Override
@@ -30,14 +30,14 @@ public class LinkedStack<E> implements Stack<E>{
         //Node<E> node = new Node<>(e,top);
         //更新首节点引用
         //top = node;
-        top = new Node<>(e,top);
+        top = new Node<>(e, top);
         //更新操作长度
-        size ++;
+        size++;
     }
 
     @Override
     public E pop() throws ExceptionStackEmpty {
-        if (isEmpty()){
+        if (isEmpty()) {
             throw new ExceptionStackEmpty("意外：栈空");
         }
         //获取当前的节点
@@ -61,7 +61,7 @@ public class LinkedStack<E> implements Stack<E>{
 
     @Override
     public E top() throws ExceptionStackEmpty {
-        if (isEmpty()){
+        if (isEmpty()) {
             throw new ExceptionStackEmpty("意外：栈空");
         }
         return (E) top.getElem();

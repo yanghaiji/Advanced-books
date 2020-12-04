@@ -13,7 +13,7 @@ import com.javayh.advanced.java.datastructure.linked.Node;
  * @version 1.0.0
  * @since 2020-08-21
  */
-public class LinkedQueue<E> implements Queue<E>{
+public class LinkedQueue<E> implements Queue<E> {
     //指向表首元素
     protected Node<E> head;
     //指向表末元素
@@ -48,10 +48,10 @@ public class LinkedQueue<E> implements Queue<E>{
         Node<E> node = new Node<>();
         node.setElem(e);
         node.setNext(null);
-        if (0 == size){
+        if (0 == size) {
             //若此前队列为空，则直接插入
             head = node;
-        }else {
+        } else {
             tail.setNext(node);
         }
         //更新指向末节点引用
@@ -62,14 +62,14 @@ public class LinkedQueue<E> implements Queue<E>{
 
     @Override
     public E dequeue() throws ExceptionQueueEmpty {
-        if(isEmpty()){
+        if (isEmpty()) {
             throw new ExceptionQueueEmpty("意外：队列空");
         }
         E old = head.getElem();
         head = head.getNext();
         size--;
         //若队列已空，须将末节点引用置空
-        if (0 == size){
+        if (0 == size) {
             tail = null;
         }
         return old;

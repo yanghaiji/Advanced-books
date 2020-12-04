@@ -16,18 +16,21 @@ public interface Queue<E> {
 
     /**
      * 返回队列的长度
+     *
      * @return
      */
     int size();
 
     /**
      * 判断队列是否为空
+     *
      * @return
      */
     boolean isEmpty();
 
     /**
      * 获取队列第一个元素，但是不删除
+     *
      * @return
      * @throws ExceptionQueueEmpty
      */
@@ -35,13 +38,15 @@ public interface Queue<E> {
 
     /**
      * 入队
+     *
      * @param e
      * @throws ExceptionQueueFull
      */
-    void enqueue (E e) throws ExceptionQueueFull;
+    void enqueue(E e) throws ExceptionQueueFull;
 
     /**
      * 出队
+     *
      * @return
      * @throws ExceptionQueueEmpty
      */

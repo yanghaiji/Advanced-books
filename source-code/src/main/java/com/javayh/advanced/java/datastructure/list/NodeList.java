@@ -17,7 +17,7 @@ import com.javayh.advanced.java.datastructure.deque.Node;
  * @version 1.0.0
  * @since 2020-08-26
  */
-public class NodeList<E> implements List<E>{
+public class NodeList<E> implements List<E> {
     //列表的实际规模
     protected int numElem;
     //哨兵：首节点+末节点
@@ -60,7 +60,7 @@ public class NodeList<E> implements List<E>{
     public Position<E> getNext(Position<E> p) throws ExceptionPositionInvalid, ExceptionBoundaryViolation {
         Node<E> v = checkPosition(p);
         Node<E> next = v.getNext();
-        if (next == trailer){
+        if (next == trailer) {
             throw new ExceptionBoundaryViolation("意外：企图越过列表后端");
         }
         return next;
@@ -152,6 +152,7 @@ public class NodeList<E> implements List<E>{
 
     /**
      * 检查给定位置在列表中是否合法，若是，则将其转换为 Node
+     *
      * @param p
      * @return
      * @throws ExceptionPositionInvalid
@@ -166,18 +167,18 @@ public class NodeList<E> implements List<E>{
         if (trailer == p) {
             throw new ExceptionPositionInvalid("意外：尾结点哨兵位置非法");
         }
-        Node temp = (Node)p;
+        Node temp = (Node) p;
         return temp;
     }
 
-    protected void isNull(){
-        if (isEmpty()){
+    protected void isNull() {
+        if (isEmpty()) {
             throw new ExceptionListEmpty("意外：列表空");
         }
     }
 
     @Override
-    public Iterator elements(){
+    public Iterator elements() {
         return new IteratorElement(this);
     }
 }

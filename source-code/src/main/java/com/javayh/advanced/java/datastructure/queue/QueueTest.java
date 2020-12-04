@@ -5,7 +5,7 @@ import com.javayh.advanced.exception.ExceptionQueueFull;
 
 /**
  * <p>
- *      测试队列
+ * 测试队列
  * </p>
  *
  * @author hai ji

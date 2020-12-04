@@ -4,7 +4,7 @@ import com.javayh.advanced.java.datastructure.Iterator;
 
 /**
  * <p>
- *    二叉树
+ * 二叉树
  * </p>
  *
  * @author hai ji
@@ -15,8 +15,9 @@ public interface BinTree<E> {
 
     /**
      * <p>
-     *     获取根节点
+     * 获取根节点
      * </p>
+     *
      * @param
      * @return com.javayh.advanced.java.datastructure.tree.bin.BinTreePosition
      */
@@ -24,8 +25,9 @@ public interface BinTree<E> {
 
     /**
      * <p>
-     *      判断是否为空
+     * 判断是否为空
      * </p>
+     *
      * @param
      * @return boolean
      */
@@ -33,14 +35,16 @@ public interface BinTree<E> {
 
     /**
      * 返回树的规模，即树根的后代数目
+     *
      * @return int
      */
     int size();
 
     /**
      * <p>
-     *    返回树的高度
+     * 返回树的高度
      * </p>
+     *
      * @param
      * @return int
      */
@@ -48,8 +52,9 @@ public interface BinTree<E> {
 
     /**
      * <p>
-     *      前序遍历
+     * 前序遍历
      * </p>
+     *
      * @param
      * @return com.javayh.advanced.java.datastructure.Iterator<E>
      */
@@ -57,8 +62,9 @@ public interface BinTree<E> {
 
     /**
      * <p>
-     *     中序遍历
+     * 中序遍历
      * </p>
+     *
      * @param
      * @return com.javayh.advanced.java.datastructure.Iterator
      */
@@ -66,17 +72,19 @@ public interface BinTree<E> {
 
     /**
      * <p>
-     *     后序遍历  
+     * 后序遍历
      * </p>
-     * @param 
+     *
+     * @param
      * @return com.javayh.advanced.java.datastructure.Iterator
      */
     Iterator<E> elementsPostorder();
 
     /**
      * <p>
-     *     层次遍历
+     * 层次遍历
      * </p>
+     *
      * @param
      * @return com.javayh.advanced.java.datastructure.Iterator
      */

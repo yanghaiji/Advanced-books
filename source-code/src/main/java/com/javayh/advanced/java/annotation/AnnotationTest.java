@@ -16,8 +16,7 @@ import java.lang.reflect.Method;
  * @version 1.0.0
  * @since 2020-07-17
  */
-public class AnnotationTest
-{
+public class AnnotationTest {
     private static final Logger logger = LoggerFactory.getLogger(AnnotationTest.class);
 
     public static void main(String[] args) {
@@ -33,13 +32,13 @@ public class AnnotationTest
                     //获取注解
                     Limit annotation = method.getAnnotation(Limit.class);
                     String value = annotation.value();
-                    if(Strings.isBlank(value)){
+                    if (Strings.isBlank(value)) {
                         value = "Limit";
                     }
                     method.invoke(addMapper);
                 } catch (IllegalAccessException | InvocationTargetException e) {
                     logger.error(
-                            "IllegalAccessException | InvocationTargetException---> {}",e.getMessage());
+                            "IllegalAccessException | InvocationTargetException---> {}", e.getMessage());
                 }
             }
         }

@@ -14,18 +14,19 @@ import java.util.Arrays;
 public class 排列组合 {
 
     public static void main(String[] args) {
-        arrangementSelect(new String[] {
+        arrangementSelect(new String[]{
                 "1", "2", "3", "4"
         }, 2);
-        combinationSelect(new String[] {
+        combinationSelect(new String[]{
                 "1", "2", "3", "4", "5"
         }, 3);
     }
 
     /**
      * 排列选择（从列表中选择n个排列）
+     *
      * @param dataList 待选列表
-     * @param n 选择个数
+     * @param n        选择个数
      */
     public static void arrangementSelect(String[] dataList, int n) {
         System.out.println(String.format("A(%d, %d) = %d", dataList.length, n, arrangement(dataList.length, n)));
@@ -34,8 +35,9 @@ public class 排列组合 {
 
     /**
      * 排列选择
-     * @param dataList 待选列表
-     * @param resultList 前面（resultIndex-1）个的排列结果
+     *
+     * @param dataList    待选列表
+     * @param resultList  前面（resultIndex-1）个的排列结果
      * @param resultIndex 选择索引，从0开始
      */
     private static void arrangementSelect(String[] dataList, String[] resultList, int resultIndex) {
@@ -64,8 +66,9 @@ public class 排列组合 {
 
     /**
      * 组合选择（从列表中选择n个组合）
+     *
      * @param dataList 待选列表
-     * @param n 选择个数
+     * @param n        选择个数
      */
     public static void combinationSelect(String[] dataList, int n) {
         System.out.println(String.format("C(%d, %d) = %d", dataList.length, n, combination(dataList.length, n)));
@@ -74,9 +77,10 @@ public class 排列组合 {
 
     /**
      * 组合选择
-     * @param dataList 待选列表
-     * @param dataIndex 待选开始索引
-     * @param resultList 前面（resultIndex-1）个的组合结果
+     *
+     * @param dataList    待选列表
+     * @param dataIndex   待选开始索引
+     * @param resultList  前面（resultIndex-1）个的组合结果
      * @param resultIndex 选择索引，从0开始
      */
     private static void combinationSelect(String[] dataList, int dataIndex, String[] resultList, int resultIndex) {
@@ -96,6 +100,7 @@ public class 排列组合 {
 
     /**
      * 计算阶乘数，即n! = n * (n-1) * ... * 2 * 1
+     *
      * @param n
      * @return
      */
@@ -105,6 +110,7 @@ public class 排列组合 {
 
     /**
      * 计算排列数，即A(n, m) = n!/(n-m)!
+     *
      * @param n
      * @param m
      * @return
@@ -115,6 +121,7 @@ public class 排列组合 {
 
     /**
      * 计算组合数，即C(n, m) = n!/((n-m)! * m!)
+     *
      * @param n
      * @param m
      * @return

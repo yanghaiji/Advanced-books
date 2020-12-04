@@ -21,13 +21,13 @@ public class TransactionTest2 {
     private TestMapper testMapper;
 
     @Transactional(rollbackFor = Exception.class)
-    public void test01(){
+    public void test01() {
         testMapper.insert("789");
         test02();
     }
 
     //@Transactional(rollbackFor = Exception.class)
-    public void test02(){
+    public void test02() {
         testMapper.insert("12345");
         Integer.valueOf("1245i");
     }

@@ -20,11 +20,17 @@ import lombok.SneakyThrows;
 public class IteratorTree<E> implements Iterator<E> {
     private List list;//列表
     private Position nextPosition;//当前（下一个）元素的位置
+
     //默认构造方法
-    public IteratorTree() { list = null; }
+    public IteratorTree() {
+        list = null;
+    }
+
     //前序遍历
     public void elementsPreorderIterator(TreeLinkedList T) {
-        if (null == T) {return;}//递归基
+        if (null == T) {
+            return;
+        }//递归基
         list.insertLast(T);//首先输出当前节点
         TreeLinkedList subtree = T.getFirstChild();//从当前节点的长子开始
         while (null != subtree) {//依次对当前节点的各个孩子
@@ -32,6 +38,7 @@ public class IteratorTree<E> implements Iterator<E> {
             subtree = subtree.getNextSibling();
         }
     }
+
     //后序遍历
     public void elementsPostorderIterator(TreeLinkedList T) {
         if (null == T) return;//递归基
@@ -42,6 +49,7 @@ public class IteratorTree<E> implements Iterator<E> {
         }
         list.insertLast(T);//当所有后代都访问过后，最后才访问当前节点
     }
+
     //层次遍历
     @SneakyThrows
     public void levelTraversalIterator(TreeLinkedList T) {
@@ -75,8 +83,7 @@ public class IteratorTree<E> implements Iterator<E> {
         Position currentPosition = nextPosition;
         if (currentPosition == list.last()) {//若已到达尾元素，则
             nextPosition = null;//不再有下一元素
-        }
-        else {//否则
+        } else {//否则
             nextPosition = list.getNext(currentPosition);//转向下一元素
         }
         return (E) currentPosition.getElem();

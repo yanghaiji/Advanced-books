@@ -17,7 +17,7 @@ import java.util.Objects;
  * @version 1.0.0
  * @since 2020-09-08
  */
-public class BinTreeNode<E> implements BinTreePosition<E>{
+public class BinTreeNode<E> implements BinTreePosition<E> {
 
     protected E element;//该节点中存放的对象
     protected BinTreePosition<E> parent;//父亲
@@ -26,8 +26,8 @@ public class BinTreeNode<E> implements BinTreePosition<E>{
     protected int size;//后代数目
     protected int height;//高度
     protected int depth;//深度
-    public BinTreeNode()
-    {
+
+    public BinTreeNode() {
         this(null, null, true, null, null);
     }
 
@@ -38,14 +38,18 @@ public class BinTreeNode<E> implements BinTreePosition<E>{
             BinTreePosition<E> l,//左孩子
             BinTreePosition<E> r)//右孩子
     {
-        size = 1; height = depth = 0; parent = lChild = rChild = null;//初始化
+        size = 1;
+        height = depth = 0;
+        parent = lChild = rChild = null;//初始化
         element = e;//存放的对象
         //建立与父亲的关系
-        if (null != p){
-            if (asLChild){
+        if (null != p) {
+            if (asLChild) {
                 p.attachL(this);
             }
-        }else {p.attachR(this);}
+        } else {
+            p.attachR(this);
+        }
         //建立与孩子的关系
         if (null != l) {
             attachL(l);
@@ -54,6 +58,7 @@ public class BinTreeNode<E> implements BinTreePosition<E>{
             attachR(r);
         }
     }
+
     @Override
     public boolean hasParent() {
         return null != parent;
@@ -66,7 +71,7 @@ public class BinTreeNode<E> implements BinTreePosition<E>{
 
     @Override
     public void setParent(BinTreePosition<E> p) {
-        this.parent=p;
+        this.parent = p;
     }
 
     @Override
@@ -76,8 +81,9 @@ public class BinTreeNode<E> implements BinTreePosition<E>{
 
     /**
      * <p>
-     *       若当前节点有父亲，而且是左孩子，则返回true；否则，返回false
+     * 若当前节点有父亲，而且是左孩子，则返回true；否则，返回false
      * </p>
+     *
      * @param
      * @return boolean
      */
@@ -88,7 +94,7 @@ public class BinTreeNode<E> implements BinTreePosition<E>{
 
     @Override
     public boolean hasLChild() {
-        return  null != lChild;
+        return null != lChild;
     }
 
     @Override
@@ -103,9 +109,10 @@ public class BinTreeNode<E> implements BinTreePosition<E>{
 
     /**
      * <p>
-     *      判断是否为右孩子（为使代码描述简洁）
-     *      若当前节点有父亲，而且是右孩子，则返回true；否则，返回false
+     * 判断是否为右孩子（为使代码描述简洁）
+     * 若当前节点有父亲，而且是右孩子，则返回true；否则，返回false
      * </p>
+     *
      * @param
      * @return boolean
      */
@@ -138,13 +145,13 @@ public class BinTreeNode<E> implements BinTreePosition<E>{
     public void updateSize() {
         //当前节点
         size = 1;
-        if(hasLChild()){
+        if (hasLChild()) {
             size += getLChild().getSize();
         }
-        if (hasRChild()){
+        if (hasRChild()) {
             size += getRChild().getSize();
         }
-        if (hasParent()){//递归更新各个真祖先的规模记录
+        if (hasParent()) {//递归更新各个真祖先的规模记录
             getParent().updateSize();
         }
     }
@@ -161,11 +168,11 @@ public class BinTreeNode<E> implements BinTreePosition<E>{
     public void updateHeight() {
         //先假设没有左、右孩子
         height = 0;
-        if(hasLChild()){
-            this.height = Math.max(height,1+getLChild().getHeight());
+        if (hasLChild()) {
+            this.height = Math.max(height, 1 + getLChild().getHeight());
         }//
-        if(hasRChild()){
-            height = Math.max(height, 1+getRChild().getHeight());
+        if (hasRChild()) {
+            height = Math.max(height, 1 + getRChild().getHeight());
         }
         if (hasParent()) {//递归更新各个真祖先的高度记录
             getParent().updateHeight();
@@ -182,7 +189,7 @@ public class BinTreeNode<E> implements BinTreePosition<E>{
      */
     @Override
     public void updateDepth() {
-        depth = hasParent() ? 1+getParent().getDepth() : 0;//当前节点
+        depth = hasParent() ? 1 + getParent().getDepth() : 0;//当前节点
         if (hasLChild()) {
             getLChild().updateDepth();//沿孩子引用逐层向下，
         }
@@ -193,6 +200,7 @@ public class BinTreeNode<E> implements BinTreePosition<E>{
 
     /**
      * /按照中序遍历的次序，找到当前节点的直接前驱
+     *
      * @return
      */
     @Override
@@ -207,7 +215,7 @@ public class BinTreeNode<E> implements BinTreePosition<E>{
         }
         //至此，当前节点没有左孩子，而且是左孩子
         BinTreePosition v = this;//从当前节点出发
-        while (v.isLChild()){
+        while (v.isLChild()) {
             v = v.getParent();//沿左孩子链一直上升
         }
         //至此，v或者没有父亲，或者是父亲的右孩子
@@ -216,6 +224,7 @@ public class BinTreeNode<E> implements BinTreePosition<E>{
 
     /**
      * 按照中序遍历的次序，找到当前节点的直接后继
+     *
      * @return
      */
     @Override
@@ -242,8 +251,7 @@ public class BinTreeNode<E> implements BinTreePosition<E>{
         if (null != parent) {
             if (isLChild()) {
                 parent.setLChild(null);//切断父亲指向当前节点的引用
-            }
-            else {
+            } else {
                 parent.setRChild(null);
             }
             parent.updateSize();//更新当前节点及其祖先的规模
@@ -256,6 +264,7 @@ public class BinTreeNode<E> implements BinTreePosition<E>{
 
     /**
      * 将节点c作为当前节点的左孩子
+     *
      * @param c
      * @return
      */
@@ -266,7 +275,8 @@ public class BinTreeNode<E> implements BinTreePosition<E>{
         }
         if (null != c) {
             c.secede();//c脱离原父亲
-            lChild = c; c.setParent(this);//确立新的父子关系
+            lChild = c;
+            c.setParent(this);//确立新的父子关系
             updateSize();//更新当前节点及其祖先的规模
             updateHeight();//更新当前节点及其祖先的高度
             c.updateDepth();//更新c及其后代节点的深度
@@ -276,6 +286,7 @@ public class BinTreeNode<E> implements BinTreePosition<E>{
 
     /**
      * 将节点c作为当前节点的右孩子
+     *
      * @param c
      * @return
      */
@@ -286,7 +297,8 @@ public class BinTreeNode<E> implements BinTreePosition<E>{
         }
         if (null != c) {
             c.secede();//c脱离原父亲
-            rChild = c; c.setParent(this);//确立新的父子关系
+            rChild = c;
+            c.setParent(this);//确立新的父子关系
             updateSize();//更新当前节点及其祖先的规模
             updateHeight();//更新当前节点及其祖先的高度
             c.updateDepth();//更新c及其后代节点的深度
@@ -341,6 +353,7 @@ public class BinTreeNode<E> implements BinTreePosition<E>{
         //至此，v或者为空，或者没有左孩子
         return v;
     }
+
     //在v的后代中，找出最大者
     protected static BinTreePosition findMaxDescendant(BinTreePosition v) {
         if (null != v)
@@ -348,6 +361,7 @@ public class BinTreeNode<E> implements BinTreePosition<E>{
         //至此，v或者为空，或者没有右孩子
         return v;
     }
+
     //前序遍历以v为根节的（子）树
     protected static void preorder(List list, BinTreePosition v) {
         if (null == v) return;//递归基：空树
@@ -355,6 +369,7 @@ public class BinTreeNode<E> implements BinTreePosition<E>{
         preorder(list, v.getLChild());//遍历左子树
         preorder(list, v.getRChild());//遍历右子树
     }
+
     //中序遍历以v为根节的（子）树
     protected static void inorder(List list, BinTreePosition v) {
         if (null == v) return;//递归基：空树
@@ -362,6 +377,7 @@ public class BinTreeNode<E> implements BinTreePosition<E>{
         list.insertLast(v);//访问v
         inorder(list, v.getRChild());//遍历右子树
     }
+
     //后序遍历以v为根节的（子）树
     protected static void postorder(List list, BinTreePosition v) {
         if (null == v) return;//递归基：空树
@@ -369,6 +385,7 @@ public class BinTreeNode<E> implements BinTreePosition<E>{
         postorder(list, v.getRChild());//遍历右子树
         list.insertLast(v);//访问v
     }
+
     //层次遍历以v为根节的（子）树
     @SneakyThrows
     protected static void levelorder(List list, BinTreePosition v) {

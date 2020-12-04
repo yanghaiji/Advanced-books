@@ -17,8 +17,9 @@ public interface ServerFactory<T> {
 
     /**
      * <p>
-     *       创建
+     * 创建
      * </p>
+     *
      * @param port
      * @return void
      */
@@ -26,8 +27,9 @@ public interface ServerFactory<T> {
 
     /**
      * <p>
-     *       启动容器
+     * 启动容器
      * </p>
+     *
      * @param
      * @return void
      */
@@ -35,8 +37,9 @@ public interface ServerFactory<T> {
 
     /**
      * <p>
-     *       定制容器
+     * 定制容器
      * </p>
+     *
      * @param
      * @return void
      */
@@ -44,8 +47,9 @@ public interface ServerFactory<T> {
 
     /**
      * <p>
-     *       销毁容器
+     * 销毁容器
      * </p>
+     *
      * @param
      * @return void
      */
@@ -53,26 +57,28 @@ public interface ServerFactory<T> {
 
     /**
      * 判断容器是否创建成功
+     *
      * @param bean
      * @param <T>
      * @throws ServerException
      */
-   static <T> void isNull(T bean) throws ServerException {
-       if(Objects.isNull(bean)){
-           throw new ServerException("create server exception");
-       }
-   }
+    static <T> void isNull(T bean) throws ServerException {
+        if (Objects.isNull(bean)) {
+            throw new ServerException("create server exception");
+        }
+    }
 
     /**
      * <p>
-     *       同于
+     * 同于
      * </p>
+     *
      * @param
      * @return void
      */
-   default void after(){
-       this.stop();
-       this.destroy();
-   }
+    default void after() {
+        this.stop();
+        this.destroy();
+    }
 
 }

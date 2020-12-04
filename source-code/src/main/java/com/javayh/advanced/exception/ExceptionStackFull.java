@@ -9,7 +9,7 @@ package com.javayh.advanced.exception;
  * @version 1.0.0
  * @since 2020-08-19
  */
-public class ExceptionStackFull extends RuntimeException{
+public class ExceptionStackFull extends RuntimeException {
 
     public ExceptionStackFull(String message) {
         super(message);

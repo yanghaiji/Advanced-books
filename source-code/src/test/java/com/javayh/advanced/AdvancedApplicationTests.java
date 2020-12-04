@@ -48,7 +48,7 @@ class AdvancedApplicationTests {
     }
 
     @Test
-    void limit()  {
+    void limit() {
         for (int i = 0; i < 20; i++) {
             testWeb.test();
         }

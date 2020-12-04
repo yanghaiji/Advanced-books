@@ -11,7 +11,7 @@ import com.javayh.advanced.exception.ServerException;
  * @version 1.0.0
  * @since 2020-09-14
  */
-public class JettyWebServerFactory<T> implements ServerFactory<T>{
+public class JettyWebServerFactory<T> implements ServerFactory<T> {
     @Override
     public T create(int port) {
         return null;

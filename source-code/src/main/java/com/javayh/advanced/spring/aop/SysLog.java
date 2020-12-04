@@ -7,6 +7,7 @@ import java.lang.annotation.Target;
 
 /**
  * log
+ *
  * @author haiyang
  */
 @Target(ElementType.METHOD)

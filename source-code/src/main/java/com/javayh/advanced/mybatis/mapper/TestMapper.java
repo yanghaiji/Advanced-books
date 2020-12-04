@@ -8,7 +8,7 @@ import java.util.List;
 
 /**
  * <p>
- *  Mybatis
+ * Mybatis
  * </p>
  *
  * @author hai ji
@@ -20,13 +20,14 @@ public interface TestMapper {
 
     /**
      * <p>
-     *       查询所有数据并且进行json处理
+     * 查询所有数据并且进行json处理
      * </p>
+     *
+     * @param
+     * @return java.util.List<com.javayh.advanced.mybatis.vo.LogisticsVO>
      * @version 1.0.0
      * @author hai ji
      * @since 2020/8/4
-     * @param
-     * @return java.util.List<com.javayh.advanced.mybatis.vo.LogisticsVO>
      */
     List<LogisticsVO> findAll();
 

@@ -17,21 +17,21 @@ import java.util.List;
 public class CollectionsTest {
     public static void main(String[] args) {
         List<String> listOne = new ArrayList<>();
-        String[] strings = new String[]{"List","Set","Map"};
-        Collections.addAll(listOne,"Yang","Hai","ji");
-        Collections.addAll(listOne,strings);
+        String[] strings = new String[]{"List", "Set", "Map"};
+        Collections.addAll(listOne, "Yang", "Hai", "ji");
+        Collections.addAll(listOne, strings);
         System.out.println(listOne);
 
         List<String> listTwo = new ArrayList<>();
         for (int i = 0; i < 1000; i++) {
-            listTwo.add("Yang"+i);
+            listTwo.add("Yang" + i);
         }
         int yang999 = Collections.binarySearch(listTwo, "Yang999");
         System.out.println(yang999);
 
         List<String> linkedList = new LinkedList<>();
         for (int i = 0; i < 5050; i++) {
-            linkedList.add("Hai"+i);
+            linkedList.add("Hai" + i);
         }
         int hai = Collections.binarySearch(linkedList, "Hai999");
         System.out.println(hai);

@@ -69,24 +69,26 @@ enum Day2 {
     /**
      * 私有构造,防止被外部调用
      */
-    private Day2(String desc,Integer code) {
+    private Day2(String desc, Integer code) {
         this.desc = desc;
         this.code = code;
     }
 
     /**
      * 定义方法,返回描述,跟常规类的定义没区别
+     *
      * @return
      */
     public String getDesc() {
         return desc;
     }
+
     public int getCode() {
         return code;
     }
 
-    public String getDesc(int index){
-        for (Day2 day2 : Day2.values()){
+    public String getDesc(int index) {
+        for (Day2 day2 : Day2.values()) {
             if (day2.code == index) {
                 return day2.desc;
             }
@@ -94,8 +96,8 @@ enum Day2 {
         return null;
     }
 
-    public int getCode(String desc){
-        for (Day2 day2 : Day2.values()){
+    public int getCode(String desc) {
+        for (Day2 day2 : Day2.values()) {
             if (Objects.equals(day2.desc, desc)) {
                 return day2.code;
             }

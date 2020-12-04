@@ -15,18 +15,21 @@ public interface Vector<E> {
 
     /**
      * 返回向量中元素数目
+     *
      * @return
      */
     int size();
 
     /**
      * 判断向量是否为空
+     *
      * @return
      */
     boolean isEmpty();
 
     /**
      * 取秩为r的元素
+     *
      * @param r
      * @return
      * @throws ExceptionBoundaryViolation
@@ -35,6 +38,7 @@ public interface Vector<E> {
 
     /**
      * 替换指定下标的元素
+     *
      * @param r
      * @param obj
      * @return
@@ -44,6 +48,7 @@ public interface Vector<E> {
 
     /**
      * 插入obj，作为秩为r的元素；返回该元素
+     *
      * @param r
      * @param obj
      * @return
@@ -52,6 +57,7 @@ public interface Vector<E> {
 
     /**
      * 删除秩为r的元素
+     *
      * @param r
      * @return
      * @throws ExceptionBoundaryViolation

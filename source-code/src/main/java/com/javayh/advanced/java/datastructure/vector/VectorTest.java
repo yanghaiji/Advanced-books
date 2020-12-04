@@ -12,10 +12,10 @@ package com.javayh.advanced.java.datastructure.vector;
 public class VectorTest {
     public static void main(String[] args) {
         Vector<String> vector = new ArrayVector<>();
-        vector.insertAtRank(0,"Java");
-        vector.insertAtRank(1,"Java");
-        vector.insertAtRank(2,"Java");
-        vector.insertAtRank(3,"Java");
+        vector.insertAtRank(0, "Java");
+        vector.insertAtRank(1, "Java");
+        vector.insertAtRank(2, "Java");
+        vector.insertAtRank(3, "Java");
         System.out.println(vector.getAtRank(2));
         System.out.println(vector.removeAtRank(2));
         System.out.println(vector.replaceAtRank(1, "Haiji"));

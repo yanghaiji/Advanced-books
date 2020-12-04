@@ -7,12 +7,12 @@
         <result property="addressee" column="addressee"/>
         <result property="addressee_name" column="addressee_name"/>
         <result property="addressee_phone" column="addressee_phone"/>
-        <collection property="senderVOList"  resultMap = "senderVOListMap"/>
+        <collection property="senderVOList" resultMap="senderVOListMap"/>
     </resultMap>
     <resultMap type="com.javayh.advanced.mybatis.vo.LogisticsSenderVO" id="senderVOListMap">
         <result property="sender_add" column="sender_add"/>
         <result property="sender_name" column="sender_name"/>
-        <collection property="informationVOS"  resultMap = "informationVOSMap"/>
+        <collection property="informationVOS" resultMap="informationVOSMap"/>
     </resultMap>
     <resultMap type="com.javayh.advanced.mybatis.vo.OtherInformationVO" id="informationVOSMap">
         <result property="create_by" column="create_by"/>
@@ -22,26 +22,26 @@
     </resultMap>
     <select id="findAll" resultMap="logisticsMap">
         SELECT
-            addressee,
-            addressee_name,
-            addressee_phone,
-            sender_add sender_name,
-            ems_status,
-            retreat_status,
-            create_by,
-            create_date
+        addressee,
+        addressee_name,
+        addressee_phone,
+        sender_add sender_name,
+        ems_status,
+        retreat_status,
+        create_by,
+        create_date
         FROM
-            sys_logistics
+        sys_logistics
     </select>
     <select id="findListAndIf" resultType="com.javayh.advanced.mybatis.vo.LogisticsVO">
-         SELECT
-            addressee,
-            addressee_name,
-            addressee_phone
+        SELECT
+        addressee,
+        addressee_name,
+        addressee_phone
         FROM
-            sys_logistics
+        sys_logistics
         <trim prefix="WHERE" prefixOverrides="AND | OR">
-            <foreach item="vos" index="vos" collection="vos"  separator="," >
+            <foreach item="vos" index="vos" collection="vos" separator=",">
                 <if test="vos.addressee_name != null and vos.addressee_name != ''">
                     AND addressee_name= #{vos.addressee_name}
                 </if>
@@ -54,8 +54,9 @@
 
     <insert id="insert">
         INSERT INTO `sys_logistics`
-        (  `addressee_name`, `addressee`, `addressee_phone`, `sender_name`, `sender_add`, `ems_status`, `retreat_status`, `retreat_info`, `create_date`, `update_date`, `create_by` )
+        ( `addressee_name`, `addressee`, `addressee_phone`, `sender_name`, `sender_add`, `ems_status`, `retreat_status`,
+        `retreat_info`, `create_date`, `update_date`, `create_by` )
         VALUES
-	    ( #{name}, '北京', 1234565432, 'dylan-ji', '北京', 0, 0, NULL, '2019-11-02', NULL, 'admin' );
+        ( #{name}, '北京', 1234565432, 'dylan-ji', '北京', 0, 0, NULL, '2019-11-02', NULL, 'admin' );
     </insert>
 </mapper>

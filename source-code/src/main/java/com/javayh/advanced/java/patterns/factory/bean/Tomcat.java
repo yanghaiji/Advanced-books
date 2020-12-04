@@ -31,8 +31,8 @@ public class Tomcat {
         this.port = port;
     }
 
-    private void assertParam(int port){
-        if(port <= 0){
+    private void assertParam(int port) {
+        if (port <= 0) {
             throw new IllegalArgumentException();
         }
     }

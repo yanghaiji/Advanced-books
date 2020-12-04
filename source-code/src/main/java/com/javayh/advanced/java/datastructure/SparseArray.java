@@ -2,7 +2,7 @@ package com.javayh.advanced.java.datastructure;
 
 /**
  * <p>
- *      稀疏数组
+ * 稀疏数组
  * </p>
  *
  * @author hai ji
@@ -15,13 +15,13 @@ public class SparseArray {
 
         //1. 创建一个二维数组
         int[][] array1 = new int[11][11];
-        array1[1][2]=1;
-        array1[2][3]=2;
+        array1[1][2] = 1;
+        array1[2][3] = 2;
         //2. 输出原始数组
         System.out.println("---原始二维数组---");
         for (int[] row : array1) {
             for (int data : row) {
-                System.out.printf("%d\t",data);
+                System.out.printf("%d\t", data);
             }//换行
             System.out.println();
         }
@@ -42,14 +42,14 @@ public class SparseArray {
         //3.2 创建稀疏数组
         int[][] sparseArray = new int[sum + 1][3];
         // 初始化稀疏数组 第一行
-        sparseArray[0][0]= array1.length;
-        sparseArray[0][1]=array1.length;
-        sparseArray[0][2]=sum;
+        sparseArray[0][0] = array1.length;
+        sparseArray[0][1] = array1.length;
+        sparseArray[0][2] = sum;
 
         int count = 0;
         for (int i = 0; i < array1.length; i++) {
             for (int j = 0; j < array1.length; j++) {
-                if (array1[i][j]!=0){
+                if (array1[i][j] != 0) {
                     count++;
                     sparseArray[count][0] = i;
                     sparseArray[count][1] = j;
@@ -74,9 +74,9 @@ public class SparseArray {
             array2[sparseArray[i][0]][sparseArray[i][1]] = sparseArray[i][2];
         }
         System.out.println("恢复后的二维数组");
-        for (int[] row: array2){
-            for(int data : row){
-                System.out.printf("%d\t",data);
+        for (int[] row : array2) {
+            for (int data : row) {
+                System.out.printf("%d\t", data);
             }
             System.out.println();
         }

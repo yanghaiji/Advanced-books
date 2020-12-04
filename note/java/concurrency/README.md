@@ -12,3 +12,5 @@
 - [线程本地存储模式：没有共享，就没有伤害](designpattern/ThreadLocalPattern.md) 
 - [Guarded Suspension模式：等待唤醒机制的规范实现](designpattern/GuardedSuspension.md) 
 - [Balking模式：再谈线程安全的单例模式](designpattern/Balking.md) 
+- [Thread-Per-Message模式：最简单实用的分工方法](designpattern/ThreadPerMessage.md) 
+- [Worker Thread模式：如何避免重复创建线程](designpattern/WorkerThread.md) 

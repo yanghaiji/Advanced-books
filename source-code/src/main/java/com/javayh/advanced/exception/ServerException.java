@@ -9,7 +9,7 @@ package com.javayh.advanced.exception;
  * @version 1.0.0
  * @since 2020-09-14
  */
-public class ServerException extends Exception{
+public class ServerException extends Exception {
 
     public ServerException(String message) {
         super(message);

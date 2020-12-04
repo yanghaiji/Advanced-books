@@ -15,11 +15,12 @@ import org.slf4j.LoggerFactory;
  * @version 1.0.0
  * @since 2020-09-14
  */
-public class TomcatWebServerFactory<T> implements ServerFactory<Tomcat>{
+public class TomcatWebServerFactory<T> implements ServerFactory<Tomcat> {
 
     Logger logger = LoggerFactory.getLogger(TomcatWebServerFactory.class);
 
     private Tomcat tomcat;
+
     @SneakyThrows
     @Override
     public Tomcat create(int port) {
@@ -32,7 +33,7 @@ public class TomcatWebServerFactory<T> implements ServerFactory<Tomcat>{
     @Override
     public void start() {
         logger.info("------start------");
-        logger.info("------"+tomcat.getPort()+"------");
+        logger.info("------" + tomcat.getPort() + "------");
         logger.info("------start------");
     }
 
