@@ -3,30 +3,14 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.3.1.RELEASE</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <groupId>com.javayh.advanced</groupId>
+        <artifactId>java-advanced</artifactId>
+        <version>1.0.0.RELEASE</version>
     </parent>
-    <groupId>com.javayh.advanced</groupId>
     <artifactId>source-code</artifactId>
     <version>1.0.0.RELEASE</version>
     <name>source-code</name>
     <description>source-code</description>
-
-    <properties>
-        <java.version>14</java.version>
-        <spring-boot.version>2.3.1.RELEASE</spring-boot.version>
-        <maven.compiler.source.version>14</maven.compiler.source.version>
-        <maven.compiler.target.version>14</maven.compiler.target.version>
-        <maven.compiler.encoding>UTF-8</maven.compiler.encoding>
-        <maven.compiler.compilerArgs>--enable-preview</maven.compiler.compilerArgs>
-        <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
-        <maven-resources-plugin.version>3.1.0</maven-resources-plugin.version>
-        <maven-source-plugin.version>3.0.1</maven-source-plugin.version>
-        <maven-surefire-plugin.version>2.22.0</maven-surefire-plugin.version>
-        <mybatis.version>2.0.0</mybatis.version>
-    </properties>
 
     <dependencies>
         <dependency>
@@ -89,6 +73,10 @@
             <groupId>cn.afterturn</groupId>
             <artifactId>easypoi-spring-boot-starter</artifactId>
             <version>4.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-all</artifactId>
         </dependency>
     </dependencies>
 
