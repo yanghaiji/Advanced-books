@@ -13,7 +13,7 @@
 ### [一.Java 核心技术](note/java/README.md)
 
  - [1.Java 基础](note/java/base/README.md)
- - [2.数据结构](note/java/datastructure/README.md)
+ - [2.数据结构与算法](note/java/datastructureAlgorithm/README.md)
  - [3.Java collection](note/java/collection/README.md)
  - [4.Java NIO](note/java/nio/README.md)    
  - [5.Java 并发实战与并发设计模式](note/java/concurrency/README.md)    

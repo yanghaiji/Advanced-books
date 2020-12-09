@@ -21,14 +21,14 @@
 ### 树ADT 
 树抽象类型要支持以下的基本方法：
 
-![tree ADT](../../../../doc/java/datastructure/tree/tree01.png)
+![tree ADT](../../../../../doc/java/datastructure/tree/tree01.png)
 
 不同的应用问题会要求树结构提供不同方法。这方面的差异太大，我
 们无法在树 ADT 中定义出通用的更新操作。在后续章节的讨论中，我们将结合各种应用问题，陆续
 给出一些具体的更新操作的实现。
 
 ###  树的Java接口
-[原始代码所在目录请点击这里](../../../../source-code/src/main/java/com/javayh/advanced/java/datastructure/tree)
+[原始代码所在目录请点击这里](../../../../../source-code/src/main/java/com/javayh/advanced/java/datastructure/tree)
 ```java
 public interface Tree<E>
 {
@@ -221,7 +221,7 @@ public class TreeLinkedList<E> implements Tree<E> {
  }
 } 
 ```
-![tree PreorderTraversal](../../../../doc/java/datastructure/tree/tree02.png)
+![tree PreorderTraversal](../../../../../doc/java/datastructure/tree/tree02.png)
 
 对称地，对任一（子）树的后序遍历将首先递归地对根节点下的各棵子树进行后序遍历，最后
 才访问根节点。由后序遍历生成的节点序列，称作后序遍历序列。
@@ -240,7 +240,7 @@ public class TreeLinkedList<E> implements Tree<E> {
  }
 } 
 ```
-![tree PostorderTraversal](../../../../doc/java/datastructure/tree/tree03.png)
+![tree PostorderTraversal](../../../../../doc/java/datastructure/tree/tree03.png)
 
 #### 层次遍历
 
@@ -270,7 +270,7 @@ public class TreeLinkedList<E> implements Tree<E> {
 } 
 ```
 
-![tree LevelorderTraversal](../../../../doc/java/datastructure/tree/tree04.png)
+![tree LevelorderTraversal](../../../../../doc/java/datastructure/tree/tree04.png)
 
 #### 树迭代器
 ```java
@@ -356,7 +356,7 @@ public class IteratorTree<E> implements Iterator<E> {
 
 二叉树抽象类型需要支持以下的基本方法：
 
-![二叉树ADT ](../../../../doc/java/datastructure/tree/tree05.png)
+![二叉树ADT ](../../../../../doc/java/datastructure/tree/tree05.png)
 
 与普通的树一样，不同的应用问题可能会在上述操作之外要求二叉树结构提供更多的方法。这
 些操作多属更新类操作，而且具体功能差异极大。在此，我们只能在二叉树 ADT 中定义相对通用的
@@ -965,7 +965,7 @@ O(1)时间内返回相应的变量，即可实现相应的功能。
 前节点及其祖先的规模记录，以便后续的查询，`updateSize()`方法的功能正在于此。请注意，在这里，
 我们允许直接对任何节点执行这一操作。
 
-![updateSize](../../../../doc/java/datastructure/tree/tree06.png)
+![updateSize](../../../../../doc/java/datastructure/tree/tree06.png)
 
 > 若节点 v 的左、右孩子分别为 lc 和 rc，则 size(v) = 1 + size(lc) + size(rc)
 

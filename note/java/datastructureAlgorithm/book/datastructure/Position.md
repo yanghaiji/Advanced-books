@@ -5,7 +5,7 @@
 ### 位置ADT
 所谓“位置”，就是支持以下方法的一种数据类型
 
-![linked01](../../../../doc/java/datastructure/position/position01.png)
+![linked01](../../../../../doc/java/datastructure/position/position01.png)
 
 按线性次序排列的一组位置，就构成了一个列表。在列表中，各个位置都是相对而言的⎯⎯相
 对于它的前、后邻居。在列表中，除第一个（最后一个）位置外，每个位置都有唯一的前驱（后继）

@@ -56,10 +56,10 @@
             // tabAt() casTabAt() 采用的是 Unsafe 直接操作虚拟机 ，
             // 如果对 Unsafe 不了解 可以在阅读 https://github.com/yanghaiji/Advanced-books/blob/master/note/java/concurrency/README.md
             else if ((f = tabAt(tab, i = (n - 1) & hash)) == null) {
-                if (casTabAt(tab, i, null, new Node<K,V>(hash, key, value)))
+                if (casTabAt(tab, i, null, new Node<K,V>(hash, key, value)))//通过cas插入新值
                     break;                   // no lock when adding to empty bin
             }
-            // 如果 条件成立，说明 正在调整大小，这是需要进行转移，通过 Unsafe 进行复制，将原始的数据复制到一个新的空间
+            // 如果 条件成立，说明 正在调整大小(扩容)，当前进行帮助进行，通过 Unsafe 进行复制，将原始的数据复制到一个新的空间
             else if ((fh = f.hash) == MOVED)
                 tab = helpTransfer(tab, f);
             else if (onlyIfAbsent // check first node without acquiring lock
@@ -72,6 +72,7 @@
                 synchronized (f) {
                     //如果tab[i]不为0，且容量足够，那么这时需要对当前hash值对应的Node加锁，防止其他线程改变该Node，然后找到和key相同
                     //的键值对，把value替换旧value，返回旧value
+                    //为什么再次检查？因为不能保证，当前线程运行到这里，有没有其他线程对该节点进行修改
                     if (tabAt(tab, i) == f) {
                         if (fh >= 0) {
                             binCount = 1;
@@ -124,4 +125,55 @@
     }
 ``` 
 
+```java
+    //transient volatile Node<K,V>[] table; tab变量确实是volatile
+    static final <K,V> Node<K,V> tabAt(Node<K,V>[] tab, int i) {//获取table中索引 i 处的元素。
+        return (Node<K,V>)U.getObjectVolatile(tab, ((long)i << ASHIFT) + ABASE);//如果tab是volatile变量，则该方法保证其可见性。
+    }
+    //通过CAS设置table索引为 i 处的元素。
+    static final <K,V> boolean casTabAt(Node<K,V>[] tab, int i,
+                                        Node<K,V> c, Node<K,V> v) {
+        return U.compareAndSwapObject(tab, ((long)i << ASHIFT) + ABASE, c, v);
+    }
+    //transient volatile Node<K,V>[] table; tab变量确实是volatile
+    static final <K,V> void setTabAt(Node<K,V>[] tab, int i, Node<K,V> v) {//修改table 索引 i 处的元素。
+        U.putObjectVolatile(tab, ((long)i << ASHIFT) + ABASE, v);//如果tab是volatile变量，则该方法保证其可见性。
+    }
+```
+
+### initTable()
+
+```java
+private final Node<K,V>[] initTable() {
+    Node<K,V>[] tab; int sc;
+    while ((tab = table) == null || tab.length == 0) {
+        // 赋值sc。并当sizeCtl == -1 即当前有线程正在执行初始化
+        if ((sc = sizeCtl) < 0)
+            //yield()暂停当前正在执行的线程，执行其他线程
+            //（这是一个通知，但是这是不一定会让当前线程停止，要取决于线程调度器）
+            //就是我想让出资源，但是这只是一厢情愿的事情，线程调度器会考虑你的方法，但是不一定采纳。
+            Thread.yield();
+        //修改 sizeCtl 的值为 -1。 SIZECTL 为 sizeCtl 的内存地址。
+        else if (U.compareAndSwapInt(this, SIZECTL, sc, -1)) {
+            try {
+                //执行初始化过程
+                if ((tab = table) == null || tab.length == 0) {
+                    //sc在上面已经赋值，=原来 sizeCtl的值。是非讨厌JDK源码这种赋值方式。
+                    int n = (sc > 0) ? sc : DEFAULT_CAPACITY;
+                    @SuppressWarnings("unchecked")
+                    //创建一个sc长度的table。
+                    Node<K,V>[] nt = (Node<K,V>[])new Node<?,?>[n];
+                    table = tab = nt;
+                    sc = n - (n >>> 2);
+                }
+            } finally {
+                //初始化完成, sizeCtl重新赋值为当前数组的长度。
+                sizeCtl = sc;
+            }
+            break;
+        }
+    }
+    return tab;
+}
+```
 

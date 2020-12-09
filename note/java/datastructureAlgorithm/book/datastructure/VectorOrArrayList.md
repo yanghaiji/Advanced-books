@@ -17,7 +17,7 @@
 ### 向量ADT
 向量 ADT 定义了如下方法:
 
-![vector01](../../../../doc/java/datastructure/vector/vector01.png)
+![vector01](../../../../../doc/java/datastructure/vector/vector01.png)
 
 请注意其中的 insertAtRank()方法，该方法之所以要返回被插入的元素，是为了使程序员可以链式编程。
 
@@ -26,8 +26,8 @@
 现，就可以通过广义的“下标”直接访问序列中对应的元素。如 表三.2 所示，随着序列的更新，其
 中元素的秩也会不断变化。
 
-![vector02](../../../../doc/java/datastructure/vector/vector02.png)
-![vector03](../../../../doc/java/datastructure/vector/vector03.png)
+![vector02](../../../../../doc/java/datastructure/vector/vector02.png)
+![vector03](../../../../../doc/java/datastructure/vector/vector03.png)
 
 - 意外错
 当作为参数的秩越界时，对应的意外错为ExceptionBoundaryViolation
@@ -94,7 +94,7 @@ public interface Vector<E> {
 向量提供的以上方法似乎不多，但如图 所示，通过这些方法，完全可以实现之前定
 义的双端队列ADT中的所有方法。
 
-![vector04](../../../../doc/java/datastructure/vector/vector04.png)
+![vector04](../../../../../doc/java/datastructure/vector/vector04.png)
 
 ### 基于数组的简单实现
 基于数组，可以直接实现向量 ADT。我们借用一个数组 A[]，其中 A[i]分别存放一个引用，指向
@@ -196,7 +196,7 @@ insertAtRank()方法就会做如下处理：
 大时，就会蜕去原来的外壳，换上一身更大的外壳。具体过程如图所示。不必担心原先的数组，
 它占用的空间将被内存回收器自动回收   
 
-![vector05](../../../../doc/java/datastructure/vector/vector05.png) 
+![vector05](../../../../../doc/java/datastructure/vector/vector05.png) 
 
 ```java
 public class ExtArrayVector<E> implements Vector<E>{

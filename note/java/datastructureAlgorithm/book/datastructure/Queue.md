@@ -20,15 +20,15 @@
 插入的对象首先被删除（FIFO）。
 队列ADT 首先支持下面的两个基本方法：
 
-![queue01](../../../../doc/java/datastructure/queue/queue01.png)
+![queue01](../../../../../doc/java/datastructure/queue/queue01.png)
 
 此外，与栈ADT 类似地，队列ADT 还支持如下的方法：
 
-![queue02](../../../../doc/java/datastructure/queue/queue02.png)
+![queue02](../../../../../doc/java/datastructure/queue/queue02.png)
 
 给出了从一个空队列开始，在依次执行一系列操作的过程中，队列中内容的相应变化。
 
-![queue03](../../../../doc/java/datastructure/queue/queue03.png)
+![queue03](../../../../../doc/java/datastructure/queue/queue03.png)
 
 队列的应用十分广泛，无论是商店、剧院、机场还是银行、医院，凡是按照“先到的客户优先
 接受服务”原则的场合，都可以利用队列这一数据结构来编排相应的服务。
