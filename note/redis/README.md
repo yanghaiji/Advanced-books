@@ -12,4 +12,5 @@
 
 ### 二.常用命令 
 - [🔖 字符串命令](book/commands/String.md)
+- [🔖 Hash命令](book/commands/Hashs.md)
 
