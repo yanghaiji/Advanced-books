@@ -13,4 +13,10 @@
 ### 二.常用命令 
 - [🔖 字符串命令](book/commands/String.md)
 - [🔖 Hash命令](book/commands/Hashs.md)
+- [🔖 List命令](book/commands/List.md)
+
+### 三.配置与常用数据结构
+- [🔖 RedisConf](book/conf/RedisConf.md)
+
+
 
