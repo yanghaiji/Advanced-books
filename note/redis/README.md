@@ -14,9 +14,16 @@
 - [🔖 字符串命令](book/commands/String.md)
 - [🔖 Hash命令](book/commands/Hashs.md)
 - [🔖 List命令](book/commands/List.md)
+- [🔖 Set命令]()
+- [🔖 ZSet命令]()
+- [🔖 bitmaps命令]()
+- [🔖 hyperloglogs命令]()
 
 ### 三.配置与常用数据结构
 - [🔖 RedisConf](book/conf/RedisConf.md)
+
+### 四.项目实战
+- [🔖 Spring与Redis整合](book/actualCombat/SpringIntegrationRedis.md)
 
 
 
