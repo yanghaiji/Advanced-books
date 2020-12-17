@@ -25,5 +25,9 @@
 ### 四.项目实战
 - [🔖 Spring与Redis整合](book/actualCombat/SpringIntegrationRedis.md)
 
+### 五.Redis开发规范
+- [🔖 Redis开发规范](book/actualCombat/RedisStandard.md)
+- [🔖 大厂Redis 性能优化的 13 条军规](book/actualCombat/RedisStandard13.md)
+
 
 
