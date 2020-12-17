@@ -25,7 +25,18 @@ spring:
       validation-timeout: 5000
       read-only: false
       login-timeout: 5
-
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    database: 0
+#    password:
+    timeout: 6000
+# 链接池
+    lettuce:
+      pool:
+        max-active: 10
+        max-idle: 10
+        max-wait: 0
 ## mybatis 常用配置
 mybatis:
   ### xml存放路径

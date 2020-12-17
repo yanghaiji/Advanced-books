@@ -12,7 +12,7 @@
 - [10. SET](#SET)
 - [11. MSET](#MSET)
 - [12. SETNX](#SETNX)
-- [12. MSETNX](#MSETNX)
+- [13. MSETNX](#MSETNX)
 
 ### APPEND
 
