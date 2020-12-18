@@ -8,7 +8,7 @@
 
 #### 欢迎来到 Java有货读书馆，以下是为您呈现的目录
 
-### [📕 ✈完整目录直通车 完整目录在这里🌻](完整目录.md)
+### [📕 ✈完整目录直通车 完整目录在这里🌻](note/README.md)
 
 ### [📕 一.Java 核心技术](note/java/README.md)
 ### [📕 二.Java 并发实战与并发设计模式](note/java/concurrency/README.md)   
