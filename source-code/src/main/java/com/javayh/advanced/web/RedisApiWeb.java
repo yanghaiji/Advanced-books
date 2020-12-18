@@ -26,12 +26,12 @@ public class RedisApiWeb {
 
     @GetMapping("test")
     public void redisTest(){
-        redisUtil.addStr("redis","Hello World");
-        System.out.println(redisUtil.getStr("redis"));
+        redisUtil.set("redis","Hello World");
+        System.out.println(redisUtil.get("redis"));
         Map<String,Object> map = new HashMap<>();
         map.put("hash01","hash02");
-        redisUtil.setHashTime("myHash",map,100);
-        System.out.println(redisUtil.getHashAll("myHash"));
+        redisUtil.hmset("myHash",map,100);
+        System.out.println(redisUtil.hmget("myHash"));
     }
 
 }

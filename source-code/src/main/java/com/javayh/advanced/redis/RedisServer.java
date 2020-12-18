@@ -1,108 +1,19 @@
-## SpringBoot 集成 Redis
+package com.javayh.advanced.redis;
 
-> SpringBoot 2.3.1 
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
-### 添加依赖
-这里我们采用的是 `lettuce` 所以必须引入`commons-pool2`
-
-```java
- <dependency>
-     <groupId>org.springframework.boot</groupId>
-     <artifactId>spring-boot-starter-data-redis</artifactId>
- </dependency>
- <dependency>
-     <groupId>org.apache.commons</groupId>
-     <artifactId>commons-pool2</artifactId>
- </dependency>
-```
-
-### 配置文件
-```java
-spring: 
-  redis:
-    host: 127.0.0.1
-    port: 6379
-    database: 0
-#    password:
-    timeout: 6000
-# 链接池
-    lettuce:
-      pool:
-        max-active: 10
-        max-idle: 10
-        max-wait: 0
-```
-
-### 自定义 RedisConfiguration
-```java
-public class RedisConfiguration {
-
-    private final LettuceConnectionFactory lettuceConnectionFactory;
-
-    public RedisConfiguration(LettuceConnectionFactory lettuceConnectionFactory) {
-        this.lettuceConnectionFactory = lettuceConnectionFactory;
-    }
-
-    @Bean("redisTemplate")
-    @ConditionalOnProperty(name = "spring.redis.host", matchIfMissing = true)
-    public RedisTemplate<String, Object> getSingleRedisTemplate() {
-        RedisTemplate<String, Object> redisTemplate = new RedisTemplate<String, Object>();
-        RedisSerializer redisObjectSerializer = new RedisObjectSerializer();
-        redisTemplate.setConnectionFactory(lettuceConnectionFactory);
-        redisTemplate.setKeySerializer(new StringRedisSerializer());
-        redisTemplate.setValueSerializer(redisObjectSerializer);
-        redisTemplate.setHashValueSerializer(redisObjectSerializer);
-        redisTemplate.afterPropertiesSet();
-        return redisTemplate;
-    }
-
-    @Bean
-    public HashOperations<String, String, String> hashOperations(StringRedisTemplate stringRedisTemplate) {
-        return stringRedisTemplate.opsForHash();
-    }
-
-    @Bean
-    public ListOperations<String,Object> listOperations(RedisTemplate<String, Object> redisTemplate) {
-        return redisTemplate.opsForList();
-    }
-
-    @Bean
-    public ZSetOperations<String,Object> zSetOperations(RedisTemplate<String, Object> redisTemplate) {
-        return redisTemplate.opsForZSet();
-    }
-
-    @Bean
-    public SetOperations<String,Object> setOperations(RedisTemplate<String, Object> redisTemplate) {
-        return redisTemplate.opsForSet();
-    }
-
-    @Bean
-    public ValueOperations<String,Object> valueOperations(RedisTemplate<String, Object> redisTemplate) {
-        return redisTemplate.opsForValue();
-    }
-
-    /**
-     * redis工具类
-     */
-    @Bean("redisUtil")
-    public RedisUtil redisUtil(RedisTemplate<String, Object> redisTemplate,
-                               StringRedisTemplate stringRedisTemplate,
-                               HashOperations<String, String, String> hashOperations,
-                               ListOperations<String,Object> listOperations,
-                               ZSetOperations<String,Object>zSetOperations,
-                               SetOperations<String,Object> setOperations,
-                               ValueOperations<String,Object> valueOperations) {
-        return new RedisUtil(redisTemplate, stringRedisTemplate,hashOperations,listOperations,
-                zSetOperations,setOperations,valueOperations);
-    }
-}
-
-```
-
-### 自定义 RedisUtil
-
-这里只截取了一部分，更多的源码请移步source-code 内的redis 目录
-```java
+/**
+ * <p>
+ *      redis 通用方法
+ * </p>
+ *
+ * @author Dylan
+ * @version 1.0.0
+ * @since 2020-12-18 11:40 AM
+ */
+public interface RedisServer<K,V> {
 
     /**
      * 指定缓存失效时间
@@ -455,27 +366,4 @@ public class RedisConfiguration {
      */
     V rifhtPop(K listKey);
 
-```
-
-### 测试
-
-```java
-@RestController
-@RequestMapping(value = "/redis/")
-public class RedisApiWeb {
-    @Autowired
-    private RedisUtil redisUtil;
-
-    @GetMapping("test")
-    public void redisTest(){
-        redisUtil.set("redis","Hello World");
-        System.out.println(redisUtil.get("redis"));
-        Map<String,Object> map = new HashMap<>();
-        map.put("hash01","hash02");
-        redisUtil.hmset("myHash",map,100);
-        System.out.println(redisUtil.hmget("myHash"));
-    }
-
-
 }
-```
