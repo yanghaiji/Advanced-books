@@ -10,7 +10,7 @@ package com.javayh.advanced.java.loader;
  * @since 2020-10-15
  */
 public class ClassLoaderTest {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ClassNotFoundException {
         // 获取系统类加载器
         ClassLoader systemClassLoader = ClassLoader.getSystemClassLoader();
         System.out.println(systemClassLoader);
@@ -30,5 +30,9 @@ public class ClassLoaderTest {
         // 获取String类型的加载器
         ClassLoader classLoader1 = String.class.getClassLoader();
         System.out.println(classLoader1);
+
+        ContextClassLoader contextClassLoader = new ContextClassLoader("C:\\Dylan\\");
+        Class advancedApplication = contextClassLoader.findClass("AdvancedApplication");
+        System.out.println(advancedApplication.getClassLoader().getClass().getName());
     }
 }
