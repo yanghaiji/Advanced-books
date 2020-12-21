@@ -18,6 +18,7 @@
 - [🔖 ZSet命令]()
 - [🔖 bitmaps命令]()
 - [🔖 hyperloglogs命令]()
+- [🔖 geospatial命令](book/commands/Geospatial.md)
 
 ### 三.配置与常用数据结构
 - [🔖 RedisConf](book/conf/RedisConf.md)
