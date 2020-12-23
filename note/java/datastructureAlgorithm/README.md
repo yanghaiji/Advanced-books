@@ -15,5 +15,6 @@
 ##### [排序算法](README.md)
 - [🔖 冒泡排序](book/algorithm/BubbleSort.md)
 - [🔖 快速排序](book/algorithm/QuickSort.md)
+- [🔖 选择排序](book/algorithm/SelectSort.md)
    
    
