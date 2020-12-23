@@ -40,7 +40,7 @@
 - [🔖 树](java/datastructureAlgorithm/book/datastructure/Tree.md)
 - [🔖  跳表](java/datastructureAlgorithm/book/datastructure/skipList.md)
 #### [🔖 2.2 算法篇](java/datastructureAlgorithm/README.md)
-##### [排序算法](java/datastructureAlgorithm/README.md)
+##### [🔖 排序算法](java/datastructureAlgorithm/README.md)
 - [🔖 冒泡排序](java/datastructureAlgorithm/book/algorithm/BubbleSort.md)
 - [🔖 快速排序](java/datastructureAlgorithm/book/algorithm/QuickSort.md)
 - [🔖 选择排序](java/datastructureAlgorithm/book/algorithm/SelectSort.md)
