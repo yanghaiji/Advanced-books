@@ -13,8 +13,8 @@
 - [🔖  跳表](book/datastructure/skipList.md)
 #### 算法
 ##### [排序算法](README.md)
-- [🔖 冒泡排序](book/algorithm/BubbleSort.md)
-- [🔖 快速排序](book/algorithm/QuickSort.md)
-- [🔖 选择排序](book/algorithm/SelectSort.md)
+- [🔖 冒泡排序](book/algorithm/sort/BubbleSort.md)
+- [🔖 快速排序](book/algorithm/sort/QuickSort.md)
+- [🔖 选择排序](book/algorithm/sort/SelectSort.md)
 
    

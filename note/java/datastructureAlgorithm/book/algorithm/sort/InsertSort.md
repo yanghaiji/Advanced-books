@@ -12,7 +12,7 @@
 
 ### 插入排序思路图
 
-![InsertSort01](img/InsertSort01.jpg)
+![InsertSort01](../img/InsertSort01.jpg)
 
 ### 插入排序法应用实例
 
