@@ -11,15 +11,15 @@
 ### 双端队列的ADT
 相比于栈和队列，双端队列的抽象数据类型要复杂很多，其中基本的方法如下：
 
-![deque01](../../../../../doc/java/datastructure/deque/deque01.png)
+![deque01](img/deque/deque01.png)
 
 此外，还可能支持以下方法：
 
-![deque02](../../../../../doc/java/datastructure/deque/deque02.png)
+![deque02](img/deque/deque02.png)
 
 给出了从一个空双端队列开始，在依次执行一系列操作的过程中，队列中内容的相应变化。
 
-![deque03](../../../../../doc/java/datastructure/deque/deque03.png)
+![deque03](img/deque/deque03.png)
 
 ### 双端队列的接口
 双端队列接口如代码所示
@@ -174,7 +174,7 @@ public class Node<E> implements Position<E> {
 
 ### 基于双向链表实现的双端队列
 
-![deque04](../../../../../doc/java/datastructure/deque/deque04.png)
+![deque04](img/deque/deque04.png)
 
 在基于Node类实现双向链表的时候，为了使编程更加简洁，通常我们都要在最前端和最后
 端各设置一个哑元节点（Dummy node）。这两个节点分别称作头节点（Header node）和尾节点
@@ -183,17 +183,17 @@ public class Node<E> implements Position<E> {
 结构，如上图所示。
 - 首、末节点的插入
 对双端队列的插入操作，与单链表类似。图 给出了在链表前端插入节点的过程。
-![deque05](../../../../../doc/java/datastructure/deque/deque05.png)
+![deque05](img/deque/deque05.png)
 
 - 首、末节点的删除
 更重要的是，我们可以在O(1)时间内删除双向链表任何一端的节点。如图 所示的，就是
 删除末节点的过程。首节点的删除过程是对称的，请读者自行给出。
-![deque06](../../../../../doc/java/datastructure/deque/deque06.png)
+![deque06](img/deque/deque06.png)
 需要特别指出的是，与单链表不同，这里能够在常数时间内删除末节点。之所以能够这样，是
 因为可以直接通过末节点的prev 引用找到它的直接前驱（新的末节点），而无需遍历整个链表。
 
 - 一般节点的插入与删除
-![deque07](../../../../../doc/java/datastructure/deque/deque07.png)
+![deque07](img/deque/deque07.png)
 
 一般地，若要在相邻的一对节点p 和q 之间插入新元素e，我们只需生成一个新节点t，将e
 存放至其中，然后将t 的prev 和next 引用分别指向p 和q，然后让p（q）的next（prev）引用指向t。
