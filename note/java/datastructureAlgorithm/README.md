@@ -14,7 +14,10 @@
 #### 算法
 ##### [排序算法](README.md)
 - [🔖 冒泡排序](book/algorithm/sort/BubbleSort.md)
+- [🔖 递归排序](book/algorithm/sort/Recursion.md)
 - [🔖 快速排序](book/algorithm/sort/QuickSort.md)
 - [🔖 选择排序](book/algorithm/sort/SelectSort.md)
+- [🔖 插入排序](book/algorithm/sort/InsertSort.md)
+- [🔖 希尔排序](book/algorithm/sort/DonaldShell.md)
 
    
