@@ -12,7 +12,7 @@
 
 ### [📕 一.Java 核心技术](note/java/README.md)
 ### [📕 二.Java 并发实战与并发设计模式](note/java/concurrency/README.md)   
-### [📕 三.数据结构与算法](note/java/datastructureAlgorithm/README.md)  
+### [📕 三.数据结构与算法](note/datastructureAlgorithm/README.md)  
 ### [📕 四.HotSpot虚拟机垃圾收集进阶](note/jvm/README.md)
 ### [📕 五.Spring 进阶篇](note/spring/README.md)
 ### [📕 六.Mysql 进阶篇](note/mysql/README.md)

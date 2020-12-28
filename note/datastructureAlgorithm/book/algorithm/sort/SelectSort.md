@@ -12,11 +12,11 @@
  
 ###  选择排序思路分析图
 
-![SelectSort](img/SelectSort.jpg)
+![SelectSort](../img/SelectSort.jpg)
 
 	对一个数组的选择排序再进行讲解
 
-![SelectSort](img/SelectSort01.jpg)
+![SelectSort](../img/SelectSort01.jpg)
 
 ### 选择排序应用实例
 

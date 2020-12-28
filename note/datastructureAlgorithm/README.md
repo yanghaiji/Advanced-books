@@ -13,8 +13,14 @@
 - [🔖  跳表](book/datastructure/skipList.md)
 #### 算法
 ##### [排序算法](README.md)
-- [🔖 冒泡排序](book/algorithm/BubbleSort.md)
-- [🔖 快速排序](book/algorithm/QuickSort.md)
-- [🔖 选择排序](book/algorithm/SelectSort.md)
+- [🔖 冒泡排序](book/algorithm/sort/BubbleSort.md)
+- [🔖 递归排序](book/algorithm/sort/Recursion.md)
+- [🔖 快速排序](book/algorithm/sort/QuickSort.md)
+- [🔖 选择排序](book/algorithm/sort/SelectSort.md)
+- [🔖 插入排序](book/algorithm/sort/InsertSort.md)
+- [🔖 希尔排序](book/algorithm/sort/DonaldShell.md)
+##### [查找算法](README.md)
+- [🔖 线性查找](book/algorithm/search/SeqSearch.md)
+- [🔖 二分查找](book/algorithm/search/BinarySearch.md)
 
    

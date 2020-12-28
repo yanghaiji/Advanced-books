@@ -12,7 +12,7 @@ LIFO）的原则⎯⎯也就是说，对象可以任意插入栈中，但每次�
 比如一摞椅子（如图二.1 所示），只能将最顶端的椅子移出，也只能将新椅子放到最顶端⎯⎯这两
 种操作分别称作入栈（Push）和退栈（Pop）。
 
-![由椅子构成的栈](../../../../../doc/java/datastructure/stack/yizi.jpg)
+![由椅子构成的栈](img/stack/yizi.jpg)
 由椅子构成的栈
 
 栈是最基本的数据结构之一，在实际应用中几乎无所不在。例如，网络浏览器会将用户最近访
@@ -25,15 +25,15 @@ LIFO）的原则⎯⎯也就是说，对象可以任意插入栈中，但每次�
 
 作为一种抽象数据类型，栈必须支持以下方法：
 
-![adt01](../../../../../doc/java/datastructure/stack/adt01.png)
+![adt01](img/stack/adt01.png)
 
 此外，还可以定义如下的方法：
 
-![adt02](../../../../../doc/java/datastructure/stack/adt02.png)
+![adt02](img/stack/adt02.png)
 
 给出了从一个空栈开始，在依次执行一系列操作的过程中，栈中内容的相应变化
 
-![adt03](../../../../../doc/java/datastructure/stack/adt03.png)
+![adt03](img/stack/adt03.png)
 
 ### Stack
 由于其重要性，在Java 的java.util 包中已经专门为栈结构内建了一个类⎯⎯java.util.Stack。
@@ -93,7 +93,7 @@ public interface Stack<E> {
 - 思路
 为了实现栈接口，我们可以用一个数组来存放其中的元素。具体来说，就是使用一个容量为N的数组S，再加上一个变量top 来只是当前栈顶的位置。
 
-![arrayStack](../../../../../doc/java/datastructure/stack/arrayStack.png)
+![arrayStack](img/stack/arrayStack.png)
 
 由于Java数组的元素都是从0 开始编号，所以top必须初始化为-1；反过来，只要top = -1，就
 说明栈为空。另一方面，由于数组的容量固定，因此有可能会出现栈溢出的情况。为此，我们专门
@@ -220,7 +220,7 @@ JVM 还会通过Java 栈将参数传递给被调用的方法。具体来说，Ja
 果将x 作为参数传递给方法N，实际上传递的是对象o 的内存地址。这个地址被复制给N 的某个局
 部变量y 之后，y 也将和x 一样地指向对象o。
 
-![java_stack](../../../../../doc/java/datastructure/stack/java_stack.png)
+![java_stack](img/stack/java_stack.png)
 
 java方法栈的实例：方法main调用方法N，方法N再调用方法M
 

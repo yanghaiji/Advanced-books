@@ -14,7 +14,7 @@
 所谓链表（Linked list），就是按线性次序排列的一组数据节点。如图 所示，每个节点都是
 一个对象，它通过一个引用element指向对应的数据元素，同时还通过一个引用next指向下一节点。
 
-###### ![linked01](../../../../../doc/java/datastructure/linked/linked01.png)
+###### ![linked01](img/linked/linked01.png)
 
 节点间这种相互指向的关系，乍看起来有循环引用之嫌，然而实际上却完全可行，而且不难实
 现。每个节点的next 引用都相当于一个链接或指针，指向另一节点。借助于这些next 引用，我们
@@ -91,13 +91,13 @@ public class Node<E> implements Position<E> {
 对于如图(a)所示的单链表，为了插入一个节点，我们首先要创建该节点，然后将其next
 引用指向当前的首节点（图二(b)），然后将队列的head引用指向新插入的节点（图二(c)）。
 
-![linked02](../../../../../doc/java/datastructure/linked/linked02.png)
+![linked02](img/linked/linked02.png)
 
 - 首节点的删除
 反之，对于如图二(a)所示的单链表，为了删除首节点，我们首先将首节点的next引用复制一
 份，然后才删除该节点（图二(b)），最后将表头引用设置为先前复制的引用（图二(c)）。
 
-![linked03](../../../../../doc/java/datastructure/linked/linked03.png)
+![linked03](img/linked/linked03.png)
 
 - 末节点的插入
 假定我们借助一个引用tail始终指向的末节点，则在表尾插入新节点也只需O(1)时间。对于如图
@@ -105,7 +105,7 @@ public class Node<E> implements Position<E> {
 置为空，并将当前末节点的next引用指向该新节点（图二(b)），最后将tail引用指向新节点（图
 二(c)）。需要特别提醒的是，上述操作的次序很有讲究，不能随意调换。
 
-![linked04](../../../../../doc/java/datastructure/linked/linked04.png)
+![linked04](img/linked/linked04.png)
 
 ### 基于单链表实现栈
 
