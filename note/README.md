@@ -47,6 +47,8 @@
 - [🔖 选择排序](java/datastructureAlgorithm/book/algorithm/sort/SelectSort.md)
 - [🔖 插入排序](java/datastructureAlgorithm/book/algorithm/sort/InsertSort.md)
 - [🔖 希尔排序](java/datastructureAlgorithm/book/algorithm/sort/DonaldShell.md)
+##### [查找算法](java/datastructureAlgorithm/README.md)
+- [🔖 线性查找](java/datastructureAlgorithm/book/algorithm/search/SeqSearch.md)
 ## [🔖 三.Java 并发实战与并发设计模式](java/concurrency/README.md)
 - [🔖 Util](java/concurrency/README.md)
   - [🔖 ExecutorService指南](java/concurrency/util/ExecutorService指南.md)  

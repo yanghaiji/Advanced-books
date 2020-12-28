@@ -19,5 +19,7 @@
 - [🔖 选择排序](book/algorithm/sort/SelectSort.md)
 - [🔖 插入排序](book/algorithm/sort/InsertSort.md)
 - [🔖 希尔排序](book/algorithm/sort/DonaldShell.md)
+##### [查找算法](README.md)
+- [🔖 线性查找](book/algorithm/search/SeqSearch.md)
 
    
