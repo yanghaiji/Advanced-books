@@ -1,6 +1,6 @@
-package com.javayh.advanced.java.algorithm.sort;
+package com.javayh.advanced.algorithm.sort;
 
-import com.javayh.advanced.java.algorithm.SortUtils;
+import com.javayh.advanced.algorithm.SortUtils;
 
 /**
  * <p>

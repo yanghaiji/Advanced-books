@@ -1,4 +1,4 @@
-package com.javayh.advanced.java.algorithm.example;
+package com.javayh.advanced.algorithm.example;
 
 /**
  * <p>

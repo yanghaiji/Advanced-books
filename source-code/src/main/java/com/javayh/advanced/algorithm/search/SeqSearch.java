@@ -1,4 +1,4 @@
-package com.javayh.advanced.java.algorithm.search;
+package com.javayh.advanced.algorithm.search;
 
 /**
  * <p>

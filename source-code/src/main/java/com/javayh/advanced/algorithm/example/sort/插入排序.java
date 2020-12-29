@@ -1,4 +1,4 @@
-package com.javayh.advanced.java.algorithm.example.sort;
+package com.javayh.advanced.algorithm.example.sort;
 
 import java.util.Arrays;
 

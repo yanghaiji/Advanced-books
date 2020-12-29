@@ -1,4 +1,4 @@
-package com.javayh.advanced.java.algorithm.recursion;
+package com.javayh.advanced.algorithm.recursion;
 
 /**
  * <p>

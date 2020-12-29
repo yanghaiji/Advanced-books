@@ -1,4 +1,4 @@
-package com.javayh.advanced.java.algorithm;
+package com.javayh.advanced.algorithm;
 
 import org.apache.commons.lang3.time.DateFormatUtils;
 

@@ -50,6 +50,7 @@
 ##### [查找算法](datastructureAlgorithm/README.md)
 - [🔖 线性查找](datastructureAlgorithm/book/algorithm/search/SeqSearch.md)
 - [🔖 二分查找](datastructureAlgorithm/book/algorithm/search/BinarySearch.md)
+- [🔖 斐波那契(黄金分割法)查找](datastructureAlgorithm/book/algorithm/search/GoldenSection.md)
 ## [🔖 三.Java 并发实战与并发设计模式](java/concurrency/README.md)
 - [🔖 Util](java/concurrency/README.md)
   - [🔖 ExecutorService指南](java/concurrency/util/ExecutorService指南.md)  
