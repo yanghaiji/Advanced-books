@@ -22,5 +22,8 @@
 ##### [查找算法](README.md)
 - [🔖 线性查找](book/algorithm/search/SeqSearch.md)
 - [🔖 二分查找](book/algorithm/search/BinarySearch.md)
+- [🔖 斐波那契(黄金分割法)查找算法](book/algorithm/search/GoldenSection.md)
+##### [树结构](README.md)
+- [🔖 堆排序](book/algorithm/tree/HeapSort.md)
 
    
