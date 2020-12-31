@@ -10,6 +10,7 @@
 - [🔖 向量与数组](book/datastructure/VectorOrArrayList.md)
 - [🔖 列表](book/datastructure/List.md)
 - [🔖 树](book/datastructure/Tree.md)
+- [🔖 二叉排序树](book/datastructure/BinarySortTree.md)
 - [🔖  跳表](book/datastructure/skipList.md)
 #### 算法
 ##### [排序算法](README.md)
