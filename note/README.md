@@ -38,6 +38,7 @@
 - [🔖 向量与数组](datastructureAlgorithm/book/datastructure/VectorOrArrayList.md)
 - [🔖 列表](datastructureAlgorithm/book/datastructure/List.md)
 - [🔖 树](datastructureAlgorithm/book/datastructure/Tree.md)
+- [🔖 二叉排序树](datastructureAlgorithm/book/datastructure/BinarySortTree.md)
 - [🔖  跳表](datastructureAlgorithm/book/datastructure/skipList.md)
 #### [🔖 2.2 算法篇](datastructureAlgorithm/README.md)
 ##### [🔖 排序算法](datastructureAlgorithm/README.md)
