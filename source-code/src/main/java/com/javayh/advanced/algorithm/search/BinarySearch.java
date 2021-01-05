@@ -28,21 +28,36 @@ public class BinarySearch {
             System.out.println("未找到目标数据");
         }
     }
-
+    /**
+     * 进行一个方法的重载
+     * @param array 原数组
+     * @param key   需要查找的数值
+     * @return      返回元素的下标
+     */
     public static int binarySearch(int[] array, int key){
-        int left = 0;
-        int right = array.length - 1;
-        while (left <= right) {
-            int mid = (right + left) / 2;
+       return binarySearch(array,0,array.length-1, key);
+    }
+
+    /**
+     * 二分查找
+     *
+     * @param array 原数组
+     * @param start 开始下标
+     * @param end   结束下标
+     * @param key   需要查找的数值
+     */
+    private static int binarySearch(int[] array, int start, int end, int key){
+        while (start <= end) {
+            int mid = (start + end) / 2;
             if(array[mid] == key){
                 return mid;
             }
             // 如果大于说明需要向左查找
             else if(array[mid] > key){
-                right = mid-1;
+                end = mid-1;
             }
             else {
-                left = mid +1;
+                start = mid +1;
             }
         }
         return -1;
