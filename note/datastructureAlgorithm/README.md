@@ -22,6 +22,7 @@
 - [🔖 插入排序](book/algorithm/sort/InsertSort.md)
 - [🔖 希尔排序](book/algorithm/sort/DonaldShell.md)
 - [🔖 堆排序](book/algorithm/tree/HeapSort.md)
+- [🔖 KMP算法](https://blog.csdn.net/weixin_38937840/article/details/112286147)
 ##### [查找算法](README.md)
 - [🔖 线性查找](book/algorithm/search/SeqSearch.md)
 - [🔖 二分查找](book/algorithm/search/BinarySearch.md)
