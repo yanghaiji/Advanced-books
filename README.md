@@ -1,4 +1,4 @@
-![🔖 GitLogo](doc/logo/book.jpg)
+![🔖 Logo](doc/logo/book.jpg)
 
 
 <p align="center">
