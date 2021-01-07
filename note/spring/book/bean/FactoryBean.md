@@ -114,7 +114,7 @@ public class FactoryBeanLearn implements FactoryBean<BaseBean>,InitializingBean 
      *       实例化对象
      * </p>
      * @param
-     * @return com.javayh.advanced.spring.bean.BaseBean
+     * @return BaseBean
      */
     private BaseBean buildBaseBean() {
         if (Objects.isNull(customConfigurationProperties)){

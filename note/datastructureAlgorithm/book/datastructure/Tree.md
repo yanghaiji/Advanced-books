@@ -135,7 +135,7 @@ public class TreeLinkedList<E> implements Tree<E> {
      * <p>
      *     返回当前节点的最大弟弟；若没有弟弟，则返回null
      * </p>
-     * @return com.javayh.advanced.datastructure.tree.linked.TreeLinkedList<E>
+     * @return TreeLinkedList<E>
      */
     @Override
     public TreeLinkedList<E> getNextSibling() {
@@ -377,7 +377,7 @@ public interface BinTree<E> {
      *     获取根节点
      * </p>
      * @param
-     * @return com.javayh.advanced.datastructure.tree.bin.BinTreePosition
+     * @return BinTreePosition
      */
     BinTreePosition getRoot();
 
@@ -410,7 +410,7 @@ public interface BinTree<E> {
      *      前序遍历
      * </p>
      * @param
-     * @return com.javayh.advanced.datastructure.Iterator<E>
+     * @return Iterator<E>
      */
     Iterator<E> elementsPreorder();
 
@@ -419,7 +419,7 @@ public interface BinTree<E> {
      *     中序遍历
      * </p>
      * @param
-     * @return com.javayh.advanced.datastructure.Iterator
+     * @return Iterator
      */
     Iterator<E> elementsInorder();
 
@@ -428,7 +428,7 @@ public interface BinTree<E> {
      *     后序遍历  
      * </p>
      * @param 
-     * @return com.javayh.advanced.datastructure.Iterator
+     * @return Iterator
      */
     Iterator<E> elementsPostorder();
 
@@ -437,7 +437,7 @@ public interface BinTree<E> {
      *     层次遍历
      * </p>
      * @param
-     * @return com.javayh.advanced.datastructure.Iterator
+     * @return Iterator
      */
     Iterator<E> elementsLevelorder();
 }
