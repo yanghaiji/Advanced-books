@@ -60,7 +60,7 @@ public class HuffManTree {
      * @version 1.0.0
      * @since 12/31/2020
      * @param array     需要构建的数组
-     * @return com.javayh.advanced.datastructure.tree.huffman.Node 构建后的赫夫曼树
+     * @return Node 构建后的赫夫曼树
      */
     public static Node createHuffmanTree(int[] array) {
         // 第一步为了操作方便
