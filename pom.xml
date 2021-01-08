@@ -31,7 +31,7 @@
         <maven-source-plugin.version>3.0.1</maven-source-plugin.version>
         <maven-surefire-plugin.version>2.22.0</maven-surefire-plugin.version>
         <mybatis.version>2.0.0</mybatis.version>
-        <flink.version>1.9.1</flink.version>
+        <flink.version>1.10.1</flink.version>
     </properties>
 
     <dependencies>
