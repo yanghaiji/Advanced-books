@@ -7,7 +7,7 @@
         <artifactId>advanced-book</artifactId>
         <version>1.0.0.RELEASE</version>
     </parent>
-    <artifactId>source-code</artifactId>
+    <artifactId>source-java-code</artifactId>
     <version>1.0.0.RELEASE</version>
     <name>source-java-code</name>
     <description>source-java-code</description>
