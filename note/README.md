@@ -204,4 +204,7 @@
 - [🔖 Flink是什么?](flink/book/base/Flink.md)
 - [🔖 Flink Applications](flink/book/base/Applications.md)
 - [🔖 Flink Operations](flink/book/base/Operations.md)
-## [🔖 十三. 接口幂等性的实现](actualCombat/Limiter.md) 
+## [🔖 十三. Kafka](kafka/README.md) 
+- [🔖 Kafka简介](kafka/book/Introduction.md) 
+## [🔖 实战](actualCombat/README.md) 
+- [🔖 接口幂等性的实现](actualCombat/Limiter.md) 
