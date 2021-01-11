@@ -30,7 +30,7 @@ Kafka有四个核心的API:
 - The Streams API 允许一个应用程序作为一个*流处理器*，消费一个或者多个topic产生的输入流，然后生产一个输出流到一个或多个topic中去，在输入输出流中进行有效的转换。
 - The Connector API允许构建并运行可重用的生产者或者消费者，将Kafka topics连接到已存在的应用程序或者数据系统。比如，连接到一个关系型数据库，捕捉表（table）的所有变更内容。
 
-![img](https://kafka.apachecn.org/10/images/kafka-apis.png)
+![img](img/kafka-apis.png)
 
 在Kafka中，客户端和服务器使用一个简单、高性能、支持多语言的 [TCP 协议](https://kafka.apache.org/protocol.html) .
 此协议版本化并且向下兼容老版本， 我们为Kafka提供了Java客户端，也支持许多[其他语言的客户端](https://cwiki.apache.org/confluence/display/KAFKA/Clients) 。
@@ -43,7 +43,7 @@ Topic 就是数据主题，是数据记录发布的地方,可以用来区分业�
 
 对于每一个topic， Kafka集群都会维持一个分区日志，如下所示：
 
-![img](https://kafka.apachecn.org/10/images/log_anatomy.png)
+![img](img/log_anatomy.png)
 
 每个分区都是有序且顺序不可变的记录集，并且不断地追加到结构化的commit log文件。分区中的每一个记录都会分配一个id号来表示顺序，
 我们称之为offset，*offset*用来唯一的标识分区中每一条记录。
@@ -51,7 +51,7 @@ Topic 就是数据主题，是数据记录发布的地方,可以用来区分业�
 Kafka 集群保留所有发布的记录—无论他们是否已被消费—并通过一个可配置的参数——保留期限来控制. 举个例子， 如果保留策略设置为2天
 ，一条记录发布后两天内，可以随时被消费，两天过后这条记录会被抛弃并释放磁盘空间。Kafka的性能和数据大小无关，所以长时间存储数据没有什么问题.
 
-![img](https://kafka.apachecn.org/10/images/log_consumer.png)
+![img](img/log_consumer.png)
 
 事实上，在每一个消费者中唯一保存的元数据是offset（偏移量）即消费在log中的位置.偏移量由消费者所控制:通常在读取记录后，
 消费者会以线性的方式增加偏移量，但是实际上，由于这个位置由消费者控制，所以消费者可以采用任何顺序来消费记录。
@@ -84,7 +84,7 @@ Kafka 集群保留所有发布的记录—无论他们是否已被消费—并�
 
 如果所有的消费者实例在不同的消费组中，每条消息记录会广播到所有的消费者进程.
 
-![img](https://kafka.apachecn.org/10/images/consumer-groups.png)
+![img](img/consumer-groups.png)
 
 如图，这个 Kafka 集群有两台 server 的，四个分区(p0-p3)和两个消费者组。消费组A有两个消费者，消费组B有四个消费者。
 
