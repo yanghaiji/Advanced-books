@@ -1,4 +1,4 @@
-# Introduction
+# Kafka 简介
 
 ### Apache Kafka® 是 *一个分布式流处理平台*. 这到底意味着什么呢?
 
