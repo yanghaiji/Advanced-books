@@ -17,6 +17,7 @@
 	<modules>
         <module>source-java-code</module>
         <module>source-flink-code</module>
+        <module>source-kafka-code</module>
     </modules>
 
     <properties>
