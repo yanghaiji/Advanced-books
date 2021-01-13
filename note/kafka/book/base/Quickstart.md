@@ -10,9 +10,42 @@
 > tar -xzf kafka_2.12-2.7.0.tgz 
 > cd kafka_2.12-2.7.0
 ```
-##### 这里需要注意的是我们需要修改一下配置文件中的日志存储的位置
+##### 常用配置介绍
 ```
-log.dirs=
+broker 的 全局唯一编号，不能重复
+broker.id=0
+删除 topic 功能使能
+delete.topic.enable=true
+处理网络请求 的 线程数量
+num.network.threads=3
+用来 处理磁盘 IO 的现成数量
+num.io.threads=8
+发送套接字的缓冲区大小
+socket.send.buffer.bytes=102400
+接收套接字的缓冲区大小
+socket.receive.buffer.bytes=102400
+请求套接字的缓冲区大小
+socket.request.max.bytes=104857600
+kafka 运行日志存放的路径
+log.dirs=/opt/module/kafka/logs
+topic 在当前 broker 上的分区个数
+num.partitions=1
+用来恢复和清理 data 下数据的线程数量
+num.recovery.threads.per.data.dir=1
+segment 文件保留的最长时间，超时将被删除
+log.retention.hours=168
+配置连接 Zookeeper 集群 地址
+zookeeper.connect=localhost:2181,localhost:2181,localhost:21 81
+```
+##### 当然您也可以将kafka配置到环境变量里
+```
+> vi /etc/profile
+
+    #KAFKA_HOME
+    export KAFKA_HOME=/opt/module/kafka
+    export PATH=$PATH:$KAFKA_HOME/bin
+
+> source /etc/profile
 ```
 
 #### Step 2: 启动服务器
@@ -43,7 +76,10 @@ Kafka 使用 [ZooKeeper](https://zookeeper.apache.org/) 如果你还没有ZooKee
 
 #.\bin\windows\kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic hello-kafka
 ```
-
+选项说明：
+- topic 定义 topic名
+- replication-factor 定义副本数
+- partitions 定义分区数
 现在我们可以运行list（列表）命令来查看这个topic：
 
 ```
@@ -51,6 +87,12 @@ Kafka 使用 [ZooKeeper](https://zookeeper.apache.org/) 如果你还没有ZooKee
 ```
 
 或者，您也可将代理配置为：在发布的topic不存在时，自动创建topic，而不是手动创建。
+
+如果您想删除topic,可以通过一下命令进行删除
+```
+ bin/kafka topics.sh --zookeeper:2181 --delete --topic first
+```
+需要`server.properties`中设置 `delete.topic.enable=true`否则只是标记删除。
 
 #### Step 4: 发送一些消息
 
