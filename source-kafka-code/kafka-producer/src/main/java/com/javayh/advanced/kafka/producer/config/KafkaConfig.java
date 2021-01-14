@@ -18,6 +18,7 @@ import org.springframework.kafka.support.ProducerListener;
 import org.springframework.kafka.support.converter.StringJsonMessageConverter;
 import org.springframework.kafka.support.serializer.JsonSerializer;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -50,6 +51,10 @@ public class KafkaConfig {
         props.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, bootstrapServers);
         props.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class);
         props.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, JsonSerializer.class);
+        // 请注意这里的书写方式，支持配置多个Interceptor
+        ArrayList<String> interceptor = new ArrayList<>();
+        interceptor.add("com.javayh.advanced.kafka.producer.config.MyKafkaInterceptor");
+        props.put(ProducerConfig.INTERCEPTOR_CLASSES_CONFIG,interceptor);
         return props;
     }
 

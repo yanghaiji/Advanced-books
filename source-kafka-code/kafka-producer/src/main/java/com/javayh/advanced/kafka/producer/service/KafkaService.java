@@ -25,10 +25,10 @@ public class KafkaService {
     }
 
     public void sendKafka(String topic , String msg){
-        kafkaSend.sendCallback(topic,msg);
+        kafkaSend.send(topic,msg);
     }
 
     public void sendKafka(String topic , User msg){
-        kafkaSend.sendCallback(topic,msg);
+        kafkaSend.send(topic,msg);
     }
 }
