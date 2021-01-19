@@ -36,5 +36,7 @@
     - [🔖 5.6. InnoDB和MyISAM索引统计信息收集](book/索引优化/InnoDB和MyISAM索引统计信息收集.md)
     - [🔖 5.7. B树和哈希索引的比较](book/索引优化/B树和哈希索引的比较.md)
     - [🔖 5.8. 索引扩展的使用](book/索引优化/索引扩展的使用.md)
+- [🔖 6.Mysql 分区表](book/partitioning/PartitioningInfo.md)  
+    - [🔖 6.1 Mysql 范围分区](book/partitioning/Range.md)  
 
 
