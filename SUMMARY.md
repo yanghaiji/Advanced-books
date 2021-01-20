@@ -1,4 +1,4 @@
 # Table of contents
 
-* [Initial page](note/README.md)
+* [Initial page](README.md)
 
