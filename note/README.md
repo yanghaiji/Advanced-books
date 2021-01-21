@@ -247,7 +247,7 @@
 
 ## [十五. Linux入门与Shell编程](linux/README.md)
 ### [🔖 命令大全](linux/README.md)
-- [🔖 命令大全](linux/book/command/DiskManagement.md)
-
+- [🔖 磁盘管理常用命令](linux/book/command/DiskManagement.md)
+- [🔖 文件管理常用命令](linux/book/command/FileManagement.md)
 ## [🔖 实战](actualCombat/README.md) 
 - [🔖 接口幂等性的实现](actualCombat/Limiter.md) 
