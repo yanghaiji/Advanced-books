@@ -1,21 +1,21 @@
 ## 文件管理常用命令
 
-- [cat 命令](cat-命令)
-- [chmod命令](chmod命令)
-- [chown 命令](chown-命令)
-- [find 命令](find-命令)
-- [cut命令](cut命令)
-- [ln 命令](ln-命令)
-- [less命令](less命令)
-- [more命令](more命令)
-- [mv 命令](mv-命令)
-- [cp 命令](cp-命令)
-- [rm 命令](rm-命令)
-- [rcp命令](rcp命令)
-- [scp命令](scp命令)
-- [awk 命令](awk命令)
+- [cat 命令](#cat命令)
+- [chmod命令](#chmod命令)
+- [chown 命令](#chown命令)
+- [find 命令](#find命令)
+- [cut命令](#cut命令)
+- [ln 命令](#ln命令)
+- [less命令](#less命令)
+- [more命令](#more命令)
+- [mv 命令](#mv命令)
+- [cp 命令](#cp命令)
+- [rm 命令](#rm命令)
+- [rcp命令](#rcp命令)
+- [scp命令](#scp命令)
+- [awk 命令](#awk命令)
 
-### cat 命令
+### cat命令
 
 - 语法
 
@@ -239,7 +239,7 @@ Linux/Unix 的文件调用权限分为三级 : 文件所有者（Owner）、用�
   | `find path/ -type d -exec chmod a-x {} \;` | 删除可执行权限对path/以及其所有的目录（不包括文件）的所有用户，使用'-type f'匹配文件 |
   | `find path/ -type d -exec chmod a+x {} \;` | 允许所有用户浏览或通过目录path/                              |
 
-### chown 命令
+### chown命令
 
 - 语法
 
@@ -285,7 +285,7 @@ Linux/Unix 的文件调用权限分为三级 : 文件所有者（Owner）、用�
   chown :512 /home/haiji
   ```
 
-### find 命令
+### find命令
 
 - 语法
 
@@ -423,7 +423,7 @@ Linux/Unix 的文件调用权限分为三级 : 文件所有者（Owner）、用�
 
   
 
-### ln 命令
+### ln命令
 
 - 语法
 
@@ -629,7 +629,7 @@ Linux/Unix 的文件调用权限分为三级 : 文件所有者（Owner）、用�
   - !命令 调用Shell，并执行命令
   - q 退出more
 
-###  mv 命令
+###  mv命令
 
 - 语法
 
@@ -675,7 +675,7 @@ Linux/Unix 的文件调用权限分为三级 : 文件所有者（Owner）、用�
   $ mv /usr/haiji/*  . 
   ```
 
-### cp 命令
+### cp命令
 
 - 语法
 
@@ -705,7 +705,7 @@ Linux/Unix 的文件调用权限分为三级 : 文件所有者（Owner）、用�
 
   注意：用户使用该指令复制目录时，必须使用参数 **-r** 或者 **-R** 。
 
-### rm 命令
+### rm命令
 
 - 语法
 
