@@ -14,7 +14,7 @@
 
 ### 欢迎来到 Java有货读书馆，以下是为您呈现的目录
 
-## [🔖 一.Java 核心技术](java/README.md)
+## [🔖 Java 核心技术](java/README.md)
 ### [🔖 1.Java 基础](java/base/README.md)
 - [🔖 为什么在Java中String是不可变的](java/base/book/String.md)
 - [🔖 Java字符串池指南](java/base/book/StringPool.md)
@@ -33,7 +33,7 @@
 - [🔖 java-8-collectors](java/stream/collectors.md)   
 - [🔖 java-8-Stream 讲解与示例](java/stream/stream.md)   
 - [🔖 JDK15的重大更新](https://blog.csdn.net/weixin_38937840/article/details/109191674)   
-## [🔖 二.数据结构与算法](datastructureAlgorithm/README.md)
+## [🔖 数据结构与算法](datastructureAlgorithm/README.md)
 #### [🔖 2.1数据结构篇](datastructureAlgorithm/README.md)
 - [🔖 二维数组](datastructureAlgorithm/book/datastructure/SparseArray.md)
 - [🔖 栈](datastructureAlgorithm/book/datastructure/Stack.md)
@@ -60,7 +60,7 @@
 - [🔖 线性查找](datastructureAlgorithm/book/algorithm/search/SeqSearch.md)
 - [🔖 二分查找](datastructureAlgorithm/book/algorithm/search/BinarySearch.md)
 - [🔖 斐波那契(黄金分割法)查找](datastructureAlgorithm/book/algorithm/search/GoldenSection.md)
-## [🔖 三.Java 并发实战与并发设计模式](java/concurrency/README.md)
+## [🔖 Java 并发实战与并发设计模式](java/concurrency/README.md)
 - [🔖 Util](java/concurrency/README.md)
   - [🔖 ExecutorService指南](java/concurrency/util/ExecutorService指南.md)  
   - [🔖 CompletableFuture](https://blog.csdn.net/weixin_38937840/article/details/105046588) 
@@ -72,7 +72,7 @@
   - [🔖 Thread-Per-Message模式：最简单实用的分工方法](java/concurrency/designpattern/ThreadPerMessage.md) 
   - [🔖 Worker Thread模式：如何避免重复创建线程](java/concurrency/designpattern/WorkerThread.md) 
   
-## [🔖 四.Java NIO](java/README.md)    
+## [🔖 Java NIO](java/README.md)    
 - [🔖 4.1.Java NIO 教程](java/nio/book/JavaNIO教程.md)    
 - [🔖 4.2.Java NIO 概览](java/nio/book/JavaNIO概览.md)    
 - [🔖 4.3.Java NIO Channel通道](java/nio/book/Channel通道.md)    
@@ -91,7 +91,7 @@
 - [🔖 4.16.Java NIO Files](java/nio/book/Files.md)    
 - [🔖 4.17.Java NIO AsynchronousFileChannel异步文件通道](java/nio/book/AsynchronousFileChannel异步文件通道.md)  
 
-## [🔖 五. Java HotSpot VM](jvm/README.md)
+## [🔖 Java HotSpot VM](jvm/README.md)
 - [🔖 5.1.HotSpot虚拟机垃圾收集优化指南](jvm/HotSpot/JavaHotSpotVM.md)
 - [🔖 5.2.Java HotSpot性能引擎架构](jvm/HotSpot/JavaHotSpot性能引擎架构.md)
 - [🔖 5.3.内存与垃圾回收篇](jvm/README.md)
@@ -115,7 +115,7 @@
 - [🔖 5.4.OutOfMemoryError Exception 介绍](jvm/StandardEditionTroubleshootingGuide/OutOfMemoryErrorException.md)    
 - [🔖 5.5.诊断Java语言代码中的泄漏](jvm/StandardEditionTroubleshootingGuide/DiagnoseLeaksinJavaLanguageCode.md)    
 
-## [🔖 六.Spring 进阶篇](spring/README.md)
+## [🔖 Spring 进阶篇](spring/README.md)
 ### [🔖 Ioc](spring/README.md)
 - [🔖 1. EnableAutoConfiguration 源码分析](spring/book/EnableAutoConfiguration.md)
 - [🔖 2. SpringApplication 源码分析 ioc 容器初始化](spring/book/ioc/SpringApplication.md)
@@ -139,7 +139,7 @@
 - [🔖 2. EnableAutoConfiguration 源码分析](spring/book/EnableAutoConfiguration.md)
 - [🔖 3. SpringBoot 2.3.0 新特性之优雅停机](spring/book/GracefulShutdown.md)
 
-## [🔖 七.Mysql 进阶篇](mysql/README.md)
+## [🔖 Mysql 进阶篇](mysql/README.md)
  - [🔖 1. Mysql Explain 详解](mysql/book/Explain.md)
  - [🔖 2. Mysql Explain Extra详解](mysql/book/Extra.md)
  - [🔖 3. Mysql 优化方案](mysql/book/优化方案.md)
@@ -170,23 +170,23 @@
      - [🔖 5.8 索引扩展的使用](mysql/book/索引优化/索引扩展的使用.md)   
  - [🔖 6.Mysql 分区表](mysql/book/partitioning/PartitioningInfo.md)  
      - [🔖 6.1 Mysql 范围分区](mysql/book/partitioning/Range.md)         
-## [🔖 八.Git 核心技术](git/README.md)
+## [🔖 Git 核心技术](git/README.md)
  - [🔖 1.Git emoji 使用](git/emoji/emoji.md)
  - [🔖 2.Git cherry pick 使用](git/senior/cherryPick.md)
  
-## [🔖 九.Mybatis 进阶篇](mybatis/README.md)  
+## [🔖 Mybatis 进阶篇](mybatis/README.md)  
  - [🔖 1. Mybatis 二级缓存](https://blog.csdn.net/weixin_38937840/article/details/106332696)
  - [🔖 2. Mybatis 高级映射](mybatis/book/结果映射.md)
  - [🔖 3. Mybatis 动态 SQL](mybatis/book/动态SQL.md)
  - [🔖 4. Mybatis SqlSession](mybatis/book/SqlSession.md) 
  - [🔖 5. Mybatis 学习扩展](mybatis/book/扩展.md)
  
-## [🔖 十.OAuth2 源码学习](oauth/README.md)
+## [🔖 OAuth2 源码学习](oauth/README.md)
  - [🔖 1.理解 OAuth2.0](oauth/book/OAuth.md)
  - [🔖 2.OAuth2 内置断点生成Token源码解析](oauth/book/OAuthToken.md)
  - [🔖 3.OAuth2 内置断点生成Authorize源码解析](oauth/book/AuthorizationEndpoint.md)   
 
-## [🔖 十一. Redis 设计与实战](redis/README.md)
+## [🔖 Redis 设计与实战](redis/README.md)
 ### [🔖 1.内部映射数据结构](redis/README.md)
 - [🔖 简单动态字符串](redis/book/datastructure/String.md)
 - [🔖 链表](redis/book/datastructure/Linked.md)
@@ -210,7 +210,7 @@
 - [🔖 Redis开发规范](redis/book/actualCombat/RedisStandard.md)
 - [🔖 大厂Redis 性能优化的 13 条军规](redis/book/actualCombat/RedisStandard13.md)
 
-## [🔖 十二. Netty 教程](netty/README.md)
+## [🔖 Netty 教程](netty/README.md)
 - [🔖 Netty如何写一个 echo 服务器](netty/book/EchoServer.md)
 - [🔖 Netty写一个 echo 客户端](netty/book/EchoClient.md)
 ### [Netty 架构模型的组件总览](netty/README.md)
@@ -228,12 +228,12 @@
 - [🔖 Netty中的Buffer API](netty/book/BufferApi.md)
 - [🔖 Netty字节数据的容器ByteBuf](netty/book/ByteBuf.md)
 
-## [🔖 十三. Flink](flink/README.md) 
+## [🔖 Flink](flink/README.md) 
 - [🔖 Flink是什么?](flink/book/base/Flink.md)
 - [🔖 Flink Applications](flink/book/base/Applications.md)
 - [🔖 Flink Operations](flink/book/base/Operations.md)
 
-## [🔖 十四. Kafka入门与架构分析](kafka/README.md) 
+## [🔖 Kafka入门与架构分析](kafka/README.md) 
 ### [快速入门](kafka/README.md) 
 - [🔖 Kafka简介](kafka/book/base/Introduction.md)
 - [🔖 kafka 服务搭建与常用测试命令](kafka/book/base/Quickstart.md)
@@ -245,12 +245,13 @@
 - [🔖 Kafka事务与zookeeper的应该](kafka/book/framework/Other.md)
 - [🔖 Kafka 自定义Interceptor](kafka/book/framework/Interceptor.md)
 
-## [十五. Linux入门与Shell编程](linux/README.md)
+## [🔖 Linux入门与Shell编程](linux/README.md)
 ### [🔖 命令大全](linux/README.md)
 - [🔖 磁盘管理常用命令](linux/book/command/DiskManagement.md)
 - [🔖 文件管理常用命令](linux/book/command/FileManagement.md)
 - [🔖 文备份压缩常用命令](linux/book/command/BackupCompression.md)
 - [🔖 网络通讯常用命令](linux/book/command/NetworkCommunication.md)
+- [🔖 系统管理用命令](linux/book/command/SystemManagement.md)
 - [🔖 yum 命令](linux/book/command/Yum.md)
 
 ## [🔖 实战](actualCombat/README.md) 
