@@ -171,8 +171,11 @@
  - [🔖 6.Mysql 分区表](mysql/book/partitioning/PartitioningInfo.md)  
      - [🔖 6.1 Mysql 范围分区](mysql/book/partitioning/Range.md)         
 ## [🔖 Git 核心技术](git/README.md)
- - [🔖 1.Git emoji 使用](git/emoji/emoji.md)
- - [🔖 2.Git cherry pick 使用](git/senior/cherryPick.md)
+ - [🔖 1.emoji 使用](git/emoji/emoji.md)
+ - [🔖 2.分支开发工作流](git/senior/Flow.md)
+ - [🔖 3.cherry pick使用](git/senior/cherryPick.md)
+ - [🔖 4.Rebase使用](git/senior/Rebase.md)
+ - [🔖 5.Idea中Rebase使用](git/senior/IdeaRebase.md)
  
 ## [🔖 Mybatis 进阶篇](mybatis/README.md)  
  - [🔖 1. Mybatis 二级缓存](https://blog.csdn.net/weixin_38937840/article/details/106332696)
