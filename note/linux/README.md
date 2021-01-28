@@ -10,4 +10,14 @@
 
 ## [🔖 shell编程]()
 - [🔖 何为shell编程](book/shell/BaseInfo.md)
-- [🔖 Shell 变量](book/shell/Variable.md)
+- [🔖 变量](book/shell/Variable.md)
+- [🔖 基本运算符](book/shell/Operator.md)
+- [🔖 echo命令](book/shell/Echo.md)
+- [🔖 printf命令](book/shell/Printf.md)
+- [🔖 test命令](book/shell/Test.md)
+- [🔖 流程控制](book/shell/ProcessControl.md)
+- [🔖 Shell 函数](book/shell/Function.md)
+- [🔖 Shell 输入/输出重定向](book/shell/Input.md)
+
+## [🔖 java run shell]()
+- [🔖 何为shell编程](book/java/RunShell.md)
