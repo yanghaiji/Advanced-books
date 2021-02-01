@@ -37,4 +37,5 @@
 ### [🔖 Flink](note/flink/README.md) 
 ### [🔖 Kafka 入门与架构分析](note/kafka/README.md) 
 ### [🔖 Linux入门与Shell编程](note/linux/README.md)
+### [🔖 AlibabaCloud](note/nacos/README.md)
 ### [🔖 更多实战](note/actualCombat/README.md)
