@@ -329,5 +329,35 @@ Spring Cloud Alibaba Nacos Config 目前提供了三种配置能力从 Nacos 拉
 
 通过设置 spring.cloud.nacos.config.enabled = false 来完全关闭 Spring Cloud Nacos Config
 
+### 动态刷新实体类(Bean)
+
+- 定义bean
+
+```java
+@Data
+@RefreshScope
+@Configuration
+@ConfigurationProperties(prefix = "spring")
+public class NacosDome2Config {
+    private String app03;
+    private Boolean status;
+}
+```
+
+`@RefreshScope` 不要忘记加上
+
+```java
+    @GetMapping(value = "getConfig")
+    public NacosDome2Config getConfig(){
+        System.out.println(dome2Config.getApp03());
+        System.out.println(dome2Config.getStatus());
+        NacosDome2Config nacosDome2Config = new NacosDome2Config();
+        nacosDome2Config.setApp03(dome2Config.getApp03());
+        nacosDome2Config.setStatus(dome2Config.getStatus());
+        return nacosDome2Config;
+    }
+```
+这是当我们在更新nacos中的配置就不需要重启服务了
+
 本实例相关代码以放在 [https://github.com/yanghaiji/javayh-demo](https://github.com/yanghaiji/javayh-demo)
 

@@ -258,6 +258,7 @@
 - [🔖 yum 命令](linux/book/command/Yum.md)
 
 ## [🔖 Nacos](nacos/README.md)
+- [🔖 Nacos安装](nacos/base/Insatll.md)
 - [🔖 NacosConfig 详解](nacos/config/NacosConfig.md)
 
 ## [🔖 实战](actualCombat/README.md) 
