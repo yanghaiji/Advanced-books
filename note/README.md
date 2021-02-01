@@ -257,5 +257,8 @@
 - [🔖 系统管理用命令](linux/book/command/SystemManagement.md)
 - [🔖 yum 命令](linux/book/command/Yum.md)
 
+## [🔖 Nacos](nacos/README.md)
+- [🔖 NacosConfig 详解](nacos/config/NacosConfig.md)
+
 ## [🔖 实战](actualCombat/README.md) 
 - [🔖 接口幂等性的实现](actualCombat/Limiter.md) 
