@@ -1,5 +1,0 @@
-hello Java
-hello Flink
-hello C++
-hello golang
-hello python
