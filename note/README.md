@@ -260,6 +260,7 @@
 ## [🔖 Nacos](nacos/README.md)
 - [🔖 Nacos安装](nacos/base/Insatll.md)
 - [🔖 NacosConfig 详解](nacos/config/NacosConfig.md)
+- [🔖 Nacos Discovery 详解](nacos/config/NacosDiscovery.md)
 
 ## [🔖 实战](actualCombat/README.md) 
 - [🔖 接口幂等性的实现](actualCombat/Limiter.md) 
