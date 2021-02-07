@@ -224,7 +224,7 @@ ResourceOwnerPasswordTokenGranter
 	}
 ```
 tokenStore 的多种实现方式
-![TokenStore](../img/TokenStore.png)
+![TokenStore](../../img/TokenStore.png)
 
 - MyTokenEnhancerChain
 ```java

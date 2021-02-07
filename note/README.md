@@ -186,8 +186,10 @@
  
 ## [🔖 OAuth2 源码学习](oauth/README.md)
  - [🔖 1.理解 OAuth2.0](oauth/book/OAuth.md)
- - [🔖 2.OAuth2 内置断点生成Token源码解析](oauth/book/OAuthToken.md)
- - [🔖 3.OAuth2 内置断点生成Authorize源码解析](oauth/book/AuthorizationEndpoint.md)   
+ - [🔖 2.服务器端应用](oauth/book/serversideapps/serverSideApps.md)
+ - [🔖 3.实现Github授权登录](https://blog.csdn.net/weixin_38937840/article/details/113573841)
+ - [🔖 4.OAuth2 内置断点生成Token源码解析](oauth/book/code/OAuthToken.md)
+ - [🔖 5.OAuth2 内置断点生成Authorize源码解析](oauth/book/code/AuthorizationEndpoint.md)   
 
 ## [🔖 Redis 设计与实战](redis/README.md)
 ### [🔖 1.内部映射数据结构](redis/README.md)
