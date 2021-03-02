@@ -4,6 +4,7 @@
  - [🔖 ExecutorService指南](util/ExecutorService指南.md)  
  - [🔖 CompletableFuture](https://blog.csdn.net/weixin_38937840/article/details/105046588) 
  - [🔖 Unsafe](util/Unsafe.md) 
+ - [🔖 基于Java并发包讲解飞行CAS与AQS ](util/CAS_AQS.md) 
  
 ### 并发设计模式
 > 来自极客 王宝令 的并发实战课程

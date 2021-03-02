@@ -66,6 +66,8 @@
 - [🔖 Util](java/concurrency/README.md)
   - [🔖 ExecutorService指南](java/concurrency/util/ExecutorService指南.md)  
   - [🔖 CompletableFuture](https://blog.csdn.net/weixin_38937840/article/details/105046588) 
+  - [🔖 Unsafe 应用](java/concurrency/util/Unsafe.md)
+  - [🔖  基于Java并发包讲解飞行CAS与AQS ](java/concurrency/util/CAS_AQS.md)   
 - [🔖 并发设计模式](java/concurrency/README.md)
   - [🔖 Immutability模式：如何利用不变性解决并发问题？](java/concurrency/designpattern/Immutability.md) 
   - [🔖 Copy-on-Write模式：不是延时策略的COW](java/concurrency/designpattern/CopyOnWrite.md) 
