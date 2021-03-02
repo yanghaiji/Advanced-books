@@ -35,7 +35,8 @@
 - 4.Java Concurrency
      - [🔖 4.1 ExecutorService指南](concurrency/util/ExecutorService指南.md)  
      - [🔖 4.2 CompletableFuture](https://blog.csdn.net/weixin_38937840/article/details/105046588)  
-     - [🔖 4.3 Unsafe 应用](concurrency/util/Unsafe.md)  
+     - [🔖 4.3 Unsafe 应用](concurrency/util/Unsafe.md)
+     - [🔖 4.4 基于Java并发包讲解飞行CAS与AQS ](concurrency/util/CAS_AQS.md)   
 - [🔖 5.常见面试题](InterviewQuestions/README.md)
 - 6.Java 扩展 
     - [🔖 8.1 JDK14的重大更新](https://blog.csdn.net/weixin_38937840/article/details/105054595)
