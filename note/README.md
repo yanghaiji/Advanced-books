@@ -20,6 +20,8 @@
 - [🔖 Java字符串池指南](java/base/book/StringPool.md)
 - [🔖 关键字 static](java/base/book/static.md)
 - [🔖 理解Java的强引用、软引用、弱引用和虚引用](java/base/book/Reference.md)
+- [🔖 Stack 源码解析](java/base/book/Stack.md)
+- [🔖 Queue 源码解析](java/base/book/Queue.md)
 ### [🔖 2.Java collection](java/collection/README.md)
 - [🔖 JDK 8 HashMap鬼斧神工的优化](https://blog.csdn.net/weixin_38937840/article/details/106805496)
 - [🔖 JDK8 Map merge 一些骚操作](java/collection/map/map_merge.md)
