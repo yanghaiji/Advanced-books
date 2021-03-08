@@ -221,6 +221,8 @@
 - [🔖 Redis开发规范](redis/book/actualCombat/RedisStandard.md)
 - [🔖 大厂Redis 性能优化的 13 条军规](redis/book/actualCombat/RedisStandard13.md)
 
+## [🔖 Shardingsphere 教程](shardingsphere/README.md)
+
 ## [🔖 Netty 教程](netty/README.md)
 - [🔖 Netty如何写一个 echo 服务器](netty/book/EchoServer.md)
 - [🔖 Netty写一个 echo 客户端](netty/book/EchoClient.md)
