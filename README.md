@@ -33,6 +33,7 @@
 ### [🔖 Mybatis 进阶篇](note/mybatis/README.md)  
 ### [🔖 OAuth2 源码学习](note/oauth/README.md)
 ### [🔖 Redis 设计与实战](note/redis/README.md)
+### [🔖 Shardingsphere 教程与实战](note/shardingsphere/README.md)
 ### [🔖 Netty 教程](note/netty/README.md)
 ### [🔖 Flink](note/flink/README.md) 
 ### [🔖 Kafka 入门与架构分析](note/kafka/README.md) 
