@@ -284,5 +284,15 @@
 - [🔖 NacosConfig 详解](nacos/config/NacosConfig.md)
 - [🔖 Nacos Discovery 详解](nacos/config/NacosDiscovery.md)
 
+##[🔖 分布式事务解决方案](transaction/README.md)
+### [基础理论](transaction/README.md)
+ - [🔖 分布式事务概述](transaction/book/info/distributed-transaction.md)
+ - [🔖 Seata 分布式事务实践和开源详解](transaction/book/info/seata-transaction.md)
+ 
+### [Seata 分布式组件介绍](transaction/README.md)
+ - [🔖 部署 Server](transaction/book/seata/depoly-server.md)
+ - [🔖 Docker部署 Server](transaction/book/seata/docker-depoly-sercer.md)
+ - [🔖 Kubernetes 部署 Server](transaction/book/seata/kubernetes-depoly-server.md)
+ 
 ## [🔖 实战](actualCombat/README.md) 
 - [🔖 接口幂等性的实现](actualCombat/Limiter.md) 
