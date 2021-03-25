@@ -8,3 +8,4 @@
 - [部署 Server](book/seata/depoly-server.md)
 - [Docker部署 Server](book/seata/docker-depoly-sercer.md)
 - [Kubernetes 部署 Server](book/seata/kubernetes-depoly-server.md)
+- [Spring与Seata的实践](book/seata/demo.md)
