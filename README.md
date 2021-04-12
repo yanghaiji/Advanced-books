@@ -40,4 +40,5 @@
 ### [🔖 Linux入门与Shell编程](note/linux/README.md)
 ### [🔖 AlibabaCloud](note/nacos/README.md)
 ### [🔖 分布式事务解决方案](note/transaction/README.md)
+## [🔖 DDD 领域驱动设计](note/ddd/README.md)
 ### [🔖 更多实战](note/actualCombat/README.md)

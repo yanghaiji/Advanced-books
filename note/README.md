@@ -292,7 +292,12 @@
  - [🔖 部署 Server](transaction/book/seata/depoly-server.md)
  - [🔖 Docker部署 Server](transaction/book/seata/docker-depoly-sercer.md)
  - [🔖 Kubernetes 部署 Server](transaction/book/seata/kubernetes-depoly-server.md)
- - [Spring与Seata的实践](transaction/book/seata/demo.md)
+ - [🔖 Spring与Seata的实践](transaction/book/seata/demo.md)
+
+## [🔖 DDD 领域驱动设计](ddd/README.md)
+- [🔖 DDD 简介](ddd/book/DDDInfo.md)
+- [🔖 实体与聚合根](ddd/book/domain/Entities.md)
+- [🔖 值对象](ddd/book/domain/ObjectVal.md)
  
 ## [🔖 实战](actualCombat/README.md) 
 - [🔖 接口幂等性的实现](actualCombat/Limiter.md) 
