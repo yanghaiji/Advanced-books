@@ -25,6 +25,7 @@
 ### [🔖 Java 核心技术](note/java/README.md)
 ### [🔖 Java 并发实战与并发设计模式](note/java/concurrency/README.md)   
 ### [🔖 数据结构与算法](note/datastructureAlgorithm/README.md)  
+### [🔖 常用设计模式总结与实践](note/designPattern/README.md)  
 ### [🔖 Java NIO](note/java/README.md)   
 ### [🔖 HotSpot虚拟机垃圾收集进阶](note/jvm/README.md)
 ### [🔖 Spring 进阶篇](note/spring/README.md)
