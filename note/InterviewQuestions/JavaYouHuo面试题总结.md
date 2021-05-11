@@ -4,6 +4,32 @@
 
 ## 基础篇
 
+1. **== 和 equals 的区别**
+
+   - == 用于基本数据类型时，是比较两个变量的值是否相等；如果用于比较对象，则是比较对象变量在堆内存中引用地址是否相等。当用于比较由一个基本数据类型自动装箱后的两个对象时，要看这个值是否在-128到127区间内（包含），如果在区间内，==此时比较的是两个指向同一个对象地址的引用，所以为true；如果不在区间内，自动装箱时是通过new Integer()、new Long()来实现的（可以看valueOf方法），此时==比较的是两个指向不同内存地址的引用，所以为false。
+   - equals()方法默认比较两个对象内存地址是否相等，如果用于比较基本数据类型的包装类，由于包装类重写了equals方法，所以比较的是intvalue longValue之类的大小是否相等。如果用于比较String类，由于String类重写了equals方法，所以比较的是对象内容是否相等。
+
+2. **String str = new String("abc");创建了几个对象**
+
+   单纯从题面上来说事创建了两个对象，一个是new String("abc"),一个是在字符串常量池内的“abc”；如果在new 之前使用过abc，则只会创建一个
+
+3. **下面的代码的结果是什么**
+
+   ```java
+   Integer b1 = 19;
+   Integer a1= 19;
+   System.out.println(a1==b1); //true
+   
+   Integer c1 = 129;
+   Integer d1= 129;
+   System.out.println(c1==d1);//false
+   ```
+
+   解析：Integer -128到127 已经被缓存
+
+   ```java
+   private static class IntegerCache {}
+   ```
 
 
 ## 集合篇
