@@ -6,5 +6,6 @@
 - [4 理解Java的强引用、软引用、弱引用和虚引用](book/Reference.md)
 - [5 Stack 源码解析](book/Stack.md)
 - [6 Queue 源码解析](book/Queue.md)
+- [7 位移运算](book/bitwiseOperators.md)
 
 
