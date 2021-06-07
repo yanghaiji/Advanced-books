@@ -17,127 +17,100 @@
 4)	递归必须向退出递归的条件逼近，否则就是无限递归,出现 StackOverflowError，死`龟(归)`了:)
 5)	当一个方法执行完毕，或者遇到 return，就会返回，遵守谁调用，就将结果返回给谁，同时当方法执行完毕或者返回时，该方法也就执行完毕
 
+在项目中我常用的有可能是循环，偶尔也会用到递归，在其他的算法中也经常有递归算法的出现，比如我关于树的遍历，如果对递归的本质不是很理解就无法真正的掌握其算法的真意。
+
+### 递归算法的推导
+
+> 需求：给定一个数值 num，首先将这个数值 -2 ，在 + 1，当num小于0时结束
+
+如果不考虑递归的出现：有可能的代码如下：
+
 ```java
-public class MiGong {
-    public static void main(String[] args) {
-        //创建一个二维数组模拟迷宫
-        int[][] map = new int[8][7];
-        //使用1表示墙
-        //上下全部置为1
-        for (int i = 0; i < 7; i++) {
-            map[0][i]= 1;
-            map[7][i]= 1;
-        }
-        //左右全部置为1
-        for (int i = 0; i < 8; i++) {
-            map[i][0]= 1;
-            map[i][6]= 1;
-        }
-        //设置挡板，1 表示
-        map[3][1] = 1;
-        map[3][2] = 1;
-        System.out.println("地图的情况");
-        for (int i = 0; i < 8; i++) {
-            for (int j = 0; j < 7; j++) {
-                System.out.print(map[i][j]+ " ");
-            }
-            System.out.println();
-        }
-
-        //使用递归回溯给小球找路
-        setWay(map,1,1);
-        setWay2(map,1,1);
-
-        System.out.println("小球走过后地图的情况");
-        for (int i = 0; i < 8; i++) {
-            for (int j = 0; j < 7; j++) {
-                System.out.print(map[i][j]+ " ");
-            }
-            System.out.println();
-        }
-
-
-    }
-
-    //使用递归回溯来给小球找路
-    //说明
-    //1. map 表示地图
-    //2. i,j 表示从地图的哪个位置开始出发 (1,1)
-    //3. 如果小球能到 map[6][5] 位置，则说明通路找到.
-    //4.  约定：  当 map[i][j]  为  0  表示该点没有走过  当为  1  表示墙	； 2 表示通路可以走 ；  3  表示该点已经走过，但是走不通
-    //5. 在走迷宫时，需要确定一个策略(方法) 下->右->上->左 ,  如果该点走不通，再回溯
-
-    private static boolean setWay(int[][] map, int i, int j) {
-        if(map[6][5]==2){
-            return true;
-        }else {
-            //此路还没有走
-            if(map[i][j]== 0 ){
-                //按照策略  下->右->上->左	走
-                map[i][j] = 2;
-                //假定该点是可以走通.
-                //向下走
-                if(setWay(map, i+1, j)) {
-                    return true;
-                }
-                //向右走
-                else if (setWay(map, i, j+1)) {
-                    return true;
-                }
-                // 向上
-                else if (setWay(map, i-1, j)) {
-                    return true;
-                }
-                // 向左走
-                else if (setWay(map, i, j-1)){
-                    return true;
-                } else {
-                    //说明该点是走不通，是死路
-                    map[i][j] = 3;
-                    return false;
-                }
-            }else { // map[i][j] != 0 可能是 1，2，3
-                return false;
+    private static void test(int num) {
+        if (num < 0) {
+            return;
+        } else {
+            num -= 2;
+            num += 1;
+            if (num < 0) {
+                return;
+            } else {
+                num -= 2;
+                num += 1;
+                //........
             }
         }
     }
-
-    //修改找路的策略，改成 上->右->下->左
-    public static boolean setWay2(int[][] map, int i, int j) {
-        if(map[6][5] == 2) {
-            // 通路已经找到 ok
-            return true;
-        }
-        else {
-            if(map[i][j] == 0) {
-                //如果当前这个点还没有走过
-                //按照策略 上->右->下->左
-                // 假定该点是可以走通.
-                map[i][j] = 2;
-                //向上走
-                if(setWay2(map, i-1, j)) {
-                    return true;
-                }  //向右走
-                else if (setWay2(map, i, j+1)) {
-                    return true;
-                } //向下
-                else if (setWay2(map, i+1, j)) {
-                    return true;
-                } //  向左走
-                else if (setWay2(map, i, j-1)){
-                    return true;
-                } else {
-                    //说明该点是走不通，是死路
-                    map[i][j] = 3; return false;
-                }
-            } else { // 如 果 map[i][j] != 0 , 可 能 是 1， 2， 3
-                return false;
-            }
-        }
-    }
-
-}
 ```
+
+对于一个简单的需求，我们就要一直这样写下去，但是当你写几次就会发现，这代码的重复率好高呀，刚写完，于是聪明的人的代码就会出现下面的递归代码：
+
+```java
+    private static void test2(int num) {
+        if (num < 0) {
+            return;
+        }
+        test2(num - 2);
+        num += 1;
+    }
+```
+
+这样的代码是不是很简单，但是原理和执行流程你是否动呢？
+
+### 递归的执行流程
+
+首先我们将上面的代码改造一下，这样可以更好的看出来执行流程
+
+```java
+    private static void test2(int num) {
+        if (num < 0) {
+            return;
+        }
+        System.out.println("前" + num);//5  3 1
+        test2(num - 2);
+        System.out.println("-----");
+        System.out.println("中" + num);//1 3 5
+        num += 1;
+        System.out.println("-----");
+        System.out.println("后" + num);//2 4 6
+    }
+```
+
+大家先想想输出的log会是什么样的呢？
+
+```java
+//      前5
+//      前3
+//      前1
+//      -----
+//      中1
+//      -----
+//      后2
+//      -----
+//      中3
+//      -----
+//      后4
+//      -----
+//      中5
+//      -----
+//      后6
+```
+
+最终的输出，是不是和你想想的不太一样呢？是什么原因造成了这样的输出呢？
+
+我们画一张图来处理一下其流程：
+
+![image-20210607151722506](../img/recursion01.png)
+
+从图中我们可以看出，其执行的流程也是先将递归前的代码执行完成，然后逐层的执行，及从最后的一层操作操作向前执行，这里也不难看出其递归的执行流程和栈一样的，都是后进先出；
+
+### 递归需要遵守的重要规则
+
+1. 执行一个方法时，就创建一个新的受保护的独立空间(栈空间)
+2. 方法的局部变量是独立的，不会相互影响, 比如 n 变量
+3. 如果方法中使用的是引用类型变量(比如数组)，就会共享该引用类型的数据.
+4. 递归必须向退出递归的条件逼近，否则就是无限递归,出现 StackOverflowError，死`龟(归)`了:)
+5. 当一个方法执行完毕，或者遇到 return，就会返回，遵守谁调用，就将结果返回给谁，同时当方法执行完毕或者返回时，该方法也就执行完毕
 
 
 
