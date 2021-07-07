@@ -191,8 +191,9 @@
  - [🔖 1. Mybatis 二级缓存](https://blog.csdn.net/weixin_38937840/article/details/106332696)
  - [🔖 2. Mybatis 高级映射](mybatis/book/结果映射.md)
  - [🔖 3. Mybatis 动态 SQL](mybatis/book/动态SQL.md)
- - [🔖 4. Mybatis SqlSession](mybatis/book/SqlSession.md) 
+ - [🔖 4. Mybatis SqlSession 预览](mybatis/book/SqlSession.md) 
  - [🔖 5. Mybatis 学习扩展](mybatis/book/扩展.md)
+ - [🔖 6. Mybatis SqlSessionFactory 初始化流程](mybatis/book/SqlSessionFactory.md)
  
 ## [🔖 OAuth2 源码学习](oauth/README.md)
  - [🔖 1.理解 OAuth2.0](oauth/book/OAuth.md)
