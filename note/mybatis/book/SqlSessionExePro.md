@@ -463,7 +463,7 @@ multipleResults.add(defaultResultHandler.getResultList());
 
 我们来回顾一下，都用到了哪些类
 
-![](C:\Dylan\YangHaiji\安装包_学习文档\sqlSession.png)
+![sqlSession](img/sqlSession.png)
 
 #### 简单总结
 
