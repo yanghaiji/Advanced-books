@@ -12,6 +12,7 @@
 
 ### 源码学习
 - [🔖 6. Mybatis SqlSessionFactory 初始化流程](book/SqlSessionFactory.md)
+- [🔖 7. Mybatis SqlSession 执行SQL流程](book/SqlSessionExePro.md)
 
 
 
