@@ -196,6 +196,7 @@
  - [🔖 6. Mybatis SqlSessionFactory 初始化流程](mybatis/book/SqlSessionFactory.md)
  - [🔖 7. Mybatis SqlSession 执行SQL流程](mybatis/book/SqlSessionExePro.md)
  - [🔖 8. Mybatis SqlSession 执行SQL流程](mybatis/book/SqlSessionSummary.md)
+ - [🔖 9. Mybatis 插件原理与实战](mybatis/book/MybatisPlugin.md)
 
 ## [🔖 OAuth2 源码学习](oauth/README.md)
  - [🔖 1.理解 OAuth2.0](oauth/book/OAuth.md)

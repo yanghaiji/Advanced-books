@@ -303,7 +303,7 @@ private <E> Object executeForMany(SqlSession sqlSession, Object[] args) {
 
 ## Mybatis整体流程总结
 
-[Mybatis整体流程总结](img/1587110666458.png)
+![Mybatis整体流程总结](img/1587110666458.png)
 
 
 
