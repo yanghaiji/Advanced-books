@@ -228,6 +228,8 @@
 ### [5.Redis开发规范](redis/README.md)
 - [🔖 Redis开发规范](redis/book/actualCombat/RedisStandard.md)
 - [🔖 大厂Redis 性能优化的 13 条军规](redis/book/actualCombat/RedisStandard13.md)
+### [6.Redis实现分布式锁](redis/README.md)
+- [🔖 Redis实现分布式锁及其演进过程](redis/book/lock/RedisLock.md)
 
 ## [🔖 Shardingsphere 教程](shardingsphere/README.md)
 - [🔖 Shardingsphere简介](shardingsphere/book/Index.md)
