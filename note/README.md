@@ -186,6 +186,9 @@
 ### [5.Redis开发规范](redis/README.md)
 - [🔖 Redis开发规范](redis/book/actualCombat/RedisStandard.md)
 - [🔖 大厂Redis 性能优化的 13 条军规](redis/book/actualCombat/RedisStandard13.md)
+### [6.Redis实现分布式锁](redis/README.md)
+- [🔖 Redis实现分布式锁及其演进过程](redis/book/lock/RedisLock.md)
+
 ## [🔖 十一. Netty 教程](netty/README.md)
 
 ## [🔖 十二. 接口幂等性的实现](actualCombat/Limiter.md) 

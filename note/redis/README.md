@@ -29,5 +29,6 @@
 - [🔖 Redis开发规范](book/actualCombat/RedisStandard.md)
 - [🔖 大厂Redis 性能优化的 13 条军规](book/actualCombat/RedisStandard13.md)
 
-
+### 六.Redis实现分布式锁
+- [🔖 Redis实现分布式锁及其演进过程](book/lock/RedisLock.md)
 
