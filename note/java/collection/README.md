@@ -7,5 +7,8 @@
 - [4.JDK14 ArrayList 分析](list/ArrayList.md)
 - [5.Collections 工具类学习](collections/collections.md)
 - [6.ConcurrentHashMap 学习](map/ConcurrentHashMap.md)
+- [7.HashMap 源码重识](map/HashMap2.md)
+- [8.HashMap面试总结](map/MapMoreau.md)
+
 
 
