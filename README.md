@@ -13,7 +13,7 @@
     - [🔖 Github ✈直通车 Advanced-books 🌻](https://github.com/yanghaiji/Advanced-books)
 - 项目源代码迁移说明 
     
-    为方便大家学习现在已将项目相关源码迁移到 [🔖 https://github.com/yanghaiji/javayh-demo](https://github.com/yanghaiji/javayh-demo) 
+    为方便大家学习现在已将项目相关源码迁移到 [🔖 https://github.com/yanghaiji/IT-Demo](https://github.com/yanghaiji/IT-Demo) 
     这里将展示更到的`demo`演示，欢迎大家进行`pull request`
 
 如果对您有所帮助，希望给小编一个`star ⭐`
