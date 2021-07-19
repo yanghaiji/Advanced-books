@@ -20,6 +20,8 @@
 - Aop
     - [🔖 1. 为什么SpringBoot 可以自动加载Aop](book/aop/SpringAutoProxy.md)        
     - [🔖 2. Spring AOP 全面解析](book/aop/SpringAop.md)        
+- SpEl
+    - [🔖 1. SpEl(Spring Expression Language) 介绍](book/spel/SpELBaseInfo.md)    
 - Other 
     - [🔖 1. ConfigurationProperties使用方式全解](book/ConfigurationProperties.md)
     - [🔖 2. EnableAutoConfiguration 源码分析](book/EnableAutoConfiguration.md)
