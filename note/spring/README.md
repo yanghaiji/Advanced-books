@@ -22,6 +22,7 @@
     - [🔖 2. Spring AOP 全面解析](book/aop/SpringAop.md)        
 - SpEl
     - [🔖 1. SpEl(Spring Expression Language) 介绍](book/spel/SpELBaseInfo.md)    
+    - [🔖 2. SpEl 常用语法](book/spel/SpElGrammar.md)    
 - Other 
     - [🔖 1. ConfigurationProperties使用方式全解](book/ConfigurationProperties.md)
     - [🔖 2. EnableAutoConfiguration 源码分析](book/EnableAutoConfiguration.md)
