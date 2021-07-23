@@ -147,6 +147,7 @@
 ### [🔖 SpEl](spring/README.md)
 - [🔖 1. SpEl(Spring Expression Language) 介绍](spring/book/spel/SpELBaseInfo.md)  
 - [🔖 2. SpEl 常用语法](spring/book/spel/SpElGrammar.md)  
+- [🔖 3. SpEl Aop 实现高级自定义日志](spring/book/spel/SpElAndAop.md)   
 ### [🔖 Other](spring/README.md) 
 - [🔖 1. ConfigurationProperties使用方式全解](spring/book/ConfigurationProperties.md)
 - [🔖 2. EnableAutoConfiguration 源码分析](spring/book/EnableAutoConfiguration.md)
