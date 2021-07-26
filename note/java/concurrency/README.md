@@ -16,3 +16,6 @@
 - [🔖 Balking模式：再谈线程安全的单例模式](designpattern/Balking.md) 
 - [🔖 Thread-Per-Message模式：最简单实用的分工方法](designpattern/ThreadPerMessage.md) 
 - [🔖 Worker Thread模式：如何避免重复创建线程](designpattern/WorkerThread.md) 
+
+### 拓展
+- [🔖 线程池的执行原理](util/ExecutorPaly.md) 
