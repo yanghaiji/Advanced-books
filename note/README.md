@@ -152,6 +152,7 @@
 - [🔖 1. ConfigurationProperties使用方式全解](spring/book/ConfigurationProperties.md)
 - [🔖 2. EnableAutoConfiguration 源码分析](spring/book/EnableAutoConfiguration.md)
 - [🔖 3. SpringBoot 2.3.0 新特性之优雅停机](spring/book/GracefulShutdown.md)
+- [🔖 4. Spring 中标准事件与自定义事件](spring/book/SpringEvent.md)
 
 ## [🔖 Mysql 进阶篇](mysql/README.md)
  - [🔖 1. Mysql Explain 详解](mysql/book/Explain.md)
