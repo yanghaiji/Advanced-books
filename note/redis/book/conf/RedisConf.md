@@ -1110,7 +1110,12 @@ acllog-max-len 128
 # accuracy. By default Redis will check five keys and pick the one that was
 # used least recently, you can change the sample size using the following
 # configuration directive.
-#
+
+# LRU、LFU和最小TTL算法不是精确算法，而是近似算法（为了节省内存），因此可以对其进行调整以提高速度或精度。
+默认情况下，Redis将检查五个键并选择最近使用最少的键，您可以使用以下配置指令更改样本大小。
+
+# 默认值为5会产生足够好的结果。10非常接近真实的LRU，但CPU成本更高。3更快，但不是很准确。
+
 # The default of 5 produces good enough results. 10 Approximates very closely
 # true LRU but costs more CPU. 3 is faster but not very accurate.
 #
@@ -1121,19 +1126,26 @@ acllog-max-len 128
 # be increased.  Decreasing this value may reduce latency at the risk of 
 # eviction processing effectiveness
 #   0 = minimum latency, 10 = default, 100 = process without regard to latency
-#
+# 逐出处理设计为在默认设置下运行良好。
+# 如果写入流量异常大，则可能需要增加此值。降低此值可能会降低延迟，但有被逐出的风险处理有效性0=最小延迟，10=默认值，100=不考虑延迟的过程
 # maxmemory-eviction-tenacity 10
 
 # Starting from Redis 5, by default a replica will ignore its maxmemory setting
 # (unless it is promoted to master after a failover or manually). It means
 # that the eviction of keys will be just handled by the master, sending the
 # DEL commands to the replica as keys evict in the master side.
-#
+# 从Redis 5开始，默认情况下，复制副本将忽略其maxmemory设置（除非在故障切换后升级为master或手动）。
+# 这意味着密钥的逐出将由主机处理，在主机端的密钥逐出时将DEL命令发送到复制副本。
+
+
 # This behavior ensures that masters and replicas stay consistent, and is usually
 # what you want, however if your replica is writable, or you want the replica
 # to have a different memory setting, and you are sure all the writes performed
 # to the replica are idempotent, then you may change this default (but be sure
 # to understand what you are doing).
+#此行为可确保主副本和副本保持一致，并且通常是您想要的，但是如果您的副本是可写的，或者您希望副本具有不同的内存设置，
+#并且您确定对副本执行的所有写入都是幂等的，然后，您可以更改此默认设置（但一定要了解您正在做什么）。
+
 #
 # Note that since the replica by default does not evict, it may end using more
 # memory than the one set via maxmemory (there are certain buffers that may
@@ -1141,7 +1153,9 @@ acllog-max-len 128
 # and so forth). So make sure you monitor your replicas and make sure they
 # have enough memory to never hit a real out-of-memory condition before the
 # master hits the configured maxmemory setting.
-#
+#请注意，由于复制副本在默认情况下不会退出，因此最终可能会使用比通过maxmemory设置的内存更多的内存
+#（复制副本上的某些缓冲区可能更大，或者数据结构有时可能占用更多内存等等）。
+# 因此，请确保监视复制副本，并确保它们有足够的内存，在主副本达到配置的maxmemory设置之前，不会出现真正的内存不足情况。
 # replica-ignore-maxmemory yes
 
 # Redis reclaims expired keys in two ways: upon access when those keys are
@@ -1149,7 +1163,11 @@ acllog-max-len 128
 # "active expire key". The key space is slowly and interactively scanned
 # looking for expired keys to reclaim, so that it is possible to free memory
 # of keys that are expired and will never be accessed again in a short time.
-#
+# Redis以两种方式回收过期的密钥：当发现这些密钥过期时进行访问，以及在后台，即所谓的“活动过期密钥”。通过交互方式缓慢地扫描密钥空间，
+#寻找过期的密钥进行回收，这样就可以释放内存中过期的密钥，并且在短时间内再也无法访问这些密钥。
+  
+#  expire循环的默认工作将尝试避免超过10%的过期密钥仍在内存中，并尝试避免消耗超过总内存的25%并增加系统延迟。
+#但是，可以将通常设置为“1”的过期“努力”增加到更大的值，直到值“10”。在其最大值时，系统将使用更多的CPU、更长的周期（技术上可能会引入更多的延迟），并将允许系统中仍然存在的已过期密钥更少。这是内存、CPU和延迟之间的折衷。
 # The default effort of the expire cycle will try to avoid having more than
 # ten percent of expired keys still in memory, and will try to avoid consuming
 # more than 25% of total memory and to add latency to the system. However
