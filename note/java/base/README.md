@@ -7,5 +7,6 @@
 - [5 Stack 源码解析](book/Stack.md)
 - [6 Queue 源码解析](book/Queue.md)
 - [7 位移运算](book/bitwiseOperators.md)
+- [8 InheritableThreadLocal详解](book/InheritableThreadLocal.md)
 
 

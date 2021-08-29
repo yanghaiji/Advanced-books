@@ -9,6 +9,7 @@
     - [🔖 1.5 Stack 源码解析](base/book/Stack.md)
     - [🔖 1.6 Queue 源码解析](base/book/Queue.md)
     - [🔖 1.7 位移运算](base/book/bitwiseOperators.md)
+    - [🔖 1.8 InheritableThreadLocal详解](base/book/InheritableThreadLocal.md)
 - [🔖 2.Java collection](collection/README.md)
     - [🔖 2.1.JDK 8 HashMap鬼斧神工的优化](https://blog.csdn.net/weixin_38937840/article/details/106805496)
     - [🔖 2.2.JDK8 Map merge 一些骚操作](collection/map/map_merge.md)
