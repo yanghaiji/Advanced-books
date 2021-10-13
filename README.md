@@ -31,6 +31,7 @@
 ### [🔖 Spring 进阶篇](note/spring/README.md)
 ### [🔖 Mysql 进阶篇](note/mysql/README.md)
 ### [🔖 Git 核心技术](note/git/README.md)
+### [🔖 JDBC核心技术学习指南](note/jdbc/README.md)
 ### [🔖 Mybatis 进阶篇](note/mybatis/README.md)  
 ### [🔖 OAuth2 源码学习](note/oauth/README.md)
 ### [🔖 Redis 设计与实战](note/redis/README.md)
