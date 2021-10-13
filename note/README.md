@@ -194,6 +194,9 @@
  - [🔖 4.Rebase使用](git/senior/Rebase.md)
  - [🔖 5.Idea中Rebase使用](git/senior/IdeaRebase.md)
  
+## [🔖 JDBC核心技术学习指南](jdbc/README.md)
+ - [🔖 JDBC概述](jdbc/book/JdbcBaseInfo.md) 
+ 
 ## [🔖 Mybatis 进阶篇](mybatis/README.md)  
  - [🔖 1. Mybatis 二级缓存](https://blog.csdn.net/weixin_38937840/article/details/106332696)
  - [🔖 2. Mybatis 高级映射](mybatis/book/结果映射.md)
