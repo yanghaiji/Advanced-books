@@ -196,6 +196,7 @@
  
 ## [🔖 JDBC核心技术学习指南](jdbc/README.md)
  - [🔖 JDBC概述](jdbc/book/JdbcBaseInfo.md) 
+- [🔖  获取数据库连接](jdbc/book/GetConnection.md)
  
 ## [🔖 Mybatis 进阶篇](mybatis/README.md)  
  - [🔖 1. Mybatis 二级缓存](https://blog.csdn.net/weixin_38937840/article/details/106332696)
