@@ -266,6 +266,7 @@
 - [🔖 Netty中 Bootstrapping 的作用](netty/book/Bootstrapping.md)
 - [🔖 认识Netty的ChannelHandler 和 ChannelPipeline](netty/book/ChannelHandlerPipeline.md)
 - [🔖 近距离观察Netty的ChannelHandler](netty/book/ChannelHandler.md)
+
 ### [Netty核心功能介绍](netty/README.md)
 #### [Netty核心之Transport](netty/README.md)
 - [🔖 Netty案例研究:Transport 的迁移](netty/book/Transport.md)
@@ -320,6 +321,9 @@
 - [🔖 DDD 简介](ddd/book/DDDInfo.md)
 - [🔖 实体与聚合根](ddd/book/domain/Entities.md)
 - [🔖 值对象](ddd/book/domain/ObjectVal.md)
+
+## [🔖 ETL工具Kettle从入门到入魔](kettle/README.md)
+- [🔖 Kettle 安装与优化](kettle/book/KettleInstall.md)
 
 ## [🔖 面试题总结](InterviewQuestions/JavaYouHuo面试题总结.md)
 
