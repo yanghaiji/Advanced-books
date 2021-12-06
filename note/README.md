@@ -318,6 +318,12 @@
  - [🔖 Spring与Seata的实践](transaction/book/seata/demo.md)
 
 ## [🔖 DDD 领域驱动设计](ddd/README.md)
+### [架构演进史](ddd/README.md)
+- [🔖 整体式架构](ddd/book/history/OverallArchitecture.md)
+- [🔖 分层式架构](ddd/book/history/LayeredArchitecture.md)
+- [🔖 EBI式架构](ddd/book/history/EBIArchitecture.md)
+
+### [DDD 简介](ddd/README.md)
 - [🔖 DDD 简介](ddd/book/DDDInfo.md)
 - [🔖 实体与聚合根](ddd/book/domain/Entities.md)
 - [🔖 值对象](ddd/book/domain/ObjectVal.md)
