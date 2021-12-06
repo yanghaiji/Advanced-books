@@ -326,6 +326,7 @@
 - [🔖 Kettle 安装与优化](kettle/book/KettleInstall.md)
 - [🔖 Kettle实现Excel输入输出](kettle/book/KettleExcel.md)
 - [🔖 Kettle 连接 oracle](kettle/book/KettleForOracle.md)
+- [🔖 Kettle 数据库密码加解密策略](kettle/book/KettleDbEncr.md)
 
 
 ## [🔖 面试题总结](InterviewQuestions/JavaYouHuo面试题总结.md)
