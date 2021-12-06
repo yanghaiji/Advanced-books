@@ -1,3 +1,4 @@
+# Kettle 连接Oracle
 如果您不了解如何安装kettle 请参考[kettle 安装与调优 https://blog.csdn.net/weixin_38937840/article/details/121352284](https://blog.csdn.net/weixin_38937840/article/details/121352284)
 
 ---
