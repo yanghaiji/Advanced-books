@@ -5,6 +5,7 @@
 - [🔖 整体式架构](book/history/OverallArchitecture.md)
 - [🔖 分层式架构](book/history/LayeredArchitecture.md)
 - [🔖 EBI式架构](book/history/EBIArchitecture.md)
+- [🔖 MVC式架构](book/history/MVCArchitecture.md)
 
 ---
 

@@ -322,6 +322,7 @@
 - [🔖 整体式架构](ddd/book/history/OverallArchitecture.md)
 - [🔖 分层式架构](ddd/book/history/LayeredArchitecture.md)
 - [🔖 EBI式架构](ddd/book/history/EBIArchitecture.md)
+- [🔖 MVC式架构](ddd/book/history/MVCArchitecture.md)
 
 ### [DDD 简介](ddd/README.md)
 - [🔖 DDD 简介](ddd/book/DDDInfo.md)

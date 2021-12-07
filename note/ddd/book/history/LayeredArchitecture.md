@@ -18,7 +18,8 @@
 
 在分层架构中，层可以严格地使用，其中层只知道其正下方的层，或者以更灵活的方法使用，其中层可以访问其下的任何层。Martin Fowler和我自己的经验都告诉我，第二种情况在实践中似乎效果更好，因为它避免了在中间层中创建代理方法（甚至是完整的代理类），并且可以降级为Lasagna架构的反模式（下面将详细介绍）。
 
-> 有时，图层的排列方式使得域图层在演示文稿中完全隐藏数据源。但是，更常见的情况是，演示文稿直接访问数据存储。虽然这不那么纯粹，但它在实践中往往效果更好。Fowler 2002，[企业应用程序体系结构的模式](https://www.amazon.com/dp/0321127420/ref=wl_it_dp_o_pC_nS_ttl?_encoding=UTF8&colid=CG11VVP0H8Y8&coliid=I1QPWUPW6G7YF5)
+> 有时，图层的排列方式使得域图层在演示文稿中完全隐藏数据源。但是，更常见的情况是，演示文稿直接访问数据存储。虽然这不那么纯粹，但它在实践中往往效果更好。Fowler 2002，
+> [企业应用程序体系结构的模式](https://www.amazon.com/dp/0321127420/ref=wl_it_dp_o_pC_nS_ttl?_encoding=UTF8&colid=CG11VVP0H8Y8&coliid=I1QPWUPW6G7YF5)
 
 **其优点**是：
 
@@ -71,7 +72,7 @@
 
 2003年，Eric Evans出版了他的标志性著作《[领域驱动设计：在软件的核心中解决复杂性》。](https://www.amazon.com/dp/0321125215/ref=wl_it_dp_o_pC_nS_ttl?_encoding=UTF8&colid=CG11VVP0H8Y8&coliid=I1X0NXLUHTFGE4)在那本书中发表的许多关键概念中，还有一个关于软件系统分层的愿景：
 
-[外链图片转存失败,源站可能有防盗链机制,建议将图片保存下来直接上传(img-K4BeOmy1-1637994732105)(C:\Dylan\YangHaiji\说明文档\ddd\img\20211126112243.png)]
+![](../img/20211126112243.png)
 
 - #### 用户界面
 
