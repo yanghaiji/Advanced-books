@@ -328,6 +328,7 @@
 - [🔖 DDD 简介](ddd/book/DDDInfo.md)
 - [🔖 实体与聚合根](ddd/book/domain/Entities.md)
 - [🔖 值对象](ddd/book/domain/ObjectVal.md)
+- [🔖 服务](ddd/book/domain/Service.md)
 
 ## [🔖 ETL工具Kettle从入门到入魔](kettle/README.md)
 - [🔖 Kettle 安装与优化](kettle/book/KettleInstall.md)
