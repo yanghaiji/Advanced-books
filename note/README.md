@@ -330,6 +330,9 @@
 - [🔖 值对象](ddd/book/domain/ObjectVal.md)
 - [🔖 服务](ddd/book/domain/Service.md)
 
+### DDD 中的生命周期
+- [🔖 DDD Aggregate](ddd/book/lifecycle/Aggregate.md)
+
 ## [🔖 ETL工具Kettle从入门到入魔](kettle/README.md)
 - [🔖 Kettle 安装与优化](kettle/book/KettleInstall.md)
 - [🔖 Kettle实现Excel输入输出](kettle/book/KettleExcel.md)
