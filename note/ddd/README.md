@@ -20,6 +20,7 @@
 ### DDD 中的生命周期
 - [🔖 DDD Aggregate](book/lifecycle/Aggregate.md)
 - [🔖 DDD Factory](book/lifecycle/Factory.md)
+- [🔖 DDD Repository](book/lifecycle/Repository.md)
 
 ### DDD常用模型
 
