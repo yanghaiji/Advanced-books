@@ -333,6 +333,7 @@
 ### DDD 中的生命周期
 - [🔖 DDD Aggregate](ddd/book/lifecycle/Aggregate.md)
 - [🔖 DDD Factory](ddd/book/lifecycle/Factory.md)
+- [🔖 DDD Repository](ddd/book/lifecycle/Repository.md)
 
 ## [🔖 ETL工具Kettle从入门到入魔](kettle/README.md)
 - [🔖 Kettle 安装与优化](kettle/book/KettleInstall.md)
