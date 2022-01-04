@@ -335,6 +335,10 @@
 - [🔖 DDD Factory](ddd/book/lifecycle/Factory.md)
 - [🔖 DDD Repository](ddd/book/lifecycle/Repository.md)
 
+### 架构整合
+- [🔖 领域驱动设计DDD与Hexagonal, Onion, Clean, CQRS 落地](https://blog.csdn.net/weixin_38937840/article/details/122293603)
+
+
 ## [🔖 ETL工具Kettle从入门到入魔](kettle/README.md)
 - [🔖 Kettle 安装与优化](kettle/book/KettleInstall.md)
 - [🔖 Kettle实现Excel输入输出](kettle/book/KettleExcel.md)
