@@ -22,5 +22,9 @@
 - [🔖 DDD Factory](book/lifecycle/Factory.md)
 - [🔖 DDD Repository](book/lifecycle/Repository.md)
 
+
+### 架构整合
+-[领域驱动设计DDD与Hexagonal, Onion, Clean, CQRS 落地](https://blog.csdn.net/weixin_38937840/article/details/122293603)
+
 ### DDD常用模型
 
