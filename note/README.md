@@ -345,6 +345,8 @@
 - [🔖 Kettle 连接 oracle](kettle/book/KettleForOracle.md)
 - [🔖 Kettle 数据库密码加解密策略](kettle/book/KettleDbEncr.md)
 
+## [🔖 ElasticSearch从入门到入魔](elasticsearch/README.md)
+- [🔖 ElasticSearch 安装](elasticsearch/basics/install_elasticsearch.md)
 
 ## [🔖 面试题总结](InterviewQuestions/JavaYouHuo面试题总结.md)
 
