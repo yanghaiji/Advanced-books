@@ -347,7 +347,7 @@
 
 ## [🔖 ElasticSearch从入门到入魔](elasticsearch/README.md)
 - [🔖 ElasticSearch 安装](elasticsearch/basics/install_elasticsearch.md)
-
+- [elasticsearch 对索引增删改](elasticsearch/basics/insert_update_delete.md)
 ## [🔖 面试题总结](InterviewQuestions/JavaYouHuo面试题总结.md)
 
 ## [🔖 实战](actualCombat/README.md) 
