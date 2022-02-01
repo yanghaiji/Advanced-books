@@ -2,3 +2,6 @@
 
 ## 安装
 - [elasticsearch 安装教程](basics/install_elasticsearch.md)
+
+## ElasticSearch 常用语法命令
+- [elasticsearch 对索引增删改](basics/insert_update_delete.md)
