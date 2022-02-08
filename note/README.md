@@ -346,8 +346,10 @@
 - [🔖 Kettle 数据库密码加解密策略](kettle/book/KettleDbEncr.md)
 
 ## [🔖 ElasticSearch从入门到入魔](elasticsearch/README.md)
-- [🔖 ElasticSearch 安装](elasticsearch/basics/install_elasticsearch.md)
-- [elasticsearch 对索引增删改](elasticsearch/basics/insert_update_delete.md)
+- [🔖 elasticSearch 安装](elasticsearch/basics/install_elasticsearch.md)
+- [🔖 elasticsearch 对索引增删改](elasticsearch/basics/insert_update_delete.md)
+- [🔖 elasticsearch 常用查询表达式](elasticsearch/basics/query_dsl.md)
+
 ## [🔖 面试题总结](InterviewQuestions/JavaYouHuo面试题总结.md)
 
 ## [🔖 实战](actualCombat/README.md) 
