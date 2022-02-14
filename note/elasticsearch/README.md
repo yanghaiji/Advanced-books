@@ -7,3 +7,4 @@
 - [elasticsearch 对索引增删改](basics/insert_update_delete.md)
 - [elasticsearch 常用查询表达式](basics/query_dsl.md)
 - [elasticsearch 批量操作常用API](basics/batch.md)
+- [elasticsearch 聚合查询](basics/agg.md)
