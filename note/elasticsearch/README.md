@@ -8,3 +8,4 @@
 - [elasticsearch 常用查询表达式](basics/query_dsl.md)
 - [elasticsearch 批量操作常用API](basics/batch.md)
 - [elasticsearch 聚合查询](basics/agg.md)
+- [🔖 elasticsearch中常用的数据类型大全](basics/datatype.md)
