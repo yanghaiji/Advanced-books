@@ -351,7 +351,8 @@
 - [🔖 elasticsearch 常用查询表达式](elasticsearch/basics/query_dsl.md)
 - [🔖 elasticsearch 批量操作常用API](elasticsearch/basics/batch.md)
 - [🔖 elasticsearch 聚合查询](elasticsearch/basics/agg.md)
-- [🔖 elasticsearch中常用的数据类型大全](elasticsearch/basics/datatype.md)
+- [🔖 elasticsearch 中常用的数据类型大全](elasticsearch/basics/datatype.md)
+- [🔖 elasticsearch mapping](elasticsearch/basics/mapping.md)
 
 ## [🔖 面试题总结](InterviewQuestions/JavaYouHuo面试题总结.md)
 
