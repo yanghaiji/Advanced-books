@@ -11,3 +11,4 @@
 
 ## ElasticSearch 高级
 - [🔖 elasticsearch mapping](basics/mapping.md)
+- [🔖 elasticsearch mapping routing](basics/routing.md)
