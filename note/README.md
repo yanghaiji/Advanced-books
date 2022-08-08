@@ -357,6 +357,7 @@
 
 ## [🔖 SonarQube实战](sonarqube/README.md)
 - [🔖 elasticSearch 安装](sonarqube/book/install.md)
+- [Jenkins集成Sonarqube](sonarqube/book/jenkinsForSonarQube.md)
 
 
 ## [🔖 面试题总结](InterviewQuestions/JavaYouHuo面试题总结.md)
