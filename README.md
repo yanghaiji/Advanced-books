@@ -46,5 +46,6 @@
 ### [🔖 ETL工具Kettle从入门到入魔](note/kettle/README.md)
 ### [🔖 ElasticSearch从入门到入魔](note/elasticsearch/README.md)
 ### [🔖 SonarQube实战](note/sonarqube/README.md)
+### [🔖 Jmeter 笔记](https://blog.csdn.net/weixin_38937840/category_11971762.html?spm=1001.2014.3001.5482)
 ### [🔖 面试题总结](note/InterviewQuestions/JavaYouHuo面试题总结.md)
 ### [🔖 更多实战](note/actualCombat/README.md)

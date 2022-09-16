@@ -357,8 +357,11 @@
 
 ## [🔖 SonarQube实战](sonarqube/README.md)
 - [🔖 elasticSearch 安装](sonarqube/book/install.md)
-- [Jenkins集成Sonarqube](sonarqube/book/jenkinsForSonarQube.md)
+- [🔖 Jenkins集成Sonarqube](sonarqube/book/jenkinsForSonarQube.md)
 
+## [🔖 Jmeter 笔记](https://blog.csdn.net/weixin_38937840/category_11971762.html?spm=1001.2014.3001.5482)
+- [🔖 Jmeter 生成测试报告](https://blog.csdn.net/weixin_38937840/article/details/126757540)
+- [🔖 Jmeter BenaShell 实现参数加密](https://blog.csdn.net/weixin_38937840/article/details/126398748)
 
 ## [🔖 面试题总结](InterviewQuestions/JavaYouHuo面试题总结.md)
 
