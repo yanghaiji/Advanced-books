@@ -367,6 +367,7 @@
 - [🔖 Kubernetes介绍](kubernetes/book/Kubernetes介绍.md)
 - [🔖 kubernetes集群环境搭建](kubernetes/book/KubernetesClusterInstall.md)
 - [🔖 kubernetes资源管理](kubernetes/book/KubernetesResource.md)
+- [🔖 kubernetes实战入门](kubernetes/book/KubernetesSz.md)
 
 
 ## [🔖 面试题总结](InterviewQuestions/JavaYouHuo面试题总结.md)
