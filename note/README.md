@@ -371,7 +371,7 @@
 - [🔖 kubernetes实战入门](kubernetes/book/KubernetesSz.md)
 - [🔖 Pod 详解](kubernetes/book/PodInfo.md)
 - [🔖 Pod 控制器详解](kubernetes/book/PodControllerInfo.md)
-
+- [🔖 Service 详解](kubernetes/book/Service.md)
 
 ## [🔖 面试题总结](InterviewQuestions/JavaYouHuo面试题总结.md)
 
