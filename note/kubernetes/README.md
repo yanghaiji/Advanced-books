@@ -8,3 +8,4 @@
 - [🔖 Pod 详解](book/PodInfo.md)
 - [🔖 Pod 控制器详解](book/PodControllerInfo.md)
 - [🔖 Service 详解](book/Service.md)
+- [🔖 数据存储 详解](book/pvc.md)
